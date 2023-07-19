@@ -1,0 +1,7 @@
+numpy
+levenshtein
+pandas
+jiwer
+symspellpy
+seaborn
+tqdm
