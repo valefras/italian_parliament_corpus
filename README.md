@@ -7,7 +7,7 @@ Scripts should be executed in order:
 - the evaluation is conducted with the gold standard: uncorrected texts, symspell-corrected texts using the base it-100k dictionary and the symspell-corrected texts using the window dictionaries are compared
 - the correction of all documents is conducted
 ## Suggested project directory structure:
-
+```bash
 project/
 │
 ├── README.md
@@ -41,3 +41,10 @@ project/
         ├── cam-leg-date-doc-page.txt  
         ├── cam-leg-date-doc-page.txt 
         └── ...
+```
+## Metrics
+[Word Error Rate](https://en.wikipedia.org/wiki/Word_error_rate) and [Character Error Rate](https://torchmetrics.readthedocs.io/en/stable/text/char_error_rate.html) were used as evaluation metrics
+## ToDo
+- Add more gold standard documents (50 total at least)
+- Implement t-test in evaluation phase
+- Test different confidence cutoffs and cut criteria of dictionaries
