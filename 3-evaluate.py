@@ -146,8 +146,8 @@ def evaluate(
                     pred = f2.read()
                     clean_pred = pred.translate(str.maketrans("", "", string.punctuation)).lower()
 
-                res.append([jiwer.wer(clean_gold, clean_pred), "WER", "Base"])
-                res.append([jiwer.cer(clean_gold, clean_pred), "CER", "Base"])
+                res.append([jiwer.wer(clean_gold, clean_pred), "WER", "Base italian dictionary"])
+                res.append([jiwer.cer(clean_gold, clean_pred), "CER", "Base italian dictionary"])
 
         for file in os.listdir(corrected_windowed_folder):
             if file == gold_file:
@@ -164,16 +164,29 @@ def evaluate(
     res_data = pd.DataFrame(res, columns=["val", "cat", "set"])
 
     print(res_data.groupby(["cat", "set"], as_index=False).mean())
-
     sns.set_theme(style="ticks", palette="pastel")
+    # create and save two separate plots for WER and CER
+    plot = sns.boxplot(x="set", y="val", hue="cat", palette=["m", "g"], data=res_data[res_data["cat"] == "WER"])
+    sns.despine(offset=10, trim=True)
+    plot.set_title("WER for the Symspell-corrected texts (against the golden standard)")
+    plot.set_xlabel("Set")
+    plot.set_ylabel("WER")
+    plot.figure.savefig("symspell_wer.png")
+
+    plot = sns.boxplot(x="set", y="val", hue="cat", palette=["m", "g"], data=res_data[res_data["cat"] == "CER"])
+    sns.despine(offset=10, trim=True)
+    plot.set_title("CER for the Symspell-corrected texts (against the golden standard)")
+    plot.set_xlabel("Set")
+    plot.set_ylabel("CER")
+    plot.figure.savefig("symspell_cer.png")
 
     # Draw a nested boxplot to show bills by day and time
-    plot = sns.boxplot(x="set", y="val", hue="cat", palette=["m", "g"], data=res_data)
-    sns.despine(offset=10, trim=True)
-    plot.set_title("WER and CER for the Symspell-corrected texts (against the golden standard)")
-    plot.set_xlabel("Set")
-    plot.set_ylabel("WER/CER")
-    plot.figure.savefig("symspell.png")
+    # plot = sns.boxplot(x="set", y="val", hue="cat", palette=["m", "g"], data=res_data)
+    # sns.despine(offset=10, trim=True)
+    # plot.set_title("WER and CER for the Symspell-corrected texts (against the golden standard)")
+    # plot.set_xlabel("Set")
+    # plot.set_ylabel("WER/CER")
+    # plot.figure.savefig("symspell.png")
 
     return res_data
 
