@@ -102,9 +102,15 @@ def cleanCameraHTML(data_path, output_path, people_path):
             for day in os.listdir(os.path.join(data_path, "camera", leg)):
                 if os.path.isdir(os.path.join(data_path, "camera", leg, day)):
                     if leg == "repubblica_13" or leg == "repubblica_14":
-                        docs = sorted(
-                            [doc for doc in os.listdir(os.path.join(data_path, "camera", leg, day)) if "_s" in doc]
-                        )
+                        docs = []
+                        for doc in os.listdir(os.path.join(data_path, "camera", leg, day)):
+                            if "_s" in doc:
+                                docs.append(doc)
+                            if "_sintero" in doc:
+                                docs = [doc]
+                                break
+
+                        docs = sorted(docs)
                         output_file = os.path.join(output_path, "camera", leg, day + ".xml")
                         os.makedirs(os.path.dirname(output_file), exist_ok=True)
                         for doc in docs:
@@ -188,7 +194,6 @@ def cleanSenatoHTML(data_path, output_path, people_path):
             # ################################## break for testing
             # break
             # #############################################
-
 
 
 def convert_date_format(input_date):
