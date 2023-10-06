@@ -217,13 +217,13 @@ def performTagging(out, leg, cam, people_dataset):
             if utils.full_process(line):
                 # wont execute and not produce a warning
                 president_best_match = process.extractOne(
-                    line,
-                    list(people_dataset["surname"]),
+                    line.lower(),
+                    list(people_dataset["surname"].str.lower()),
                     scorer=fuzz.partial_ratio,
                     score_cutoff=70,
                 )
                 if president_best_match:
-                    president_uri = people_dataset.loc[people_dataset["surname"] == president_best_match[0]][
+                    president_uri = people_dataset.loc[people_dataset["surname"] == president_best_match[0].upper()][
                         "URI"
                     ].iloc[0]
                     if is_presidency_open:
