@@ -1,8 +1,13 @@
 from Levenshtein import distance as lev
 import csv
-from cleaning_utils.cleaning_functions import frequency_count
+from collections import Counter
 import pandas as pd
 import numpy as np
+
+
+def frequency_count(numbers):
+    counter = Counter(numbers)
+    return counter.most_common(1)[0][0]
 
 
 def assessDocType(df, leg, page_num):
@@ -362,7 +367,7 @@ def senatoDocType(leg, page_num, page_list):
     for page in np.random.choice(page_list, num_pages_check):
         dataframe = pd.read_csv(page, sep="\t", quoting=csv.QUOTE_NONE, encoding="utf-8")
         # if page is empty skip it
-        if dataframe.shape[0] < 2:
+        if dataframe.shape[0] < 3:
             continue
 
         ########### special cases ################
@@ -378,4 +383,6 @@ def senatoDocType(leg, page_num, page_list):
         document_type_list.append(assessDocType(dataframe, leg, page_num))
 
         # document type is the most frequent one in first three pages
-    return frequency_count(document_type_list)
+    if len(document_type_list) > 0:
+        return frequency_count(document_type_list)
+    return None

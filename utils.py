@@ -213,6 +213,12 @@ ordered_leg_names = [
     "repubblica_10",
     "repubblica_11",
     "repubblica_12",
+    "repubblica_13",
+    "repubblica_14",
+    "repubblica_15",
+    "repubblica_16",
+    "repubblica_17",
+    "repubblica_18",
 ]
 
 leg_mapping = {
@@ -280,4 +286,3 @@ leg_mapping = {
     "cg_18": "repubblica_18",
     "18": "repubblica_18",
 }
-

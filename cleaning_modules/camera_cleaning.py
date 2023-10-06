@@ -1,14 +1,19 @@
 from Levenshtein import distance as lev
 import csv
-from cleaning_utils.cleaning_functions import frequency_count
 import pandas as pd
+from collections import Counter
 import numpy as np
+
+
+def frequency_count(numbers):
+    counter = Counter(numbers)
+    return counter.most_common(1)[0][0]
 
 
 def assessDocType(df, date, page_num):
     """
     tries to assess the type of camera document based on the first 120 words of a page
-    :param df: dataframe of the page
+    :param df: dataframe of the pagefre
     :param date: date of the document
     :param page_num: page number
     :return page type
@@ -376,7 +381,7 @@ def cameraDocType(date, page_num, page_list):
         for page in np.random.choice(page_list, num_pages_check):
             dataframe = pd.read_csv(page, sep="\t", quoting=csv.QUOTE_NONE, encoding="utf-8")
             # if page is empty skip it
-            if dataframe.shape[0] < 2:
+            if dataframe.shape[0] < 3:
                 continue
 
             ########### special cases ################
@@ -394,4 +399,6 @@ def cameraDocType(date, page_num, page_list):
             document_type_list.append(assessDocType(dataframe, date, page_num))
 
         # document type is the most frequent one in first three pages
-        return frequency_count(document_type_list)
+        if len(document_type_list) > 0:
+            return frequency_count(document_type_list)
+        return None

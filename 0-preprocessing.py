@@ -10,7 +10,9 @@ from bs4 import BeautifulSoup
 from tagging_modules.tagging import createPeopleDatasets
 import re
 from cleaning_modules.formatting_func import performTagging
-from utils import leg_mapping
+from utils import leg_mapping, ordered_leg_names
+from string import punctuation
+from lxml import etree as ET
 
 
 def cleanCameraPDF(metadata_path, data_path, output_path, gold_folder, pred_folder, people_path):
@@ -109,7 +111,6 @@ def cleanCameraHTML(data_path, output_path, people_path):
                             if "_sintero" in doc:
                                 docs = [doc]
                                 break
-
                         docs = sorted(docs)
                         output_file = os.path.join(output_path, "camera", leg, day + ".xml")
                         os.makedirs(os.path.dirname(output_file), exist_ok=True)
@@ -130,6 +131,18 @@ def cleanCameraHTML(data_path, output_path, people_path):
                                 with open(output_file, "a", encoding="utf-8") as f:
                                     f.write(clean_text)
                         performTagging(output_file, leg, 0, people_dataset)
+                        stats_df = pd.read_csv("./stats.csv", encoding="utf-8")
+
+                        stats_df.loc[stats_df["legislature"] == leg, "speech_num"] += len(
+                            re.findall(r"</speech>", open(output_file, "r", encoding="utf-8").read())
+                        )
+                        tree = ET.parse(output_file)
+                        string_doc = ET.tostring(tree.getroot(), encoding="utf-8", method="text").decode("utf-8")
+                        stats_df.loc[stats_df["legislature"] == leg, "token_num"] += len(
+                            [x for x in string_doc.split() if x not in punctuation]
+                        )
+
+                        stats_df.to_csv("./stats.csv", index=False, encoding="utf-8")
 
                     else:
                         for doc in os.listdir(os.path.join(data_path, "camera", leg, day)):
@@ -155,6 +168,19 @@ def cleanCameraHTML(data_path, output_path, people_path):
                                     with open(output_file, "a", encoding="utf-8") as f:
                                         f.write(clean_text)
                         performTagging(output_file, leg, 0, people_dataset)
+
+                        stats_df = pd.read_csv("./stats.csv", encoding="utf-8")
+
+                        stats_df.loc[stats_df["legislature"] == leg, "speech_num"] += len(
+                            re.findall(r"</speech>", open(output_file, "r", encoding="utf-8").read())
+                        )
+                        tree = ET.parse(output_file)
+                        string_doc = ET.tostring(tree.getroot(), encoding="utf-8", method="text").decode("utf-8")
+                        stats_df.loc[stats_df["legislature"] == leg, "token_num"] += len(
+                            [x for x in string_doc.split() if x not in punctuation]
+                        )
+
+                        stats_df.to_csv("./stats.csv", index=False, encoding="utf-8")
 
 
 def cleanSenatoHTML(data_path, output_path, people_path):
@@ -191,6 +217,22 @@ def cleanSenatoHTML(data_path, output_path, people_path):
                                 with open(output_file, "a", encoding="utf-8") as f:
                                     f.write(clean_text)
                             performTagging(output_file, clean_leg, 1, people_dataset)
+
+                            # add up stats
+
+                            stats_df = pd.read_csv("./stats.csv", encoding="utf-8")
+
+                            stats_df.loc[stats_df["legislature"] == clean_leg, "speech_num"] += len(
+                                re.findall(r"</speech>", open(output_file, "r", encoding="utf-8").read())
+                            )
+                            tree = ET.parse(output_file)
+                            string_doc = ET.tostring(tree.getroot(), encoding="utf-8", method="text").decode("utf-8")
+                            stats_df.loc[stats_df["legislature"] == clean_leg, "token_num"] += len(
+                                [x for x in string_doc.split() if x not in punctuation]
+                            )
+
+                            stats_df.to_csv("./stats.csv", index=False, encoding="utf-8")
+
             # ################################## break for testing
             # break
             # #############################################
@@ -253,7 +295,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--people_folder",
         type=str,
-        default="people",
+        default="people/",
         help="Folder where to output the test set.",
     )
 
@@ -262,6 +304,24 @@ if __name__ == "__main__":
     os.makedirs(args.output_path, exist_ok=True)
 
     start_time = datetime.now()
+
+    if not os.path.isfile("./stats.csv"):
+        stats_df = pd.DataFrame(columns=["legislature", "page_num", "speech_num", "token_num"])
+        # fill with all legislatures and 0s
+        stats_df["legislature"] = ordered_leg_names
+        stats_df["page_num"] = 0
+        stats_df["speech_num"] = 0
+        stats_df["token_num"] = 0
+
+        # "page_num" in legs between repubblica_13 and repooblica_18 are "NA"
+        stats_df.loc[
+            stats_df["legislature"].isin(
+                ["repubblica_13", "repubblica_14", "repubblica_15", "repubblica_16", "repubblica_17", "repubblica_18"]
+            ),
+            "page_num",
+        ] = "NA"
+
+        stats_df.to_csv("./stats.csv", index=False, encoding="utf-8")
 
     createPeopleDatasets(args.people_folder, "tagging_modules/rdf")
 
@@ -291,9 +351,9 @@ if __name__ == "__main__":
         args.pred_set_folder,
         args.people_folder,
     )
-    cleanSenatoHTML(args.html_data_path, args.output_path)
+    cleanSenatoHTML(args.html_data_path, args.output_path, args.people_folder)
 
-    cleanCameraHTML(args.html_data_path, args.output_path)
+    cleanCameraHTML(args.html_data_path, args.output_path, args.people_folder)
 
     end_time = datetime.now()
     print("Duration: {}".format(end_time - start_time))
