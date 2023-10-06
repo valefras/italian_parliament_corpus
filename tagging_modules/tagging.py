@@ -8,50 +8,50 @@ import time
 import pandas as pd
 
 ordered_leg_names = [
-    # "regno_01",
-    # "regno_02",
-    # "regno_03",
-    # "regno_04",
-    # "regno_05",
-    # "regno_06",
-    # "regno_07",
-    # "regno_08",
-    # "regno_09",
-    # "regno_10",
-    # "regno_11",
-    # "regno_12",
-    # "regno_13",
-    # "regno_14",
-    # "regno_15",
-    # "regno_16",
-    # "regno_17",
-    # "regno_18",
-    # "regno_19",
-    # "regno_20",
-    # "regno_21",
-    # "regno_22",
-    # "regno_23",
-    # "regno_24",
-    # "regno_25",
-    # "regno_26",
-    # "regno_27",
-    # "regno_28",
-    # "regno_29",
-    # "regno_30",
-    # "consulta_nazionale",
-    # "costituente",
-    # "repubblica_01",
-    # "repubblica_02",
-    # "repubblica_03",
-    # "repubblica_04",
-    # "repubblica_05",
-    # "repubblica_06",
-    # "repubblica_07",
-    # "repubblica_08",
-    # "repubblica_09",
-    # "repubblica_10",
-    # "repubblica_11",
-    # "repubblica_12",
+    "regno_01",
+    "regno_02",
+    "regno_03",
+    "regno_04",
+    "regno_05",
+    "regno_06",
+    "regno_07",
+    "regno_08",
+    "regno_09",
+    "regno_10",
+    "regno_11",
+    "regno_12",
+    "regno_13",
+    "regno_14",
+    "regno_15",
+    "regno_16",
+    "regno_17",
+    "regno_18",
+    "regno_19",
+    "regno_20",
+    "regno_21",
+    "regno_22",
+    "regno_23",
+    "regno_24",
+    "regno_25",
+    "regno_26",
+    "regno_27",
+    "regno_28",
+    "regno_29",
+    "regno_30",
+    "consulta_nazionale",
+    "costituente",
+    "repubblica_01",
+    "repubblica_02",
+    "repubblica_03",
+    "repubblica_04",
+    "repubblica_05",
+    "repubblica_06",
+    "repubblica_07",
+    "repubblica_08",
+    "repubblica_09",
+    "repubblica_10",
+    "repubblica_11",
+    "repubblica_12",
     "repubblica_13",
     "repubblica_14",
     "repubblica_15",
@@ -61,10 +61,14 @@ ordered_leg_names = [
     "repubblica_19",
 ]
 
-rdf_path = "rdf"
-
 
 def initialize(rdf_path):
+    """
+    Parses together all the useful parliament RDF files in the given path
+    :param rdf_path: the path where the RDF files are stored
+    :return: None
+    """
+
     global dataset
 
     dataset = ConjunctiveGraph()
@@ -77,6 +81,12 @@ def initialize(rdf_path):
 
 
 def queryRDF(leg):
+    """
+    Queries the RDF files for the names of the people in the given legislature
+    :param leg: the legislature to query
+    :return: a dataframe containing the names of the people in the given legislature
+    """
+
     query = prepareQuery(
         f"""
             SELECT DISTINCT ?person ?name ?surname
@@ -146,6 +156,12 @@ def queryRDF(leg):
 
 
 def createPeopleDatasets(output_path="people", rdf_path="tagging_modules/rdf"):
+    """
+    Create a dataset for each legislature containing the names of the people in that legislature
+    :param output_path: the path where the datasets will be saved
+    :param rdf_path: the path where the RDF files are stored
+    :return: None
+    """
     initialize(rdf_path)
 
     if not os.path.exists(output_path):
@@ -156,9 +172,3 @@ def createPeopleDatasets(output_path="people", rdf_path="tagging_modules/rdf"):
     for leg in ordered_leg_names:
         parliament_composition = queryRDF(leg)
         parliament_composition.to_csv(os.path.join(output_path, leg + ".csv"), index=False)
-
-
-# os.chdir("C:/Users/Valentino/Desktop/Tirocinio_2023/data_cleaning_temp/tagging_modules/")
-# initialize("rdf")
-# len(dataset)
-# queryRDF("regno_03")

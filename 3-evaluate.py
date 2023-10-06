@@ -6,6 +6,11 @@ import pandas as pd
 import argparse
 import os
 import seaborn as sns
+import matplotlib.pyplot as plt
+import math
+import statistics
+from collections import Counter
+
 
 string.punctuation += "«»–"
 
@@ -99,7 +104,87 @@ def computeSymspellWindowedDictionaries(test_set_path, output_path, dict_folder,
                 f2.write(corrected_line + "\n")
 
 
-def evaluate(
+def evaluateTags(gold_standard_folder, pred_set_folder):
+    """
+    evaluates the tags using the gold standard
+    :param gold_standard_folder: path to the gold standard
+    :param test_set_folder: path to the test set
+    """
+    print("eval tags")
+    # open gold standard
+    # open test set
+
+    true_positives = 0
+    false_positives = 0
+    false_negatives = 0
+
+    for gold_file in os.listdir(gold_standard_folder):
+        print(gold_file)
+        with open(gold_standard_folder + "/" + gold_file, "r", encoding="utf-8") as f1:
+            gold = f1.read()
+
+        with open(pred_set_folder + "/" + gold_file, "r", encoding="utf-8") as f2:
+            pred = f2.read()
+
+        # check if speech tag exists in either file
+        # if not, skip file
+        if "</speech>" not in gold or "</speech>" not in pred:
+            continue
+
+        gold_xml = pd.read_xml(gold, xpath=".//speech")
+        pred_xml = pd.read_xml(pred, xpath=".//speech")
+
+        gold_xml = gold_xml[["speaker"]]
+        pred_xml = pred_xml[["speaker"]]
+
+        gold_list = [str(x).split("/")[-1] for x in gold_xml["speaker"]]
+        pred_list = [str(x).split("/")[-1] for x in pred_xml["speaker"]]
+
+        gold_speakers = Counter(gold_list)
+        pred_speakers = Counter(pred_list)
+
+        # Calculate True Positives, False Positives, and False Negatives
+        true_positives += sum((gold_speakers & pred_speakers).values())  # Count of common elements
+        false_positives += sum(
+            (pred_speakers - gold_speakers).values()
+        )  # Elements in predicted but not in gold standard
+        false_negatives += sum(
+            (gold_speakers - pred_speakers).values()
+        )  # Elements in gold standard but not in predicted
+
+        print(gold_speakers, pred_speakers)
+
+        temp_true_positives = sum((gold_speakers & pred_speakers).values())
+        temp_false_positives = sum((pred_speakers - gold_speakers).values())
+        temp_false_negatives = sum((gold_speakers - pred_speakers).values())
+
+        print(
+            temp_true_positives / (temp_true_positives + temp_false_positives),
+            temp_true_positives / (temp_true_positives + temp_false_negatives),
+        )
+
+    # Calculate Precision and Recall
+    precision = true_positives / (true_positives + false_positives)
+    recall = true_positives / (true_positives + false_negatives)
+
+    # print(gold_speakers, pred_speakers)
+    # print(true_positives, false_positives, false_negatives)
+
+    print("Precision:", precision)
+    print("Recall:", recall)
+
+    # jaccard = round(counter_cosine_similarity(gold_speakers, pred_speakers), 3)
+
+    # cosine_similarities.append(jaccard)
+    # print(jaccard)
+
+    # compute cosine similarity between the two counters
+
+    # print(cosine_similarities)
+    # print(statistics.mean(cosine_similarities))
+
+
+def evaluateText(
     gold_standard_folder,
     clean_text_folder,
     corrected_base_folder,
@@ -112,14 +197,15 @@ def evaluate(
     :return: a dataframe containing results
     """
 
-    computeSymspellBase(args.preprocessed_set_folder, args.symspell_base_set_folder, args.dict_folder, 2)
+    computeSymspellBase(args.uncorrected_set_folder, args.symspell_base_set_folder, args.dict_folder, 2)
 
     computeSymspellWindowedDictionaries(
-        args.preprocessed_set_folder,
+        args.uncorrected_set_folder,
         args.symspell_window_set_folder,
         args.dict_folder,
         2,
     )
+
     res = []
 
     for gold_file in os.listdir(gold_standard_folder):
@@ -132,6 +218,8 @@ def evaluate(
                 with open(clean_text_folder + "/" + file, "r", encoding="utf-8") as f2:
                     pred = f2.read()
                     clean_pred = pred.translate(str.maketrans("", "", string.punctuation)).lower()
+
+                print([jiwer.wer(clean_gold, clean_pred), "WER", "Uncorrected"])
 
                 res.append([jiwer.wer(clean_gold, clean_pred), "WER", "Uncorrected"])
                 res.append([jiwer.cer(clean_gold, clean_pred), "CER", "Uncorrected"])
@@ -146,8 +234,8 @@ def evaluate(
                     pred = f2.read()
                     clean_pred = pred.translate(str.maketrans("", "", string.punctuation)).lower()
 
-                res.append([jiwer.wer(clean_gold, clean_pred), "WER", "Base italian dictionary"])
-                res.append([jiwer.cer(clean_gold, clean_pred), "CER", "Base italian dictionary"])
+                res.append([jiwer.wer(clean_gold, clean_pred), "WER", "Base"])
+                res.append([jiwer.cer(clean_gold, clean_pred), "CER", "Base"])
 
         for file in os.listdir(corrected_windowed_folder):
             if file == gold_file:
@@ -161,33 +249,13 @@ def evaluate(
                 res.append([jiwer.wer(clean_gold, clean_pred), "WER", "Windowed"])
                 res.append([jiwer.cer(clean_gold, clean_pred), "CER", "Windowed"])
 
+    print(res)
     res_data = pd.DataFrame(res, columns=["val", "cat", "set"])
 
     print(res_data.groupby(["cat", "set"], as_index=False).mean())
-    sns.set_theme(style="ticks", palette="pastel")
-    # create and save two separate plots for WER and CER
-    plot = sns.boxplot(x="set", y="val", hue="cat", palette=["m", "g"], data=res_data[res_data["cat"] == "WER"])
-    sns.despine(offset=10, trim=True)
-    plot.set_title("WER for the Symspell-corrected texts (against the golden standard)")
-    plot.set_xlabel("Set")
-    plot.set_ylabel("WER")
-    plot.figure.savefig("symspell_wer.png")
 
-    plot = sns.boxplot(x="set", y="val", hue="cat", palette=["m", "g"], data=res_data[res_data["cat"] == "CER"])
-    sns.despine(offset=10, trim=True)
-    plot.set_title("CER for the Symspell-corrected texts (against the golden standard)")
-    plot.set_xlabel("Set")
-    plot.set_ylabel("CER")
-    plot.figure.savefig("symspell_cer.png")
-
-    # Draw a nested boxplot to show bills by day and time
-    # plot = sns.boxplot(x="set", y="val", hue="cat", palette=["m", "g"], data=res_data)
-    # sns.despine(offset=10, trim=True)
-    # plot.set_title("WER and CER for the Symspell-corrected texts (against the golden standard)")
-    # plot.set_xlabel("Set")
-    # plot.set_ylabel("WER/CER")
-    # plot.figure.savefig("symspell.png")
-
+    # save results to csv
+    res_data.to_csv("symspell_eval.csv", index=False)
     return res_data
 
 
@@ -206,9 +274,9 @@ if __name__ == "__main__":
         required=False,
     )
     parser.add_argument(
-        "--preprocessed_set_folder",
+        "--uncorrected_set_folder",
         type=str,
-        default="preprocessed_set",
+        default="uncorrected_set",
         help="Folder where the pre processed texts are stored.",
         required=False,
     )
@@ -226,11 +294,37 @@ if __name__ == "__main__":
         help="Folder where to save the windowed Symspell-corrected set.",
         required=False,
     )
-    args = parser.parse_args()
 
-    evaluate(
-        args.gold_standard_folder,
-        args.preprocessed_set_folder,
-        args.symspell_base_set_folder,
-        args.symspell_window_set_folder,
+    parser.add_argument(
+        "--eval_tags_only",
+        action="store_true",
     )
+    parser.add_argument(
+        "--eval_text_only",
+        action="store_true",
+    )
+    parser.add_argument(
+        "--test_set_folder",
+        type=str,
+        default="test_set",
+        help="Folder containing the test set.",
+        required=False,
+    )
+    args = parser.parse_args()
+    if args.eval_tags_only:
+        evaluateTags(args.gold_standard_folder, args.test_set_folder)
+    elif args.eval_text_only:
+        evaluateText(
+            args.gold_standard_folder,
+            args.uncorrected_set_folder,
+            args.symspell_base_set_folder,
+            args.symspell_window_set_folder,
+        )
+    else:
+        evaluateTags(args.gold_standard_folder, args.test_set_folder)
+        evaluateText(
+            args.gold_standard_folder,
+            args.uncorrected_set_folder,
+            args.symspell_base_set_folder,
+            args.symspell_window_set_folder,
+        )
