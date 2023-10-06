@@ -27,15 +27,11 @@ class Dictionary:
         if n > len(self.data):
             return
 
-        self.data = dict(
-            sorted(self.data.items(), key=lambda item: item[1], reverse=True)[:n]
-        )
+        self.data = dict(sorted(self.data.items(), key=lambda item: item[1], reverse=True)[:n])
 
     def sort(self):
         # sort dictionary by frequency
-        self.data = dict(
-            sorted(self.data.items(), key=lambda item: item[1], reverse=True)
-        )
+        self.data = dict(sorted(self.data.items(), key=lambda item: item[1], reverse=True))
 
     def load(self, path):
         # load from txt
@@ -52,12 +48,12 @@ class Dictionary:
             else:
                 self.data[word] += other.data[word]
 
-
     def __len__(self):
         return len(self.data)
 
     def __str__(self):
         return str(self.data)
+
 
 leg_mapping_full = {
     "regno_1": "regno_01",
@@ -265,4 +261,23 @@ leg_mapping = {
     "l_12": "repubblica_12",
     "cg_12": "repubblica_12",
     "12": "repubblica_12",
+    "l_13": "repubblica_13",
+    "cg_13": "repubblica_13",
+    "13": "repubblica_13",
+    "l_14": "repubblica_14",
+    "cg_14": "repubblica_14",
+    "14": "repubblica_14",
+    "l_15": "repubblica_15",
+    "cg_15": "repubblica_15",
+    "15": "repubblica_15",
+    "l_16": "repubblica_16",
+    "cg_16": "repubblica_16",
+    "16": "repubblica_16",
+    "l_17": "repubblica_17",
+    "cg_17": "repubblica_17",
+    "17": "repubblica_17",
+    "l_18": "repubblica_18",
+    "cg_18": "repubblica_18",
+    "18": "repubblica_18",
 }
+

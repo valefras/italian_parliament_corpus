@@ -9,7 +9,7 @@ from collections import Counter
 from fuzzywuzzy import fuzz, process, utils
 
 
-def preprocessDocument(dir, out, strdate, leg, cam, gold_folder, test_folder):
+def preprocessDocument(dir, out, strdate, leg, cam, gold_folder, pred_folder, people_path):
     """
     processes a single document, removing intestation and padding, merging the page, processing truncated words and outputs the result in a txt file
     :param dir: path to the document
@@ -18,7 +18,7 @@ def preprocessDocument(dir, out, strdate, leg, cam, gold_folder, test_folder):
     :param leg: legislature of the document
     :param cam: 0 if camera, 1 if senato
     :param gold_folder: path to output the gold standard files
-    :param test_folder: path to output the test files
+    :param pred_folder: path to output the test files
     """
 
     # year and date are needed to clean camera documents
@@ -43,7 +43,7 @@ def preprocessDocument(dir, out, strdate, leg, cam, gold_folder, test_folder):
     if cam == 1:
         document_type = senatoDocType(leg, i, page_list)
 
-    people_dataset = pd.read_csv("people/" + leg + ".csv", encoding="utf-8")
+    people_dataset = pd.read_csv(people_path + leg + ".csv", encoding="utf-8")
 
     # once document type is known, remove intestation, padding, parse columns for each page
 
@@ -169,14 +169,14 @@ def preprocessDocument(dir, out, strdate, leg, cam, gold_folder, test_folder):
 
         with open(out, "a", encoding="utf-8") as output_file:
             # print(text_values)
-            fillOutputDocument(output_file, text_values, i, tot_page_num, prev_last_char, people_dataset, is_gold)
+            fillOutputDocument(output_file, text_values, i, prev_last_char, is_gold)
 
         if is_gold:
-            if not os.path.exists(test_folder):
-                os.makedirs(test_folder)
-            with open(test_folder + "/" + gold_format, "w", encoding="utf-8") as gold:
-                fillOutputDocument(gold, text_values, i, tot_page_num, prev_last_char, people_dataset, is_gold)
-            performTagging(test_folder + "/" + gold_format, leg, cam, people_dataset)
+            if not os.path.exists(pred_folder):
+                os.makedirs(pred_folder)
+            with open(pred_folder + "/" + gold_format, "w", encoding="utf-8") as gold:
+                fillOutputDocument(gold, text_values, i, prev_last_char, is_gold)
+            performTagging(pred_folder + "/" + gold_format, leg, cam, people_dataset)
 
         is_gold = False
 
@@ -530,9 +530,7 @@ def performTagging(out, leg, cam, people_dataset):
     # if they are, tag them with their URI. If they are not, check if the first three words are in the dataset. If they are, tag them with their URI.
 
 
-def fillOutputDocument(
-    output_file, text_values, page_num, tot_page_num, prev_last_char, people_dataset, is_gold, current_president="bruh"
-):
+def fillOutputDocument(output_file, text_values, page_num, prev_last_char, is_gold):
     """
     fills the output file with the text from each page
     :param output_file: file to write to

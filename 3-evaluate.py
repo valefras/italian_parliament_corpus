@@ -10,6 +10,7 @@ import matplotlib.pyplot as plt
 import math
 import statistics
 from collections import Counter
+from lxml import etree
 
 
 string.punctuation += "«»–"
@@ -104,12 +105,7 @@ def computeSymspellWindowedDictionaries(test_set_path, output_path, dict_folder,
                 f2.write(corrected_line + "\n")
 
 
-def evaluateTags(gold_standard_folder, pred_set_folder):
-    """
-    evaluates the tags using the gold standard
-    :param gold_standard_folder: path to the gold standard
-    :param test_set_folder: path to the test set
-    """
+def evaluateTags(gold_standard_folder, test_set_folder):
     print("eval tags")
     # open gold standard
     # open test set
@@ -123,8 +119,34 @@ def evaluateTags(gold_standard_folder, pred_set_folder):
         with open(gold_standard_folder + "/" + gold_file, "r", encoding="utf-8") as f1:
             gold = f1.read()
 
-        with open(pred_set_folder + "/" + gold_file, "r", encoding="utf-8") as f2:
+        with open(test_set_folder + "/" + gold_file, "r", encoding="utf-8") as f2:
             pred = f2.read()
+
+        root = etree.fromstring(bytes(gold, encoding="utf-8"))
+
+        # Iterate through all elements in the XML
+        for elem in root.iter():
+            # Check if the word_to_delete is in the text content of the element
+            if "PRESIDENTE" in elem.text or "Presidente" in elem.text:
+                # If the word is found, remove the element
+                if elem.getparent() is not None:
+                    parent = elem.getparent()
+                    parent.remove(elem)
+
+        gold = etree.tostring(root, pretty_print=True).decode()
+
+        # same for pred
+        root_pred = etree.fromstring(bytes(pred, encoding="utf-8"))
+        # Iterate through all elements in the XML
+        for elem in root_pred.iter():
+            # Check if the word_to_delete is in the text content of the element
+            if "PRESIDENTE" in elem.text or "Presidente" in elem.text:
+                # If the word is found, remove the element
+                if elem.getparent() is not None:
+                    parent = elem.getparent()
+                    parent.remove(elem)
+
+        pred = etree.tostring(root_pred, pretty_print=True).decode()
 
         # check if speech tag exists in either file
         # if not, skip file
@@ -133,6 +155,8 @@ def evaluateTags(gold_standard_folder, pred_set_folder):
 
         gold_xml = pd.read_xml(gold, xpath=".//speech")
         pred_xml = pd.read_xml(pred, xpath=".//speech")
+
+        # Parse the XML
 
         gold_xml = gold_xml[["speaker"]]
         pred_xml = pred_xml[["speaker"]]
