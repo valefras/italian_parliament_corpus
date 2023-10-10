@@ -128,11 +128,14 @@ def preprocessDocument(dir, out, strdate, leg, cam, gold_folder, pred_folder, pe
     gold_paths = []
 
     for filename in page_list:
-        clean_doc_name = (
-            filename.split(os.sep)[-2].split(".")[0]
-            if cam == 0 or cam == 1 and clean_leg[:5] == "regno"
-            else filename.split("/")[-1].split(".")[0]
-        )
+        # filename.split(os.sep)[-2].split(".")[0]
+        # if cam == 0 and (cam == 1 and clean_leg[:9] == "repubblica")
+        # else
+
+        if (cam == 1 and clean_leg[:5] == "regno") or cam == 0:
+            clean_doc_name = filename.split(os.sep)[-2].split(".")[0]
+        elif cam == 1 and clean_leg[:10] == "repubblica":
+            clean_doc_name = filename.split("/")[-1].split(".")[0]
 
         if cam == 1 and clean_leg[:5] == "regno":
             gold_format = (
@@ -172,6 +175,7 @@ def preprocessDocument(dir, out, strdate, leg, cam, gold_folder, pred_folder, pe
                 )
                 + ".xml"
             )
+        # print(gold_format)
 
         if gold_format in os.listdir(gold_folder):
             is_gold = True
@@ -268,6 +272,9 @@ def preprocessDocument(dir, out, strdate, leg, cam, gold_folder, pred_folder, pe
         #     last_char = "-"
 
         i += 1
+
+    if not os.path.isfile(out):
+        return
 
     president_for_gold = performTagging(out, clean_leg, cam, people_dataset)
 
@@ -371,9 +378,9 @@ def performTagging(out, leg, cam, people_dataset, president_for_gold="no_preside
                     and (is_presidency_open or president_for_gold != "no_president")
                 ):
                     if is_speech_open:
-                        new_line += '</speech><speech speaker="' + president_uri + '">' + line
+                        new_line += '</speech><speech speaker="' + president_uri + '" is_president="true">' + line
                     else:
-                        new_line += '<speech speaker="' + president_uri + '">' + line
+                        new_line += '<speech speaker="' + president_uri + '" is_president="true">' + line
                     is_speech_open = True
                     new_lines.append(new_line)
                     continue
@@ -389,7 +396,7 @@ def performTagging(out, leg, cam, people_dataset, president_for_gold="no_preside
                                 name.lower(),
                                 surnames_names,
                                 scorer=fuzz.partial_ratio,
-                                score_cutoff=90,
+                                score_cutoff=80,
                             )
                             if best_match:
                                 best_match_uri = people_dataset.loc[
@@ -401,8 +408,8 @@ def performTagging(out, leg, cam, people_dataset, president_for_gold="no_preside
                             best_match = process.extractOne(
                                 name.lower(),
                                 list(people_dataset["surname"].str.lower()),
-                                scorer=fuzz.ratio,
-                                score_cutoff=85,
+                                scorer=fuzz.token_set_ratio,
+                                score_cutoff=80,
                             )
                             if best_match:
                                 best_match_uri = people_dataset.loc[
@@ -411,9 +418,11 @@ def performTagging(out, leg, cam, people_dataset, president_for_gold="no_preside
                         # if among any of the two cases there is a match, tag the line with the URI
                         if best_match:
                             if is_speech_open:
-                                new_line += '</speech><speech speaker="' + best_match_uri + '">' + line
+                                new_line += (
+                                    '</speech><speech speaker="' + best_match_uri + '" is_president="false">' + line
+                                )
                             else:
-                                new_line += '<speech speaker="' + best_match_uri + '">' + line
+                                new_line += '<speech speaker="' + best_match_uri + '" is_president="false">' + line
                             is_speech_open = True
                         else:
                             new_line = line
@@ -449,9 +458,9 @@ def performTagging(out, leg, cam, people_dataset, president_for_gold="no_preside
 
                 if "PRESIDENTE" in name and (is_presidency_open or president_for_gold != "no_president"):
                     if is_speech_open:
-                        new_line += '</speech><speech speaker="' + president_uri + '">' + line
+                        new_line += '</speech><speech speaker="' + president_uri + '" is_president="true">' + line
                     else:
-                        new_line += '<speech speaker="' + president_uri + '">' + line
+                        new_line += '<speech speaker="' + president_uri + '" is_president="true">' + line
                     is_speech_open = True
                     new_lines.append(new_line)
                     continue
@@ -464,7 +473,7 @@ def performTagging(out, leg, cam, people_dataset, president_for_gold="no_preside
                                 name,
                                 surnames_names,
                                 scorer=fuzz.partial_ratio,
-                                score_cutoff=90,
+                                score_cutoff=80,
                             )
                             if best_match:
                                 best_match_uri = people_dataset.loc[
@@ -476,8 +485,8 @@ def performTagging(out, leg, cam, people_dataset, president_for_gold="no_preside
                             best_match = process.extractOne(
                                 name,
                                 list(people_dataset["surname"]),
-                                scorer=fuzz.ratio,
-                                score_cutoff=85,
+                                scorer=fuzz.token_set_ratio,
+                                score_cutoff=80,
                             )
                             if best_match:
                                 best_match_uri = people_dataset.loc[people_dataset["surname"] == best_match[0]][
@@ -486,14 +495,17 @@ def performTagging(out, leg, cam, people_dataset, president_for_gold="no_preside
                         # if among any of the two cases there is a match, tag the line with the URI
                         if best_match:
                             if is_speech_open:
-                                new_line += '</speech><speech speaker="' + best_match_uri + '">' + line
+                                new_line += (
+                                    '</speech><speech speaker="' + best_match_uri + '" is_president="false">' + line
+                                )
                             else:
-                                new_line += '<speech speaker="' + best_match_uri + '">' + line
+                                new_line += '<speech speaker="' + best_match_uri + '" is_president="false">' + line
                             is_speech_open = True
                         else:
                             new_line = line
                         new_lines.append(new_line)
                         continue
+                new_line = line
 
             # case 3: names are all uppercase
             else:
@@ -525,9 +537,9 @@ def performTagging(out, leg, cam, people_dataset, president_for_gold="no_preside
                     # if name is PRESIDENTE search for president in charge and tag the speech with it
                     if "PRESIDENTE" in name and (is_presidency_open or president_for_gold != "no_president"):
                         if is_speech_open:
-                            new_line += '</speech><speech speaker="' + president_uri + '">' + line
+                            new_line += '</speech><speech speaker="' + president_uri + '" is_president="true">' + line
                         else:
-                            new_line += '<speech speaker="' + president_uri + '">' + line
+                            new_line += '<speech speaker="' + president_uri + '" is_president="true">' + line
                         is_speech_open = True
                         new_lines.append(new_line)
                         continue
@@ -551,7 +563,7 @@ def performTagging(out, leg, cam, people_dataset, president_for_gold="no_preside
                                         "repubblica_18",
                                     ]
                                     else fuzz.partial_ratio,
-                                    score_cutoff=90,
+                                    score_cutoff=80,
                                 )
                                 if best_match:
                                     best_match_uri = people_dataset.loc[
@@ -563,8 +575,8 @@ def performTagging(out, leg, cam, people_dataset, president_for_gold="no_preside
                                 best_match = process.extractOne(
                                     name,
                                     list(people_dataset["surname"]),
-                                    scorer=fuzz.ratio,
-                                    score_cutoff=85,
+                                    scorer=fuzz.token_set_ratio,
+                                    score_cutoff=80,
                                 )
                                 if best_match:
                                     best_match_uri = people_dataset.loc[people_dataset["surname"] == best_match[0]][
@@ -573,9 +585,11 @@ def performTagging(out, leg, cam, people_dataset, president_for_gold="no_preside
                             # if among any of the two cases there is a match, tag the line with the URI
                             if best_match:
                                 if is_speech_open:
-                                    new_line += '</speech><speech speaker="' + best_match_uri + '">' + line
+                                    new_line += (
+                                        '</speech><speech speaker="' + best_match_uri + '" is_president="false">' + line
+                                    )
                                 else:
-                                    new_line += '<speech speaker="' + best_match_uri + '">' + line
+                                    new_line += '<speech speaker="' + best_match_uri + '" is_president="false">' + line
                                 is_speech_open = True
                             else:
                                 new_line = line

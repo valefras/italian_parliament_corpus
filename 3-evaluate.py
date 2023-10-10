@@ -10,10 +10,11 @@ import matplotlib.pyplot as plt
 import math
 import statistics
 from collections import Counter
+import re
 from lxml import etree
 
 
-string.punctuation += "«»–"
+string.punctuation += "«»–’"
 
 
 def computeSymspellBase(test_set_path, output_path, dict_folder, max_edit_distance):
@@ -37,13 +38,19 @@ def computeSymspellBase(test_set_path, output_path, dict_folder, max_edit_distan
     )
 
     for file in os.listdir(test_set_path):
-        with open(test_set_path + "/" + file, "r", encoding="utf-8") as f1:
-            lines = f1.readlines()
+        tree = etree.parse(test_set_path + "/" + file)
+        lines = etree.tostring(tree.getroot(), encoding="utf-8", method="text").decode("utf-8").split("\n")
+        # with open(test_set_path + "/" + file, "r", encoding="utf-8") as f1:
+        #     lines = f1.readlines()
 
         os.makedirs(os.path.dirname(output_path + "/" + file), exist_ok=True)
 
+        file = file.replace(".txt", ".xml")
+
         with open(output_path + "/" + file, "w", encoding="utf-8") as f2:
             for line in lines:
+                line = re.sub(r"[^a-zA-ZÀ-ÿ\s]", "", line)
+
                 # clean_line = line.translate(str.maketrans("", "", string.punctuation))
 
                 suggestions = sym_spell.lookup_compound(
@@ -69,8 +76,11 @@ def computeSymspellWindowedDictionaries(test_set_path, output_path, dict_folder,
     global leg_mapping
 
     for file in os.listdir(test_set_path):
-        with open(test_set_path + "/" + file, "r", encoding="utf-8") as f1:
-            lines = f1.readlines()
+        tree = etree.parse(test_set_path + "/" + file)
+        lines = etree.tostring(tree.getroot(), encoding="utf-8", method="text").decode("utf-8").split("\n")
+        # with open(test_set_path + "/" + file, "r", encoding="utf-8") as f1:
+        #     lines = f1.readlines()
+        file = file.replace(".txt", ".xml")
 
         os.makedirs(os.path.dirname(output_path + "/" + file), exist_ok=True)
 
@@ -93,7 +103,7 @@ def computeSymspellWindowedDictionaries(test_set_path, output_path, dict_folder,
         with open(output_path + "/" + file, "w", encoding="utf-8") as f2:
             for line in lines:
                 # clean_line = line.translate(str.maketrans("", "", string.punctuation))
-
+                line = re.sub(r"[^a-zA-ZÀ-ÿ\s]", "", line)
                 suggestions = sym_spell.lookup_compound(
                     line,
                     max_edit_distance=max_edit_distance,
@@ -125,26 +135,26 @@ def evaluateTags(gold_standard_folder, test_set_folder):
         root = etree.fromstring(bytes(gold, encoding="utf-8"))
 
         # Iterate through all elements in the XML
-        for elem in root.iter():
-            # Check if the word_to_delete is in the text content of the element
-            if "PRESIDENTE" in elem.text or "Presidente" in elem.text:
-                # If the word is found, remove the element
-                if elem.getparent() is not None:
-                    parent = elem.getparent()
-                    parent.remove(elem)
+        for element in root.findall(".//speech[@is_president='true']"):
+            parent = element.getparent()
+            parent.remove(element)
 
         gold = etree.tostring(root, pretty_print=True).decode()
 
         # same for pred
         root_pred = etree.fromstring(bytes(pred, encoding="utf-8"))
         # Iterate through all elements in the XML
-        for elem in root_pred.iter():
-            # Check if the word_to_delete is in the text content of the element
-            if "PRESIDENTE" in elem.text or "Presidente" in elem.text:
-                # If the word is found, remove the element
-                if elem.getparent() is not None:
-                    parent = elem.getparent()
-                    parent.remove(elem)
+        # for elem in root_pred.iter():
+        for element in root_pred.findall(".//speech[@is_president='true']"):
+            parent = element.getparent()
+            parent.remove(element)
+
+            # # Check if the word_to_delete is in the text content of the element
+            # if "PRESIDENTE." in elem.text or "Presidente." in elem.text or "PRESIDENTE" in elem.text:
+            #     # If the word is found, remove the element
+            #     if elem.getparent() is not None:
+            #         parent = elem.getparent()
+            #         parent.remove(elem)
 
         pred = etree.tostring(root_pred, pretty_print=True).decode()
 
@@ -190,12 +200,20 @@ def evaluateTags(gold_standard_folder, test_set_folder):
     # Calculate Precision and Recall
     precision = true_positives / (true_positives + false_positives)
     recall = true_positives / (true_positives + false_negatives)
+    f1 = 2 * (precision * recall) / (precision + recall)
 
     # print(gold_speakers, pred_speakers)
     # print(true_positives, false_positives, false_negatives)
 
-    print("Precision:", precision)
-    print("Recall:", recall)
+    # save results in a csv
+    res_data = pd.DataFrame(
+        [[precision, recall, f1]],
+        columns=["precision", "recall", "f1"],
+    )
+
+    res_data.to_csv("tags_eval.csv", index=False)
+
+    print(res_data)
 
     # jaccard = round(counter_cosine_similarity(gold_speakers, pred_speakers), 3)
 
@@ -210,7 +228,7 @@ def evaluateTags(gold_standard_folder, test_set_folder):
 
 def evaluateText(
     gold_standard_folder,
-    clean_text_folder,
+    pred_folder,
     corrected_base_folder,
     corrected_windowed_folder,
 ):
@@ -233,54 +251,64 @@ def evaluateText(
     res = []
 
     for gold_file in os.listdir(gold_standard_folder):
-        for file in os.listdir(clean_text_folder):
+        for file in os.listdir(pred_folder):
             if file == gold_file:
-                with open(gold_standard_folder + "/" + gold_file, "r", encoding="utf-8") as f1:
-                    gold = f1.read()
-                    clean_gold = gold.translate(str.maketrans("", "", string.punctuation)).lower()
+                gold_tree = etree.parse(gold_standard_folder + "/" + gold_file)
+                gold = etree.tostring(gold_tree.getroot(), encoding="utf-8", method="text").decode("utf-8")
+                # clean_gold = gold.translate(str.maketrans("", "", string.punctuation)).lower()
+                clean_gold = " ".join(re.sub(r"[^a-zA-ZÀ-ÿ\s]", "", gold).replace("\n", " ").lower().split())
 
-                with open(clean_text_folder + "/" + file, "r", encoding="utf-8") as f2:
-                    pred = f2.read()
-                    clean_pred = pred.translate(str.maketrans("", "", string.punctuation)).lower()
+                pred_tree = etree.parse(pred_folder + "/" + file)
+                pred = etree.tostring(pred_tree.getroot(), encoding="utf-8", method="text").decode("utf-8")
+                clean_pred = " ".join(re.sub(r"[^a-zA-ZÀ-ÿ\s]", "", pred).replace("\n", " ").lower().split())
 
-                print([jiwer.wer(clean_gold, clean_pred), "WER", "Uncorrected"])
+                # clean_pred = pred.translate(str.maketrans("", "", string.punctuation)).lower()
 
                 res.append([jiwer.wer(clean_gold, clean_pred), "WER", "Uncorrected"])
                 res.append([jiwer.cer(clean_gold, clean_pred), "CER", "Uncorrected"])
 
         for file in os.listdir(corrected_base_folder):
             if file == gold_file:
-                with open(gold_standard_folder + "/" + gold_file, "r", encoding="utf-8") as f1:
-                    gold = f1.read()
-                    clean_gold = gold.translate(str.maketrans("", "", string.punctuation)).lower()
+                gold_tree = etree.parse(gold_standard_folder + "/" + gold_file)
+                gold = etree.tostring(gold_tree.getroot(), encoding="utf-8", method="text").decode("utf-8")
+                clean_gold = " ".join(re.sub(r"[^a-zA-ZÀ-ÿ\s]", "", gold).replace("\n", " ").lower().split())
 
                 with open(corrected_base_folder + "/" + file, "r", encoding="utf-8") as f2:
                     pred = f2.read()
-                    clean_pred = pred.translate(str.maketrans("", "", string.punctuation)).lower()
+                    clean_pred = " ".join(re.sub(r"[^a-zA-ZÀ-ÿ\s]", "", pred).replace("\n", " ").lower().split())
 
                 res.append([jiwer.wer(clean_gold, clean_pred), "WER", "Base"])
                 res.append([jiwer.cer(clean_gold, clean_pred), "CER", "Base"])
 
         for file in os.listdir(corrected_windowed_folder):
             if file == gold_file:
-                with open(gold_standard_folder + "/" + gold_file, "r", encoding="utf-8") as f1:
-                    gold = f1.read()
-                    clean_gold = gold.translate(str.maketrans("", "", string.punctuation)).lower()
+                gold_tree = etree.parse(gold_standard_folder + "/" + gold_file)
+                gold = etree.tostring(gold_tree.getroot(), encoding="utf-8", method="text").decode("utf-8")
+                clean_gold = " ".join(re.sub(r"[^a-zA-ZÀ-ÿ\s]", "", gold).replace("\n", " ").lower().split())
+
+                # clean_gold = gold.translate(str.maketrans("", "", string.punctuation)).lower()
+
                 with open(corrected_windowed_folder + "/" + file, "r", encoding="utf-8") as f2:
                     pred = f2.read()
-                    clean_pred = pred.translate(str.maketrans("", "", string.punctuation)).lower()
+                    clean_pred = " ".join(re.sub(r"[^a-zA-ZÀ-ÿ\s]", "", pred).replace("\n", " ").lower().split())
+                    # clean_pred = pred.translate(str.maketrans("", "", string.punctuation)).lower()
+                if jiwer.wer(clean_gold, clean_pred) > 0.2:
+                    print(gold_file)
+                    print(jiwer.wer(clean_gold, clean_pred))
 
                 res.append([jiwer.wer(clean_gold, clean_pred), "WER", "Windowed"])
                 res.append([jiwer.cer(clean_gold, clean_pred), "CER", "Windowed"])
 
-    print(res)
     res_data = pd.DataFrame(res, columns=["val", "cat", "set"])
 
     print(res_data.groupby(["cat", "set"], as_index=False).mean())
 
     # save results to csv
     res_data.to_csv("symspell_eval.csv", index=False)
-    return res_data
+
+    # also save mean results to csv
+
+    res_data.groupby(["cat", "set"], as_index=False).mean().to_csv("symspell_eval_mean.csv", index=False)
 
 
 if __name__ == "__main__":
@@ -327,16 +355,16 @@ if __name__ == "__main__":
         "--eval_text_only",
         action="store_true",
     )
-    parser.add_argument(
-        "--test_set_folder",
-        type=str,
-        default="test_set",
-        help="Folder containing the test set.",
-        required=False,
-    )
+    # parser.add_argument(
+    #     "--test_set_folder",
+    #     type=str,
+    #     default="test_set",
+    #     help="Folder containing the test set.",
+    #     required=False,
+    # )
     args = parser.parse_args()
     if args.eval_tags_only:
-        evaluateTags(args.gold_standard_folder, args.test_set_folder)
+        evaluateTags(args.gold_standard_folder, args.uncorrected_set_folder)
     elif args.eval_text_only:
         evaluateText(
             args.gold_standard_folder,
@@ -345,7 +373,7 @@ if __name__ == "__main__":
             args.symspell_window_set_folder,
         )
     else:
-        evaluateTags(args.gold_standard_folder, args.test_set_folder)
+        evaluateTags(args.gold_standard_folder, args.uncorrected_set_folder)
         evaluateText(
             args.gold_standard_folder,
             args.uncorrected_set_folder,

@@ -2,13 +2,13 @@
 version="1.0" ?>
 <document>
 che la franca parola del Governo sarà così conforme alle nostre domande, che ogni senatore si terrà senz'altro soddisfatto.
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr3429">
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr3429" is_president="false">
 Senatore PARENZO. Domando la parola.
 </speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr2468">
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr2468" is_president="true">
 PRESIDENTE. Ha facoltà di parlare l'onor. senatore Parenzo.
 </speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr3429">
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr3429" is_president="false">
 Senatore PARENZO. Io non ho nulla da osservare sui quesiti giustissimi formulati dall'Ufficio centrale.
 Vorrei però cogliere questa occasione per richiamare l'attenzione del Governo sull'opportunità di studiare tutta la legge di espropriazione per ragione di pubblica utilità, allo scopo di vedere quali riforme esiga.
 Il relatore dell'Ufficio centrale consigliava poco fa a non presentare ulteriori proroghe alla facoltà nei comuni di chiedere l'applicazione della legge eccezionale di Napoli, e piuttosto, se si presentano necessità igieniche in alcuni speciali luoghi, a provvedere con progetto di legge speciale.

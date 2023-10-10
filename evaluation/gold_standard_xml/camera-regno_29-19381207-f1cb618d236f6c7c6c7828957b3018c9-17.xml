@@ -2,7 +2,7 @@
 version="1.0" ?>
 <document>
 Seconda votazione segreta.
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr4561">
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr4561" is_president="true">
 PRESIDENTE. Procediamo alla votazione
 segreta su altri dodici disegni di legge
 già approvati per alzata e seduta:
@@ -78,7 +78,7 @@ gli onorevoli Segretari a procedere alla numerazione
 dei voti.
 (Gli onorevoli Segretari numerano i voti).
 Terza votazione segreta.</speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr4561">
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr4561" is_president="true">
 PRESIDENTE. Procediamo alla votazione
 segreta sui seguenti altri disegni di legge
 approvati per alzata e seduta.

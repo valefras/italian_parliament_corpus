@@ -45,10 +45,10 @@ che la Camera accoglierà le conclusioni
 dell'onorevole Brunialti e non autorizzerà
 la procedura contro l'onorevole Todeschini.
 (Approvazioni all'estrema sinistra).
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr4284">
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr4284" is_president="true">
 Presidente. Ha facoltà di parlare l'onorevole
 De Novellis, relatore.</speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr1816">
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr1816" is_president="false">
 De Novellis, relatore. La maggioranza della
 vostra Commissione, in conformità della giurisprudenza
 prevalente nella Camera, fu di avviso
@@ -74,10 +74,10 @@ magistratura possa assolvere l'onorevole Todeschini,
 ma ciò spetta alla magistratura,
 non già a noi, e l'assoluzione sarà più bella
 e più sodisfacente per lui e pel nostro prestigio.</speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr4421">
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr4421" is_president="false">
 Zanardelli, presidente del Consiglio. Il Governo
 dichiara di astenersi dalla votazione.</speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr4284">
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr4284" is_president="true">
 Presidente. Metterò a partito le conclusioni
 delia Commissione la quale propone di accordare
 l'autorizzazione a procedere in giudizio

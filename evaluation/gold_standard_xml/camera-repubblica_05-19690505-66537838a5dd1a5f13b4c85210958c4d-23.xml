@@ -1,10 +1,10 @@
 <?xml
 version="1.0" ?>
 <document>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/p3510">
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/p3510" is_president="true">
 PRESIDENTE. L'onorevole Lezzi ha facoltà
 di dichiarare se sia sodisfatto.</speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/p3370">
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/p3370" is_president="false">
 LEZZI. La ringrazio vivamente, onorevole
 sottosegretario, perché ritengo che con questa
 sua ampia ed esauriente risposta ella ed
@@ -54,7 +54,7 @@ di Napoli e nel Mezzogiorno. Pertanto,
 onorevole sottosegretario, la ringrazio e mi
 dichiaro sodisfatto.
 </speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/p3510">
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/p3510" is_president="true">
 PRESIDENTE. Segue l'interrogazione dell'onorevole
 Sanna, al ministro dell'interno,
 per conoscere la sua opinione in merito al
@@ -82,7 +82,7 @@ di questo inaudito episodio di violenza »
 (3-00760).
 L'onorevole sottosegretario di Stato per lo
 interno ha facoltà di rispondere.</speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/p5220">
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/p5220" is_president="false">
 SALIZZONI, Sottosegretario di Stato per
 l'interno. In relazione all'interrogazione dello
 onorevole Sanna faccio presente quanto segue.

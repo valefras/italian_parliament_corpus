@@ -7,18 +7,19 @@ legge che adottò le famiglie di coloro che morirono per la
 patria.
 La Commissione vi propone rinvio della petizione al signor
 ministro di guerra e marina.
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr9115">BAVA, ministro della guerra. Ha già ricorso al Ministero?</speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr2204">DEPRETIS, relatore. Non ha ricorso.</speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr172">MAMELI, ministro dell' istruzione pubblica. Doveva ricorrere
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr9115" is_president="false">BAVA, ministro della guerra. Ha già ricorso al Ministero?</speech>
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr2204" is_president="false">DEPRETIS, relatore. Non ha ricorso.</speech>
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr172" is_president="false">MAMELI, ministro dell' istruzione pubblica. Doveva ricorrere
 prima al Ministero; se presso questo non si faceva
 luogo, allora poteva rivolgersi alla Camera...</speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr2204">DEPRETIS, relatore. Parve troppo duro il respingere una
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr2204" is_president="false">DEPRETIS, relatore. Parve troppo duro il respingere una
 petizione di persona, la quale ha tanti titoli e tanto bisogno.
+</speech><speech speaker="http://dati.camera.it/ocd/persona.rdf/pr228" is_president="true">
 PRESIDENTE. La Commissione persiste nelle sue conclusioni?
 Voci. Sì!</speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr228">PRESIDENTE. Allora le metto ai voti.
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr228" is_president="true">PRESIDENTE. Allora le metto ai voti.
 (Le conclusioni sono adottate.)</speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr2204">DEPRETIS, relatore. Petizione 1273 di Lucia Merra, la
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr2204" is_president="false">DEPRETIS, relatore. Petizione 1273 di Lucia Merra, la
 quale narra che, non avendo potuto finora ottenere la pensione
 che per legge le spetta, ma solo qualche tenue gratificazione,
 ricorre ora alla Camera per ottenere giustizia.
@@ -31,7 +32,7 @@ legge, le quali sarebbero insufficienti, propone l'invio della
 petizione al Ministero della guerra.
 (La Camera approva.)
 (Bertini vedova d'un militare compromesso nel 1821.)</speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr2204">DEPRETIS, relatore. Petizione 1326. Anna, vedova Bertini,
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr2204" is_president="false">DEPRETIS, relatore. Petizione 1326. Anna, vedova Bertini,
 settuagenaria, chiede un aumento alla sua pensione;
 essa ha perduto un'unica figlia che le era di sostegno, cosicché
 si trova nel maggiore bisogno.
@@ -43,14 +44,14 @@ per delitti politici nel 1821, circostanza alla quale
 la Camera ha sempre avuto speciale riguardo, la Commissione
 ha creduto d'inviare la petizione al ministro della
 guerra per gli opportuni provvedimenti.</speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr9115">BAVA, ministro della guerra. Lorsque un homme meurt
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr9115" is_president="false">BAVA, ministro della guerra. Lorsque un homme meurt
 au service dans un fait de guerre la veuve n'a droit qu'à une
 partie de la pension. Un homme qui se retire après trente
 ans de service ne jouit, s'il est simple soldat, que d'une retraite
 de 1 lik francs. Lajemme de celui dont il est question
 a reçu 100 francs. Elle a déjà reçu plus que la loi n'accorde,
 si son mari n'était que simple soldat.</speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr2204">DEPRETIS, relatore. Il motivo pel quale la Commissione
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr2204" is_president="false">DEPRETIS, relatore. Il motivo pel quale la Commissione
 conchiuse che questa petizione fosse inviata al ministro di
 guerra per gli opportuni provvedimenti si è, ripeto, la qualità
 speciale della ricorrente, che è vedova settuagenaria e
@@ -64,11 +65,11 @@ umanità; epperciò, quantunque, dico, non risultasse che la
 petente avesse prima ricorso al Ministero, credette tuttavia
 che essa meritasse uno speciale riguardo e dovesse la petizione
 mandarsi al ministro di guerra.</speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr9115">BAVA, ministro della guerra. Si son mari était mort au
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr9115" is_president="false">BAVA, ministro della guerra. Si son mari était mort au
 champ de bataille, elle n'aurait pas droit à une somme plus
 considérable que celle de 100 francs. Ainsi il ne faut pas être
 surpris si le Ministère ne lui a pas accordé davantage.</speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr3271">MICHELINI G. B. Mi pare che sarebbe mestieri che la
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr3271" is_president="false">MICHELINI G. B. Mi pare che sarebbe mestieri che la
 Camera adottasse una regola in ordine alla trasmissione delle
 diverse petizioni ai Ministeri, vale a dire, si avesse cura di
 non trasmettere se non raramente quelle petizioni dalle
@@ -95,7 +96,7 @@ nella petizione di cui si tratta, tuttoché cosiffatta petizione
 si meriti un particolare riguardo, nulladimeno, per la ragione
 che il petente non ha ricorso al Ministero di guerra, io propongo
 l'ordine del giorno.</speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr641">COLLA. Io sorgo per combattere l'ordine del giorno, non
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr641" is_president="false">COLLA. Io sorgo per combattere l'ordine del giorno, non
 tanto per ispeciali considerazioni della petizione, ma perchè
 non si stabilisca un precedente che venga a ledere il diritto
 di petizione proclamato dallo Statuto.
@@ -113,7 +114,7 @@ norma ed un complemento di prova.
 Mi oppongo pertanto a che si restringa menomamente o si
 leda in alcuna guisa il diritto di petizione, e conseguentemente
 voto per le conclusioni del signor relatore.</speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr3271">MICHELINI G. B. Noi non abbiamo una legge sulle petizioni,
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr3271" is_president="false">MICHELINI G. B. Noi non abbiamo una legge sulle petizioni,
 è un desiderio che bisognerà soddisfare al più presto;
 la moltitudine stessa delle petizioni che vengono continuamente
 alla Camera dimostra quanto sii necessaria una legge

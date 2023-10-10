@@ -44,11 +44,11 @@ coi voti, e con quella serena aspettazione di chi confida
 nel braccio dei forti, nella simpatia d'ogni nazione generosa,
 nell'energia dell'unanime consentimento, nella santità
 d'imperscrittibili conculcati diritti (1).
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr9881">
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr9881" is_president="true">
 IL PRESIDENTE. È aperta la discussione generale sopra
 questo progetto di risposta al discorso della Corona.
 La parola è al signor senatore Alberto della Marmora.</speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr9638">
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr9638" is_president="false">
 LA MARMORA ALBERTO. Una notevole lacuna trovasi
 nell'ultimo periodo della progettata risposta al discorso della
 Corona, nella quale si fa onorevole cenno del nostro esercito,
@@ -117,7 +117,7 @@ posteriore occorrenza la squadra sarda tutta, dall'ammiraglio
 al semplice marinaro, ha ben meritato dell'Italia e del paese.
 Vi propongo dunque o signori, di unirvi a me per dargliene
 una sincera e pubblica testimonianza.</speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr9363">
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr9363" is_president="false">
 CIBRARIO, relatore. L'osservazione fatta dal senatore
 Della Marmora forse si sarebbe più propriamente potuta riservare
 all'epoca dell'esame del paragrafo sesto. Del resto io

@@ -37,6 +37,8 @@ def cleanCameraPDF(metadata_path, data_path, output_path, gold_folder, pred_fold
                                 if metadata_dict[leg][path_for_metadata]["type"] == "Seduta":
                                     input_path = os.path.join(data_path, "camera", leg, day, doc + ".out")
                                     output_file = os.path.join(output_path, "camera", leg, day + ".xml")
+                                    if os.path.isfile(output_file):
+                                        output_file = os.path.join(output_path, "camera", leg, day + "_1.xml")
 
                                     if os.path.exists(input_path):
                                         preprocessDocument(
@@ -72,6 +74,8 @@ def cleanSenatoPDFMon(metadata_path, data_path, output_path, gold_folder, pred_f
         if os.path.exists(input_path):
             clean_path = input_path
             output_file = os.path.join(output_path, "senato", leg_parsed, date_parsed + ".xml")
+            if os.path.isfile(output_file):
+                output_file = os.path.join(output_path, "senato", leg_parsed, date_parsed + "_1.xml")
             preprocessDocument(
                 clean_path, output_file, date_parsed, leg_parsed, 1, gold_folder, pred_folder, people_path
             )
@@ -89,6 +93,8 @@ def cleanSenatoPDFRep(metadata_path, data_path, output_path, gold_folder, pred_f
             clean_filename = convert_date_format(doc_info["date"].split(" ", 1)[1])
             clean_leg = leg_mapping[leg] if leg in leg_mapping else leg
             print(clean_leg)
+            if os.path.isfile(os.path.join(output_path, "senato", clean_leg, clean_filename + ".xml")):
+                clean_filename = clean_filename + "_1"
             output_file = os.path.join(output_path, "senato", clean_leg, clean_filename + ".xml")
             preprocessDocument(clean_path, output_file, clean_filename, leg, 1, gold_folder, pred_folder, people_path)
         # ################################## break for testing
@@ -111,6 +117,8 @@ def cleanCameraHTML(data_path, output_path, people_path):
                             if "_sintero" in doc:
                                 docs = [doc]
                                 break
+                        if len(docs) == 0:
+                            continue
                         docs = sorted(docs)
                         output_file = os.path.join(output_path, "camera", leg, day + ".xml")
                         os.makedirs(os.path.dirname(output_file), exist_ok=True)
@@ -131,18 +139,18 @@ def cleanCameraHTML(data_path, output_path, people_path):
                                 with open(output_file, "a", encoding="utf-8") as f:
                                     f.write(clean_text)
                         performTagging(output_file, leg, 0, people_dataset)
-                        stats_df = pd.read_csv("./stats.csv", encoding="utf-8")
+                        stats_df = pd.read_csv("stats.csv", encoding="utf-8")
 
                         stats_df.loc[stats_df["legislature"] == leg, "speech_num"] += len(
                             re.findall(r"</speech>", open(output_file, "r", encoding="utf-8").read())
                         )
-                        tree = ET.parse(output_file)
+                        tree = ET.parse(output_file, parser=ET.XMLParser(recover=True))
                         string_doc = ET.tostring(tree.getroot(), encoding="utf-8", method="text").decode("utf-8")
                         stats_df.loc[stats_df["legislature"] == leg, "token_num"] += len(
                             [x for x in string_doc.split() if x not in punctuation]
                         )
 
-                        stats_df.to_csv("./stats.csv", index=False, encoding="utf-8")
+                        stats_df.to_csv("stats.csv", index=False, encoding="utf-8")
 
                     else:
                         for doc in os.listdir(os.path.join(data_path, "camera", leg, day)):
@@ -169,18 +177,18 @@ def cleanCameraHTML(data_path, output_path, people_path):
                                         f.write(clean_text)
                         performTagging(output_file, leg, 0, people_dataset)
 
-                        stats_df = pd.read_csv("./stats.csv", encoding="utf-8")
+                        stats_df = pd.read_csv("stats.csv", encoding="utf-8")
 
                         stats_df.loc[stats_df["legislature"] == leg, "speech_num"] += len(
                             re.findall(r"</speech>", open(output_file, "r", encoding="utf-8").read())
                         )
-                        tree = ET.parse(output_file)
+                        tree = ET.parse(output_file, parser=ET.XMLParser(recover=True))
                         string_doc = ET.tostring(tree.getroot(), encoding="utf-8", method="text").decode("utf-8")
                         stats_df.loc[stats_df["legislature"] == leg, "token_num"] += len(
                             [x for x in string_doc.split() if x not in punctuation]
                         )
 
-                        stats_df.to_csv("./stats.csv", index=False, encoding="utf-8")
+                        stats_df.to_csv("stats.csv", index=False, encoding="utf-8")
 
 
 def cleanSenatoHTML(data_path, output_path, people_path):
@@ -207,7 +215,8 @@ def cleanSenatoHTML(data_path, output_path, people_path):
                                     clean_date = convert_date_format(date_raw)
                                 except:
                                     clean_date = "date_not_found_" + year + "_" + doc
-
+                                if os.path.isfile(os.path.join(output_path, "senato", clean_leg, clean_date + ".xml")):
+                                    clean_date = clean_date + "_1"
                                 output_file = os.path.join(output_path, "senato", clean_leg, clean_date + ".xml")
                                 os.makedirs(os.path.dirname(output_file), exist_ok=True)
 
@@ -220,18 +229,19 @@ def cleanSenatoHTML(data_path, output_path, people_path):
 
                             # add up stats
 
-                            stats_df = pd.read_csv("./stats.csv", encoding="utf-8")
+                            stats_df = pd.read_csv("stats.csv", encoding="utf-8")
 
                             stats_df.loc[stats_df["legislature"] == clean_leg, "speech_num"] += len(
                                 re.findall(r"</speech>", open(output_file, "r", encoding="utf-8").read())
                             )
-                            tree = ET.parse(output_file)
+                            # ignore invalid characters when parsing xml
+                            tree = ET.parse(output_file, parser=ET.XMLParser(recover=True))
                             string_doc = ET.tostring(tree.getroot(), encoding="utf-8", method="text").decode("utf-8")
                             stats_df.loc[stats_df["legislature"] == clean_leg, "token_num"] += len(
                                 [x for x in string_doc.split() if x not in punctuation]
                             )
 
-                            stats_df.to_csv("./stats.csv", index=False, encoding="utf-8")
+                            stats_df.to_csv("stats.csv", index=False, encoding="utf-8")
 
             # ################################## break for testing
             # break
@@ -305,7 +315,7 @@ if __name__ == "__main__":
 
     start_time = datetime.now()
 
-    if not os.path.isfile("./stats.csv"):
+    if not os.path.isfile("stats.csv"):
         stats_df = pd.DataFrame(columns=["legislature", "page_num", "speech_num", "token_num"])
         # fill with all legislatures and 0s
         stats_df["legislature"] = ordered_leg_names
@@ -323,10 +333,9 @@ if __name__ == "__main__":
 
         stats_df.to_csv("./stats.csv", index=False, encoding="utf-8")
 
-    createPeopleDatasets(args.people_folder, "tagging_modules/rdf")
-
-    cleanSenatoPDFRep(
-        args.senato_rep_metadata_path,
+    # createPeopleDatasets(args.people_folder, "tagging_modules/rdf")
+    cleanSenatoPDFMon(
+        args.senato_mon_metadata_path,
         args.pdf_data_path,
         args.output_path,
         args.gold_folder,
@@ -334,8 +343,8 @@ if __name__ == "__main__":
         args.people_folder,
     )
 
-    cleanSenatoPDFMon(
-        args.senato_mon_metadata_path,
+    cleanSenatoPDFRep(
+        args.senato_rep_metadata_path,
         args.pdf_data_path,
         args.output_path,
         args.gold_folder,
@@ -351,9 +360,9 @@ if __name__ == "__main__":
         args.pred_set_folder,
         args.people_folder,
     )
-    cleanSenatoHTML(args.html_data_path, args.output_path, args.people_folder)
+    # # cleanSenatoHTML(args.html_data_path, args.output_path, args.people_folder)
 
-    cleanCameraHTML(args.html_data_path, args.output_path, args.people_folder)
+    # cleanCameraHTML(args.html_data_path, args.output_path, args.people_folder)
 
     end_time = datetime.now()
     print("Duration: {}".format(end_time - start_time))

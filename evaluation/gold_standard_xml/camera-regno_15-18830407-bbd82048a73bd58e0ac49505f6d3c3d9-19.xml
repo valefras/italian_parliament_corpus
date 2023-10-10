@@ -37,15 +37,15 @@ Non raccolgo voci vaghe o insinuazioni, ma mi
 attengo all'eloquenza dei fatti; non voglio fare
 recriminazioni inutili sul passato, ma desidero assicurazioni
 feconde per l'avvenire. (Benissimo!)
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr2468">
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr2468" is_president="true">
 Presidente. Dopo l'onorevole Maffi è inscritto
 nella discussione generale l'onorevole Nervo.
 Gli domando se intenda di parlare su questo
 stesso argomento.</speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr3336">Nervo. Sì.</speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr2468">
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr3336" is_president="false">Nervo. Sì.</speech>
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr2468" is_president="true">
 Presidente. Ha facoltà di parlare.</speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr3336">
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr3336" is_president="false">
 Nervo. Sarò brevissimo, onorevoli colleghi,
 perchè i lunghi discorsi e le dotte osservazioni
 che avete udito dagli onorevoli oratori che mi

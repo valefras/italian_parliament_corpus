@@ -23,11 +23,11 @@ ed, in ogni caso di variazione, entro quindici
 giorni da quello in cui siasi verificato il fatto
 che dà luogo alla variazione, nei modi e con
 le forme che verranno stabilite dal regolamento.
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr9986">
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr9986" is_president="false">
 MORELLI GIUSEPPE. Chiedo di parlare.</speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr1604">
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr1604" is_president="true">
 PRESIDENTE. Ne ha facoltà.</speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr9986">
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr9986" is_president="false">
 MORELLI GIUSEPPE. Crederei opportuno
 che in questo articolo, dove si dice che
 deve essere prodotto l'atto di costituzione
@@ -44,7 +44,7 @@ Colla produzione degli atti modificativi
 si otterrà che non si possono eludere le disposizioni
 di questo articolo, variando poi la
 costituzione iniziale. (Commenti).</speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr4754">
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr4754" is_president="false">
 UNGARO, relatore. Comprendo le preoccupazioni
 dell'onorevole Morelli; ma nell'ultimo
 capoverso dell'articolo 3 è detto
@@ -54,23 +54,23 @@ caso entro quindici giorni. In tal modo la
 Procura Generale dovrà essere sempre mantenuta
 al corrente di ogni eventuale mutamento
 di proprietà.</speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr1604">
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr1604" is_president="true">
 PRESIDENTE. Onorevole Morelli, è
 sodisfatto?</speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr9986">
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr9986" is_president="false">
 MORELLI GIUSEPPE. Trovo che è
 pleonasmo il chiedere i nomi, perchè sono
 indicati negli atti costitutivi.</speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr4754">
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr4754" is_president="false">
 UNGARO, relatore. Ma il proprietario
 potrebbe essere uno solo. Non è detto che
 ci debba essere sempre una società!</speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr1604">
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr1604" is_president="true">
 PRESIDENTE. Onorevole Morelli, fa
 una proposta formale?</speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr9986">
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr9986" is_president="false">
 MORELLI GIUSEPPE. No.</speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr1604">
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr1604" is_president="true">
 PRESIDENTE. Nessun altro chiedendo
 di parlare, metto a partito l'articolo 3.
 (È approvato).
@@ -82,11 +82,11 @@ riparazione o risarcimento di danni o per le
 spese del procedimento in dipendenza di
 condanne pronunziate per i reati commessi a
 mezzo della stampa.</speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr3790">
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr3790" is_president="false">
 SANDRINI. Chiedo di parlare.</speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr1604">
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr1604" is_president="true">
 PRESIDENTE. Ne ha facoltà.</speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr3790">
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr3790" is_president="false">
 SANDRINI. Per una osservazione giuridica:
 nel testo originario dell'articolo 4 era
 stabilita la responsabilità solidale dei proprietari
@@ -123,8 +123,8 @@ lo stampatore debba essere esonerato dalla
 garanzia personale, bisogna che esoneriamo
 dalla responsabilità lo stampatore anche
 all'articolo 5.</speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr4621">
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr4621" is_president="false">
 FINZI. Chiedo di parlare.</speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr1604">
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr1604" is_president="true">
 PRESIDENTE. Ne ha facoltà.</speech>
 </document>

@@ -161,3 +161,8 @@ cython_debug/
 
 .DS_Store
 
+evaluation/base_set/
+evaluation/dictionaries/
+evaluation/window_dictionaries/
+evaluation/window_set/
+

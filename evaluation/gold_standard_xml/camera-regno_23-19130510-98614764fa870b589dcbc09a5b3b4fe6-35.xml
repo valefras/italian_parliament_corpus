@@ -81,10 +81,10 @@ una portata storica molto più ampia; e voi,
 onorevoli signori, ci dovete un pochino pensare!
 (Vive approvazioni all'estrema sinistra
 - Commenti).
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr2845">
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr2845" is_president="true">
 PRESIDENTE. Ha facoltà di parlare
 l'onorevole Gesualdo Libertini.</speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr2747">
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr2747" is_president="false">
 LIBERTINI GESUALDO. Onorevoli
 colleghi, dopo un così lungo dibattito, avrei
 molto volentieri rinunziato alla parola, se

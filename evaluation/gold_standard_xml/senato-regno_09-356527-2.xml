@@ -2,13 +2,13 @@
 version="1.0" ?>
 <document>
 un voto a cui tutti i Senatori aderiscono, dovesse essere presa in considerazione dal Governo del Re.
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr429">
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr429" is_president="true">
 Presidente. Ringrazio l'Uffizio 3º di quest'osservazione, la quale può dare maggior valore all'istanza che rinnoverò presso il Ministero.
 Metto ai voti le conclusioni dell'Uffizio 3º per l'ammissione del barone Camerata-Scovazzo a Senatore del Regno.
 Chi la approva, sorga. (Approvato)
 DISCUSSIONE DEL PROGETTO DI LEGGE PER LA PROROGA DELL'ESERCIZIO PROVVISORIO DEI BILANCI DELLO STATO A TUTTO IL MESE DI LUGLIO 1856, E DI QUELLO SULLA COLTIVAZIONE DELLE RISAIE.
 </speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr429">
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr429" is_president="true">
 Presidente. L'ordine del giorno porta in primo luogo la discussione del progetto di legge per la proroga dell'esercizio provvisorio del Bilancio dello Stato fino a tutto luglio 1866. Do lettura del progetto di legge (Vedi infra). É aperta la discussione generale.
 Se nessuno chiede la parola, si passerà alla discussione degli articoli. Rileggo l'articolo 1.
 « Art. 1. Sino a tutto il mese di luglio 1866, il Governo del Re riscuoterà le tasse ed imposte d'ogni genere secondo le leggi in vigore, farà entrare nelle casse dello Stato lo somme ed i proventi che gli sono dovuti, ed è autorizzato a pagare le spese ordinarie dello Stato a le straordinarie che non ammettono dilazione, e quelle che dipendono da leggi ed obbligazioni anteriori, conformandosi alle previsioni fatte nel progetto di bilancio pel 1866 con le modificazioni successive presentate al Parlamento, e contenendosi, quanto alle spese, nella misura ivi stabilita. »
@@ -19,17 +19,17 @@ Per non incomodare due volte il Senato, si passerà alla discussione del progett
 Do lettura del progetto di legge (Vedi infra).
 È aperta la discussione generale. 
 </speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr9069">
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr9069" is_president="false">
 Senatore Arrivabene. Domando la parola.
 </speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr429">
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr429" is_president="true">
 Presidente. Ila la parola. 
 </speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr9069">
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr9069" is_president="false">
 Senatore Arrivabene. Io non proporrò alcun emendamento, mi limiterò a brevi osservazioni generali. Vi sono due qualità di risaie; le vallive ove non si può coltivare niente altro che rise, e quelle poste su terreni suscettivi di altre colture, ove un anno si pone riso, poi grano turco, quindi frumento, poi trifoglio ecc. Verso le prime, quanto alla distanza dei luoghi abitati, giova usare indulgenza.
 Lasciate incolte sono più contrarie alla igiene che non seminate a riso. Per le seconde si può essere più severi, giacchè sono suscettive di altre colture più salubri che quella del riso non sia. Ma anche per queste giova distinguere. Tenerle più distante che si può dai grandi centri di popolazione è utile, e possibile. Ma nei grandi fondi di questa natura vi sono case isolate, ed è impossibile impedire che ogni quattro o più anni, secondo la rotazione adottata, non sia seminato riso vicino ad esse.
 </speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr429">
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr429" is_president="true">
 Presidente. Se non vi è più alcuno che chiegga la parola, la discussione generalo s'intenderà chiusa, e si passerà alla discussione degli articoli. Li rileggo per metterli ai voti.
 « Art. 1. La coltivazione del riso è permesse alle distanze dagli aggregati di abitazioni e sotto le condizioni prescritta nell'interesse della pubblica igiene da regolamenti speciali che, sentiti i Consigli comunali e sanitarii delle provincie, sono deliberati dai Consigli provinciali, ed approvati dal Re, previo il parere del Consiglio superiore di sanità e del Consiglio di Stato. 
 (Approvato)

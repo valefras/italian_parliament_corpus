@@ -3,8 +3,8 @@ version="1.0" ?>
 <document>
 cumenti, aggiungendo che a lui mancava l'animo di
 leggerli...
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr2829">PRESIDENTE. Questa non è questione d'ordine.</speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr2177">DI SAN DONATO... lasciando ad altri la volontà di
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr2829" is_president="true">PRESIDENTE. Questa non è questione d'ordine.</speech>
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr2177" is_president="false">DI SAN DONATO... lasciando ad altri la volontà di
 farlo.
 Ebbene, signori, chi vuol leggere questi documenti
 sapete chi è? La Camera e con essa il paese. Noi domandiamo
@@ -23,7 +23,7 @@ ordinare la pubblicazione immediata di questi documenti
 per moltissime ragioni; ne dirò una: noi in
 Italia abbiamo avuto il dolore di vedere dei telegrammi
 falsi. (Bene! a sinistra)</speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr2829">PRESIDENTE. I discorsi fin qui fatti mi convincono vieppiù
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr2829" is_president="true">PRESIDENTE. I discorsi fin qui fatti mi convincono vieppiù
 che non c'è ancora un concetto maturo e deciso dalla
 maggioranza, riguardo ai provvedimenti da prendersi
 relativamente a questi documenti. Ne è prova la divergenza
@@ -37,7 +37,7 @@ con calma... (Sì! a destra — No! a sinistra)
 Io sono bene lontano dal volere fare una proposta
 esplicita; è un consiglio...
 Una voce a sinistra. Non vogliamo consigli!</speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr2829">PRESIDENTE. È un consiglio che emetto per prevenire
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr2829" is_president="true">PRESIDENTE. È un consiglio che emetto per prevenire
 una decisione precipitata. (Rumori)
 Del resto do lettura delle diverse proposte.
 V'è una proposta già presentata da qualche giorno
@@ -55,7 +55,7 @@ prefetto (Oh! oh! a destra — Viva approvasione
 a sinistra)
 « E passa all'ordine del giorno. »
 Una voce a destra. Domando la parola.</speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr2829">
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr2829" is_president="true">
 PRESIDENTE. Non si tratta di discutere questa proposta
 ora. Una seconda proposta venne ai banco della
 Presidenza firmata dai deputati Cairoli, Bertani, La
@@ -66,9 +66,9 @@ presentati dal Ministero.
 « Propongono pure che la Commissione sia composta
 di sette membri scelti dall'onorevole presidente
 della Camera immediatamente. » (Rumori)</speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr2177">
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr2177" is_president="false">
 DI SAN DONATO. E la mia proposta?</speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr2829">
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr2829" is_president="true">
 PRESIDENTE. Una alla volta. Ve n'è un'altra dell'onorevole Guerrieri:
 « La Camera delibera che, mantenuti sotto suggello
 i documenti presentati alla Presidenza dal Ministero,
@@ -100,16 +100,16 @@ proposte possano essere discusse stasera?
 Voci a sinistra. Sì! sì!
 Voci a destra. No! no!
 Altre voci. Domani!</speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr2590">LAZZARO. Domando la parola per un richiamo al regolamento.</speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr4354">VALERIO. Ho domandato la parola.</speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr2829">PRESIDENTE. La parola spetta prima al deputato Lazzaro 
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr2590" is_president="false">LAZZARO. Domando la parola per un richiamo al regolamento.</speech>
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr4354" is_president="false">VALERIO. Ho domandato la parola.</speech>
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr2829" is_president="true">PRESIDENTE. La parola spetta prima al deputato Lazzaro 
 per un appello al regolamento.</speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr4354">VALERIO. Ma io ho domandato di parlare.</speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr2829">PRESIDENTE. Ella deve sapere che chi chiama facoltà
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr4354" is_president="false">VALERIO. Ma io ho domandato di parlare.</speech>
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr2829" is_president="true">PRESIDENTE. Ella deve sapere che chi chiama facoltà
 di parlare per un appello al regolamento deve avere
 la precedenza.</speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr4354">VALERIO. Mi permetta di rispondere.
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr4354" is_president="false">VALERIO. Mi permetta di rispondere.
 Voci. No! no! Non si puoi (Rumori vivissimi)</speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr2829">PRESIDENTE. Non ha la parola, non mi obblighi a
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr2829" is_president="true">PRESIDENTE. Non ha la parola, non mi obblighi a
 richiamarlo all' ordine.</speech>
 </document>

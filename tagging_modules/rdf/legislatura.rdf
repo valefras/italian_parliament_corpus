@@ -89,7 +89,7 @@
 <http://dati.camera.it/ocd/legislatura.rdf/regno_23>	<http://purl.org/dc/elements/1.1/title>	"Legislatura XXIII del Regno (24.03.1909 - 29.09.1913)" .
 <http://dati.camera.it/ocd/legislatura.rdf/repubblica_15>	<http://lod.xdams.org/ontologies/ods/modified>	"2014-05-06T15:25:51Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <http://dati.camera.it/ocd/legislatura.rdf/regno_05>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://dati.camera.it/ocd/legislatura> .
-<http://dati.camera.it/ocd/legislatura.rdf/repubblica_18>	<http://purl.org/dc/elements/1.1/date>	"20180323" .
+<http://dati.camera.it/ocd/legislatura.rdf/repubblica_18>	<http://purl.org/dc/elements/1.1/date>	"20180323-20221012" .
 <http://dati.camera.it/ocd/sessioneLegislatura.rdf/sl15_Unica>	<http://dati.camera.it/ocd/endDate>	"18860427" .
 <http://dati.camera.it/ocd/legislatura.rdf/regno_04>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://dati.camera.it/ocd/legislatura> .
 <http://dati.camera.it/ocd/legislatura.rdf/repubblica_01>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://dati.camera.it/ocd/legislatura> .

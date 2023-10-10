@@ -13,9 +13,9 @@ La seduta comincia alle ore 10 10 antimeridiane.
 Il segretario Solidati dà lettura del processo verbale
 della tornata antimeridiana di ieri, che è approvato.
 PRESENTAZIONE DI UNA RELAZIONE.
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr4242">PRESIDENTE. Prego l'onorevole Baratieri di recarsi
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr4242" is_president="true">PRESIDENTE. Prego l'onorevole Baratieri di recarsi
 alla tribuna per presentare una relazione.</speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr1056">
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr1056" is_president="false">
 BARATIERI, relatore. Mi onoro di presentare alla
 Camera la relazione della Giunta generale del bilancio
 sul disegno di legge relativo ad un aumento
@@ -23,16 +23,16 @@ di fondi per gli assegni stabiliti dalla legge sulla
 reintegrazione dei gradi militari e sulla concessione
 di assegni vitalizi a titolo di ricompensa. (V. Stampato,
 n° 217-A.)</speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr4242">
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr4242" is_president="true">
 PRESIDENTE. Questa relazione sarà stampata e distribuita
 agli onorevoli deputati.
 Ha facoltà di parlare l'onorevole Fabrizi.
 913</speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr2249">
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr2249" is_president="false">
 FABRIZI. Prego la Camera di dichiarare d'urgenza
 il disegno di legge del quale fu presentata or ora la
 relazione.</speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr4242">
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr4242" is_president="true">
 PRESIDENTE. L'onorevole Fabrizi domanda che
 sia dichiarato d'urgenza il disegno di legge del
 quale ha presentata testé la relazione l'onorevole
@@ -42,7 +42,7 @@ accordata.
 (È accordata)
 DISCUSSIONE DEL BILANCIO DI DEFINITIVA PREVISIONE
 DEL MINISTERO DELL'INTERNO.</speech>
-<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr4242">
+<speech speaker="http://dati.camera.it/ocd/persona.rdf/pr4242" is_president="true">
 PRESIDENTE. L'ordine del giorno reca la discussione
 del bilancio di definitiva previsione della
 spesa del Ministero dell'interno pel 1881.
