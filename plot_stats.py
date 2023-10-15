@@ -12,7 +12,7 @@ plt.rcParams["font.family"] = "sans-serif"
 plt.rcParams["font.sans-serif"] = "Helvetica"
 
 
-stats = pd.read_csv("stats.csv", encoding="utf-8")
+stats = pd.read_csv("stats_def.csv", encoding="utf-8")
 
 dataset = Graph()
 
@@ -21,7 +21,7 @@ dataset.parse(os.path.join("tagging_modules/rdf/", "legislatura.rdf"), format="n
 starts = []
 ends = []
 
-for leg in ordered_leg_names:
+for leg in stats["legislature"]:
     query = prepareQuery(
         f"""
             SELECT ?start ?end
@@ -55,8 +55,9 @@ stats["end"] = ends
 stats["start"] = stats["start"].apply(lambda x: datetime.strptime(str(x), "%Y%m%d"))
 stats["end"] = stats["end"].apply(lambda x: datetime.strptime(str(x), "%Y%m%d"))
 stats["span"] = (stats["end"] - stats["start"]).dt.days
+print(stats["span"])
 # convert token_num to millions log
-stats["token_num"] = stats["token_num"] / 1000000
+stats["token_num"] = stats["token_num"] / stats["span"]
 # order the palette based on token_num
 stats = stats.sort_values(by=["token_num"])
 color_palette = sns.color_palette("magma", len(stats))
@@ -77,11 +78,13 @@ for index, row in stats.iterrows():
     # color the bar based on the number of tokens
     ax.bar(row.start, value, width=row.span, align="edge", color=row.color)
 
+# sns.kdeplot(x=stats["start"], color="darkgrey", alpha=0.5, ax=ax)
+
 
 # Add labels and legend
 ax.set_xlabel("Time")
-ax.set_ylabel("Number of tokens (millions)")
-ax.set_title("Number of tokens per legislature")
+ax.set_ylabel("Number of tokens per day of legislature")
+ax.set_title("Number of tokens published per day of legislature")
 
 # Display the plot
 plt.tight_layout()

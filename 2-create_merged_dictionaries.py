@@ -1,12 +1,10 @@
-from utils import Dictionary, ordered_leg_names
+from utils import Dictionary, ordered_leg_names_short
 import math
 import os
 import argparse
 
 
-def createMergedDictionaries(
-    span, cutoff_method, cutoff_value, dict_folder, output_folder
-):
+def createMergedDictionaries(span, keep_top_n, freq_cutoff, dict_folder, output_folder):
     """
     Merges span dictionaries into one in a window surrounding the leg (inclusive)
     :param leg: leg to create the merged dictionary for
@@ -17,20 +15,18 @@ def createMergedDictionaries(
     :param output_folder: folder where to save the merged dictionary
     """
 
-    global ordered_leg_names
+    global ordered_leg_names_short
 
     os.makedirs(os.path.dirname(output_folder), exist_ok=True)
 
     # create merged dictionaries
-    for leg in ordered_leg_names:
-        # get index of leg in ordered_leg_names
-        idx = ordered_leg_names.index(leg)
+    for leg in ordered_leg_names_short:
+        # get index of leg in ordered_leg_names_short
+        idx = ordered_leg_names_short.index(leg)
 
         # get the surrounding legs
-        surrounding_legs = ordered_leg_names[
-            max(0, idx - math.floor(span / 2)) : min(
-                len(ordered_leg_names), idx + math.floor(span / 2) + 1
-            )
+        surrounding_legs = ordered_leg_names_short[
+            max(0, idx - math.floor(span / 2)) : min(len(ordered_leg_names_short), idx + math.floor(span / 2) + 1)
         ]
         print(surrounding_legs)
 
@@ -48,21 +44,25 @@ def createMergedDictionaries(
 
         merged_dict.sort()
 
-        # cut dictionary
-        if cutoff_method == 0:
-            merged_dict.keep_top_n(cutoff_value)
-        else:
-            merged_dict.freq_cutoff(cutoff_value)
+        # cut dictionary in a mutually exclusive way
+        merged_dict.keep_top_n(keep_top_n)
+        merged_dict.freq_cutoff(freq_cutoff)
+
+        # # cut dictionary
+        # if cutoff_method == 0:
+        #     merged_dict.keep_top_n(cutoff_value)
+        # else:
+        #     merged_dict.freq_cutoff(cutoff_value)
 
         print(os.path.join(output_folder, leg + ".txt"))
+
+        os.makedirs(os.path.dirname(os.path.join(output_folder, leg + ".txt")), exist_ok=True)
 
         merged_dict.save(os.path.join(output_folder, leg + ".txt"))
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(
-        formatter_class=argparse.ArgumentDefaultsHelpFormatter
-    )
+    parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     parser.add_argument(
         "--span",
         type=int,
@@ -83,33 +83,30 @@ if __name__ == "__main__":
         required=False,
     )
 
-    group = parser.add_mutually_exclusive_group()
-    group.add_argument(
+    parser.add_argument(
         "--freq_cutoff",
         type=int,
         default=10,
         help="Frequency cutoff for words.",
-        required=False,
+        required=True,
     )
-    group.add_argument(
+    parser.add_argument(
         "--keep_top_n",
         type=int,
         default=100000,
         help="Keep top n words by frequency.",
-        required=False,
+        required=True,
     )
 
     args = parser.parse_args()
 
-    # method with which to cut the dictionary (0 = keep top n, 1 = keep words with frequency > freq_cutoff)
-    cut_method = 0 if args.keep_top_n else 1
-
-    cut_value = args.keep_top_n if args.keep_top_n else args.freq_cutoff
+    keep_n = args.keep_top_n
+    freq = args.freq_cutoff
 
     createMergedDictionaries(
         args.span,
-        cut_method,
-        cut_value,
+        keep_n,
+        freq,
         args.dict_folder,
         args.dict_output_folder,
     )

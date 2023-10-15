@@ -161,8 +161,12 @@ cython_debug/
 
 .DS_Store
 
-evaluation/base_set/
-evaluation/dictionaries/
-evaluation/window_dictionaries/
-evaluation/window_set/
+evaluation/data/window*
+evaluation/data/pred*
+evaluation/data/base*
+evaluation/dictionaries/window*
+evaluation/metrics
+*.png
+*.csv
+plot*
 
