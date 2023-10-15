@@ -8,6 +8,7 @@ from lxml import etree as ET
 import os
 import re
 import pandas as pd
+import jenkspy
 import csv
 from modules.camera_cleaning import cameraDocType, cameraRemoveIntest
 from modules.senato_cleaning import senatoDocType, senatoRemoveIntest
@@ -155,31 +156,85 @@ def preprocessDocument(dir, out, strdate, leg, cam):
 
     os.makedirs(os.path.dirname(out), exist_ok=True)
 
-    mid_sep = (max(new_cols_df["left"] + new_cols_df["width"]) - new_cols_df["left"].min()) / 2
+    # exclude nan values in "text"
 
-    new_cols_df["col"] = new_cols_df["left"].apply(lambda x: 1 if x < mid_sep else 2)
+    new_cols_df = new_cols_df[~new_cols_df["text"].isna()]
 
-    # uniform the top value, so that words in intervals of 10 are in the same line
+    # find middle separating coordinate
 
-    new_cols_df["top"] = new_cols_df["top"].apply(lambda x: x - (x % 40))
+    middle = (max(new_cols_df["left"] + new_cols_df["width"]) + min(new_cols_df["left"])) / 2
 
-    # i want each word to be ordered inside their line
-    # create lines of first column
+    col1 = new_cols_df[new_cols_df["left"] < middle]
 
-    new_cols_df["line_num"] = new_cols_df.groupby(["col", "top"]).cumcount() + 1
+    col2 = new_cols_df[new_cols_df["left"] >= middle]
 
-    # sort words within lines by left column (leftmost first, rightmost last)
+    line_num_col1 = len(col1[col1["line_num"] == 1])
+
+    line_num_col2 = len(col2[col2["line_num"] == 1])
+
+    lines_col1 = jenkspy.jenks_breaks(col1[col1["line_num"] == 1]["top"], n_classes=line_num_col1)
+
+    lines_col2 = jenkspy.jenks_breaks(col2[col2["line_num"] == 1]["top"], n_classes=line_num_col2)
+
+    # divide col1 and col2 into lines
+
+    bin_values_col1 = []
+
+    # Iterate over the 'value' column and assign values to bins
+
+    for value in col1["top"]:
+        for i in range(len(lines_col1) - 1):
+            if lines_col1[i] <= value < lines_col1[i + 1]:
+                bin_values_col1.append(i)
+                break
+        else:
+            bin_values_col1.append(lines_col1[-1])
+
+    col1["line_num"] = bin_values_col1
+
+    bin_values_col2 = []
+
+    # Iterate over the 'value' column and assign values to bins
+
+    for value in col2["top"]:
+        for i in range(len(lines_col2) - 1):
+            if lines_col2[i] <= value < lines_col2[i + 1]:
+                bin_values_col2.append(i)
+                break
+        else:
+            bin_values_col2.append(lines_col2[-1])
+
+    col2["line_num"] = bin_values_col2
+
+    final_df = pd.concat([col1, col2])
+
+    # bin_values = []
+
+    # # Iterate over the 'value' column and assign values to bins
+    # for value in new_cols_df["top"]:
+    #     for i in range(len(lines) - 1):
+    #         if lines[i] <= value < lines[i + 1]:
+    #             bin_values.append(i)
+    #             break
+    #     else:
+    #         bin_values.append(lines[-1])
+
+    # Add the 'bin' column to the DataFrame
+    # new_cols_df["line_num"] = bin_values
+
+    new_cols_df.sort_values(by=["col", "line_num", "left"], inplace=True)
+
+    # col1["line_num"] = col1["top"].apply(lambda x: sum(x > lines))
+    # assign line number to each row
 
     new_cols_df.to_html("test.html")
-    # new_cols_df["word_num"] = new_cols_df.sort_values(by=["line_num", "left"])
 
     text_values = list(
         zip(
-            new_cols_df["block_num"],
+            new_cols_df["line_num"],
             new_cols_df["text"],
             new_cols_df["conf"],
             new_cols_df["col"],
-            new_cols_df["line_num"],
         )
     )
 
@@ -187,7 +242,7 @@ def preprocessDocument(dir, out, strdate, leg, cam):
         # print(text_values)
         # calculate middle separating coordinate
 
-        fillOutputDocument(output_file, text_values, i, prev_last_char, text_values)
+        fillOutputDocument(output_file, text_values, i, prev_last_char)
 
     prev_last_char = str(new_cols_df["text"].iloc[-1])[-1]
 
@@ -209,7 +264,7 @@ def preprocessDocument(dir, out, strdate, leg, cam):
     # if they are, tag them with their URI. If they are not, check if the first three words are in the dataset. If they are, tag them with their URI.
 
 
-def fillOutputDocument(output_file, text_values, page_num, prev_last_char, middle):
+def fillOutputDocument(output_file, text_values, page_num, prev_last_char):
     """
     fills the output file with the text from each page
     :param output_file: file to write to
@@ -235,6 +290,7 @@ def fillOutputDocument(output_file, text_values, page_num, prev_last_char, middl
     closing_count = 0
     is_truncated = False
     # word_count = 0
+    line = 0
     block = 0
 
     for tup in text_values:
@@ -248,7 +304,7 @@ def fillOutputDocument(output_file, text_values, page_num, prev_last_char, middl
 
         sep = ""
 
-        if closing_count == 2 or block != tup[0] or (curr_word.isupper() and curr_word.endswith(".")):
+        if line != tup[0] or (curr_word.isupper() and curr_word.endswith(".")):
             sep = "\n"
             # if prev_sep == "\n":
             #     sep = ""
@@ -270,7 +326,7 @@ def fillOutputDocument(output_file, text_values, page_num, prev_last_char, middl
         output_file.write(sep + curr_word)
 
         closing_count = 0
-        block = tup[0]
+        line = tup[0]
 
 
 def removePadding(df):
@@ -305,22 +361,6 @@ def checkNewCols(df, page_num):
     return clean_df.reset_index(drop=True)
 
 
-def has_majority_uppercase(input_string):
-    # Initialize counters for uppercase and lowercase characters
-    uppercase_count = 0
-    lowercase_count = 0
-
-    # Iterate through each character in the string
-    for char in input_string:
-        if char.isupper():
-            uppercase_count += 1
-        elif char.islower():
-            lowercase_count += 1
-
-    # Compare the counts to determine if the majority is uppercase
-    return uppercase_count > lowercase_count
-
-
 def cleanGoldTsv(folder, out):
     for i, file in enumerate(os.listdir(folder)):
         if "camera" in file:
@@ -332,10 +372,10 @@ def cleanGoldTsv(folder, out):
             poss_leg = file.split("-")[1]
             leg = poss_leg if poss_leg not in reverse_leg_mapping else reverse_leg_mapping[poss_leg]
             strdate = leg
-        if i == 0:
-            preprocessDocument(
-                os.path.join(folder, file), os.path.join(out, file.replace(".tsv", ".txt")), strdate, leg, cam
-            )
+        # if i == 0:
+        preprocessDocument(
+            os.path.join(folder, file), os.path.join(out, file.replace(".tsv", ".txt")), strdate, leg, cam
+        )
 
 
 if __name__ == "__main__":
