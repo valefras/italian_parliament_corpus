@@ -6,7 +6,61 @@ from rdflib.plugins.sparql import prepareQuery
 from Levenshtein import distance as lev
 import time
 import pandas as pd
-from utils import ordered_leg_names
+
+# from utils import ordered_leg_names
+
+ordered_leg_names = [
+    "regno_01",
+    "regno_02",
+    "regno_03",
+    "regno_04",
+    "regno_05",
+    "regno_06",
+    "regno_07",
+    "regno_08",
+    "regno_09",
+    "regno_10",
+    "regno_11",
+    "regno_12",
+    "regno_13",
+    "regno_14",
+    "regno_15",
+    "regno_16",
+    "regno_17",
+    "regno_18",
+    "regno_19",
+    "regno_20",
+    "regno_21",
+    "regno_22",
+    "regno_23",
+    "regno_24",
+    "regno_25",
+    "regno_26",
+    "regno_27",
+    "regno_28",
+    "regno_29",
+    "regno_30",
+    "consulta_nazionale",
+    "costituente",
+    "repubblica_01",
+    "repubblica_02",
+    "repubblica_03",
+    "repubblica_04",
+    "repubblica_05",
+    "repubblica_06",
+    "repubblica_07",
+    "repubblica_08",
+    "repubblica_09",
+    "repubblica_10",
+    "repubblica_11",
+    "repubblica_12",
+    "repubblica_13",
+    "repubblica_14",
+    "repubblica_15",
+    "repubblica_16",
+    "repubblica_17",
+    "repubblica_18",
+]
 
 
 def initialize(rdf_path):
@@ -36,7 +90,8 @@ def queryRDF(leg):
 
     query = prepareQuery(
         f"""
-            SELECT DISTINCT ?person ?name ?surname
+            SELECT DISTINCT ?person ?name ?surname ?job
+            # job is 0 if the person is a member of the government, 1 if the person is a deputy, 2 if the person is a senator
             WHERE {{
             ?person a foaf:Person .
             ?person foaf:surname ?surname .
@@ -44,17 +99,23 @@ def queryRDF(leg):
             {{
                 ?person <http://dati.camera.it/ocd/rif_membroGoverno> ?mandateGov .
                 ?mandateGov ocd:rif_leg <http://dati.camera.it/ocd/legislatura.rdf/{leg}>
+
+                BIND(0 AS ?job)
             }}
             UNION
             {{
                 ?person <http://dati.camera.it/ocd/rif_mandatoCamera> ?mandateCam .
                 ?mandateCam ocd:rif_leg <http://dati.camera.it/ocd/legislatura.rdf/{leg}>
+
+                BIND(1 AS ?job)
             }}
             UNION
             {{
                 {{
                     ?person <http://dati.camera.it/ocd/rif_mandatoSenato> ?mandateSen .
                     ?mandateSen ocd:rif_leg <http://dati.camera.it/ocd/legislatura.rdf/{leg}>
+
+                    BIND(2 AS ?job)
                 }}
                 UNION
                 {{
@@ -71,8 +132,9 @@ def queryRDF(leg):
                     BIND(xsd:integer(strafter(?leg_date, "-")) AS ?end_leg_date) .
 
                     # filter for ?start_date being inside the legislature OR ?end_date being inside the legislature
-                    FILTER(?end_date >= ?start_leg_date && ?start_date <= ?end_leg_date)
+                    FILTER(?end_date >= ?start_leg_date && ?start_date < ?end_leg_date)
 
+                    BIND(2 AS ?job)
                 }}
             }}
             }}
@@ -85,10 +147,13 @@ def queryRDF(leg):
 
     qres = dataset.query(query)
     print(len(qres))
-    parliament_composition = pd.DataFrame(columns=["name", "surname", "URI"])
+    parliament_composition = pd.DataFrame(columns=["name", "surname", "job", "URI"])
     for row in qres:
         parliament_composition = pd.concat(
-            [parliament_composition, pd.DataFrame({"name": [row.name], "surname": [row.surname], "URI": [row.person]})]
+            [
+                parliament_composition,
+                pd.DataFrame({"name": [row.name], "surname": [row.surname], "job": [row.job], "URI": [row.person]}),
+            ]
         )
 
     # Record the end time
@@ -102,7 +167,7 @@ def queryRDF(leg):
     return parliament_composition
 
 
-def createPeopleDatasets(output_path="people", rdf_path="tagging_modules/rdf"):
+def createPeopleDatasets(output_path="../people", rdf_path="tagging_modules/rdf"):
     """
     Create a dataset for each legislature containing the names of the people in that legislature
     :param output_path: the path where the datasets will be saved
@@ -119,3 +184,6 @@ def createPeopleDatasets(output_path="people", rdf_path="tagging_modules/rdf"):
     for leg in ordered_leg_names:
         parliament_composition = queryRDF(leg)
         parliament_composition.to_csv(os.path.join(output_path, leg + ".csv"), index=False)
+
+
+createPeopleDatasets()

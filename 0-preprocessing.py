@@ -7,6 +7,7 @@ from datetime import datetime
 import locale
 import pandas as pd
 from bs4 import BeautifulSoup
+
 from tagging_modules.tagging import createPeopleDatasets
 import re
 from cleaning_modules.formatting_func import performTagging
@@ -15,25 +16,21 @@ from string import punctuation
 from lxml import etree as ET
 
 
-def cleanCameraPDF(metadata_path, data_path, output_path, gold_folder, pred_folder, people_path):
+def cleanCameraPDF(metadata_path, data_path, output_path, people_path):
     global leg_mapping
 
     metadata_dict = json.load(open(metadata_path, "r"))
 
     for leg in os.listdir(os.path.join(data_path, "camera")):
         if os.path.isdir(os.path.join(data_path, "camera", leg)):
-            print("1")
             for day in os.listdir(os.path.join(data_path, "camera", leg)):
                 if os.path.isdir(os.path.join(data_path, "camera", leg, day)):
-                    print("2")
                     for doc in os.listdir(os.path.join(data_path, "camera", leg, day)):
                         if doc.endswith(".pdf"):
-                            print("3")
                             # path_for_metadata = os.path.join("out", leg, day, doc)
                             path_for_metadata = "out/" + leg + "/" + day + "/" + doc
                             print(path_for_metadata)
                             if path_for_metadata in metadata_dict[leg]:
-                                print("4")
                                 if metadata_dict[leg][path_for_metadata]["type"] == "Seduta":
                                     input_path = os.path.join(data_path, "camera", leg, day, doc + ".out")
                                     output_file = os.path.join(output_path, "camera", leg, day + ".xml")
@@ -41,12 +38,18 @@ def cleanCameraPDF(metadata_path, data_path, output_path, gold_folder, pred_fold
                                         output_file = os.path.join(output_path, "camera", leg, day + "_1.xml")
 
                                     if os.path.exists(input_path):
-                                        preprocessDocument(
-                                            input_path, output_file, day, leg, 0, gold_folder, pred_folder, people_path
-                                        )
+                                        preprocessDocument(input_path, output_file, day, leg, 0, people_path)
+                                        # check if xml output file is valid
+                                        # if not, try to put path in a txt
+                                        try:
+                                            ET.parse(output_file)
+                                        except:
+                                            print("invalid xml: " + output_file)
+                                            with open("invalid_xml.txt", "a", encoding="utf-8") as f:
+                                                f.write(output_file + "\n")
 
 
-def cleanSenatoPDFMon(metadata_path, data_path, output_path, gold_folder, pred_folder, people_path):
+def cleanSenatoPDFMon(metadata_path, data_path, output_path, people_path):
     # this time metadata is a csv
     metadata_csv = pd.read_csv(metadata_path, sep=";", encoding="utf-8")
 
@@ -76,12 +79,16 @@ def cleanSenatoPDFMon(metadata_path, data_path, output_path, gold_folder, pred_f
             output_file = os.path.join(output_path, "senato", leg_parsed, date_parsed + ".xml")
             if os.path.isfile(output_file):
                 output_file = os.path.join(output_path, "senato", leg_parsed, date_parsed + "_1.xml")
-            preprocessDocument(
-                clean_path, output_file, date_parsed, leg_parsed, 1, gold_folder, pred_folder, people_path
-            )
+            preprocessDocument(clean_path, output_file, date_parsed, leg_parsed, 1, people_path)
+            try:
+                ET.parse(output_file)
+            except:
+                print("invalid xml: " + output_file)
+                with open("invalid_xml.txt", "a", encoding="utf-8") as f:
+                    f.write(output_file + "\n")
 
 
-def cleanSenatoPDFRep(metadata_path, data_path, output_path, gold_folder, pred_folder, people_path):
+def cleanSenatoPDFRep(metadata_path, data_path, output_path, people_path):
     metadata_dict = json.load(open(metadata_path, "r"))
 
     for leg, leg_dict in metadata_dict.items():
@@ -96,7 +103,14 @@ def cleanSenatoPDFRep(metadata_path, data_path, output_path, gold_folder, pred_f
             if os.path.isfile(os.path.join(output_path, "senato", clean_leg, clean_filename + ".xml")):
                 clean_filename = clean_filename + "_1"
             output_file = os.path.join(output_path, "senato", clean_leg, clean_filename + ".xml")
-            preprocessDocument(clean_path, output_file, clean_filename, leg, 1, gold_folder, pred_folder, people_path)
+            preprocessDocument(clean_path, output_file, clean_filename, leg, 1, people_path)
+            try:
+                ET.parse(output_file)
+            except:
+                print("invalid xml: " + output_file)
+
+                with open("invalid_xml.txt", "a", encoding="utf-8") as f:
+                    f.write(output_file + "\n")
         # ################################## break for testing
         # break
         # #############################################
@@ -139,18 +153,25 @@ def cleanCameraHTML(data_path, output_path, people_path):
                                 with open(output_file, "a", encoding="utf-8") as f:
                                     f.write(clean_text)
                         performTagging(output_file, leg, 0, people_dataset)
-                        stats_df = pd.read_csv("stats.csv", encoding="utf-8")
+                        try:
+                            ET.parse(output_file)
+                        except:
+                            print("invalid xml: " + output_file)
 
-                        stats_df.loc[stats_df["legislature"] == leg, "speech_num"] += len(
-                            re.findall(r"</speech>", open(output_file, "r", encoding="utf-8").read())
-                        )
-                        tree = ET.parse(output_file, parser=ET.XMLParser(recover=True))
-                        string_doc = ET.tostring(tree.getroot(), encoding="utf-8", method="text").decode("utf-8")
-                        stats_df.loc[stats_df["legislature"] == leg, "token_num"] += len(
-                            [x for x in string_doc.split() if x not in punctuation]
-                        )
+                            with open("invalid_xml.txt", "a", encoding="utf-8") as f:
+                                f.write(output_file + "\n")
+                        # stats_df = pd.read_csv("stats.csv", encoding="utf-8")
 
-                        stats_df.to_csv("stats.csv", index=False, encoding="utf-8")
+                        # stats_df.loc[stats_df["legislature"] == leg, "speech_num"] += len(
+                        #     re.findall(r"</speech>", open(output_file, "r", encoding="utf-8").read())
+                        # )
+                        # tree = ET.parse(output_file, parser=ET.XMLParser(recover=True))
+                        # string_doc = ET.tostring(tree.getroot(), encoding="utf-8", method="text").decode("utf-8")
+                        # stats_df.loc[stats_df["legislature"] == leg, "token_num"] += len(
+                        #     [x for x in string_doc.split() if x not in punctuation]
+                        # )
+
+                        # stats_df.to_csv("stats.csv", index=False, encoding="utf-8")
 
                     else:
                         for doc in os.listdir(os.path.join(data_path, "camera", leg, day)):
@@ -176,19 +197,26 @@ def cleanCameraHTML(data_path, output_path, people_path):
                                     with open(output_file, "a", encoding="utf-8") as f:
                                         f.write(clean_text)
                         performTagging(output_file, leg, 0, people_dataset)
+                        try:
+                            ET.parse(output_file)
+                        except:
+                            print("invalid xml: " + output_file)
 
-                        stats_df = pd.read_csv("stats.csv", encoding="utf-8")
+                            with open("invalid_xml.txt", "a", encoding="utf-8") as f:
+                                f.write(output_file + "\n")
 
-                        stats_df.loc[stats_df["legislature"] == leg, "speech_num"] += len(
-                            re.findall(r"</speech>", open(output_file, "r", encoding="utf-8").read())
-                        )
-                        tree = ET.parse(output_file, parser=ET.XMLParser(recover=True))
-                        string_doc = ET.tostring(tree.getroot(), encoding="utf-8", method="text").decode("utf-8")
-                        stats_df.loc[stats_df["legislature"] == leg, "token_num"] += len(
-                            [x for x in string_doc.split() if x not in punctuation]
-                        )
+                        # stats_df = pd.read_csv("stats.csv", encoding="utf-8")
 
-                        stats_df.to_csv("stats.csv", index=False, encoding="utf-8")
+                        # stats_df.loc[stats_df["legislature"] == leg, "speech_num"] += len(
+                        #     re.findall(r"</speech>", open(output_file, "r", encoding="utf-8").read())
+                        # )
+                        # tree = ET.parse(output_file, parser=ET.XMLParser(recover=True))
+                        # string_doc = ET.tostring(tree.getroot(), encoding="utf-8", method="text").decode("utf-8")
+                        # stats_df.loc[stats_df["legislature"] == leg, "token_num"] += len(
+                        #     [x for x in string_doc.split() if x not in punctuation]
+                        # )
+
+                        # stats_df.to_csv("stats.csv", index=False, encoding="utf-8")
 
 
 def cleanSenatoHTML(data_path, output_path, people_path):
@@ -226,22 +254,28 @@ def cleanSenatoHTML(data_path, output_path, people_path):
                                 with open(output_file, "a", encoding="utf-8") as f:
                                     f.write(clean_text)
                             performTagging(output_file, clean_leg, 1, people_dataset)
+                            try:
+                                ET.parse(output_file)
+                            except:
+                                print("invalid xml: " + output_file)
+                                with open("invalid_xml.txt", "a", encoding="utf-8") as f:
+                                    f.write(output_file + "\n")
 
-                            # add up stats
+                            # # add up stats
 
-                            stats_df = pd.read_csv("stats.csv", encoding="utf-8")
+                            # stats_df = pd.read_csv("stats.csv", encoding="utf-8")
 
-                            stats_df.loc[stats_df["legislature"] == clean_leg, "speech_num"] += len(
-                                re.findall(r"</speech>", open(output_file, "r", encoding="utf-8").read())
-                            )
-                            # ignore invalid characters when parsing xml
-                            tree = ET.parse(output_file, parser=ET.XMLParser(recover=True))
-                            string_doc = ET.tostring(tree.getroot(), encoding="utf-8", method="text").decode("utf-8")
-                            stats_df.loc[stats_df["legislature"] == clean_leg, "token_num"] += len(
-                                [x for x in string_doc.split() if x not in punctuation]
-                            )
+                            # stats_df.loc[stats_df["legislature"] == clean_leg, "speech_num"] += len(
+                            #     re.findall(r"</speech>", open(output_file, "r", encoding="utf-8").read())
+                            # )
+                            # # ignore invalid characters when parsing xml
+                            # tree = ET.parse(output_file, parser=ET.XMLParser(recover=True))
+                            # string_doc = ET.tostring(tree.getroot(), encoding="utf-8", method="text").decode("utf-8")
+                            # stats_df.loc[stats_df["legislature"] == clean_leg, "token_num"] += len(
+                            #     [x for x in string_doc.split() if x not in punctuation]
+                            # )
 
-                            stats_df.to_csv("stats.csv", index=False, encoding="utf-8")
+                            # stats_df.to_csv("stats.csv", index=False, encoding="utf-8")
 
             # ################################## break for testing
             # break
@@ -290,18 +324,18 @@ if __name__ == "__main__":
         type=str,
         help="Path to the metadata file for monarchical senato documents.",
     )
-    parser.add_argument(
-        "--gold_folder",
-        type=str,
-        default="../evaluation/gold_standard",
-        help="Path to the gold folder.",
-    )
-    parser.add_argument(
-        "--pred_set_folder",
-        type=str,
-        default="../evaluation/pred_set",
-        help="Folder where to output the test set.",
-    )
+    # parser.add_argument(
+    #     "--gold_folder",
+    #     type=str,
+    #     default="../evaluation/gold_standard",
+    #     help="Path to the gold folder.",
+    # )
+    # parser.add_argument(
+    #     "--pred_set_folder",
+    #     type=str,
+    #     default="../evaluation/pred_set",
+    #     help="Folder where to output the test set.",
+    # )
     parser.add_argument(
         "--people_folder",
         type=str,
@@ -315,40 +349,36 @@ if __name__ == "__main__":
 
     start_time = datetime.now()
 
-    if not os.path.isfile("stats.csv"):
-        stats_df = pd.DataFrame(columns=["legislature", "page_num", "speech_num", "token_num"])
-        # fill with all legislatures and 0s
-        stats_df["legislature"] = ordered_leg_names
-        stats_df["page_num"] = 0
-        stats_df["speech_num"] = 0
-        stats_df["token_num"] = 0
+    # if not os.path.isfile("stats.csv"):
+    #     stats_df = pd.DataFrame(columns=["legislature", "page_num", "speech_num", "token_num"])
+    #     # fill with all legislatures and 0s
+    #     stats_df["legislature"] = ordered_leg_names
+    #     stats_df["page_num"] = 0
+    #     stats_df["speech_num"] = 0
+    #     stats_df["token_num"] = 0
 
-        # "page_num" in legs between repubblica_13 and repooblica_18 are "NA"
-        stats_df.loc[
-            stats_df["legislature"].isin(
-                ["repubblica_13", "repubblica_14", "repubblica_15", "repubblica_16", "repubblica_17", "repubblica_18"]
-            ),
-            "page_num",
-        ] = "NA"
+    #     # "page_num" in legs between repubblica_13 and repooblica_18 are "NA"
+    #     stats_df.loc[
+    #         stats_df["legislature"].isin(
+    #             ["repubblica_13", "repubblica_14", "repubblica_15", "repubblica_16", "repubblica_17", "repubblica_18"]
+    #         ),
+    #         "page_num",
+    #     ] = "NA"
 
-        stats_df.to_csv("./stats.csv", index=False, encoding="utf-8")
+    #     stats_df.to_csv("./stats.csv", index=False, encoding="utf-8")
 
-    # createPeopleDatasets(args.people_folder, "tagging_modules/rdf")
+    createPeopleDatasets(args.people_folder, "tagging_modules/rdf")
+
+    # create invalid_xml.txt if it doesn't exist
+
+    cleanSenatoHTML(args.html_data_path, args.output_path, args.people_folder)
+
+    cleanCameraHTML(args.html_data_path, args.output_path, args.people_folder)
+
     cleanSenatoPDFMon(
         args.senato_mon_metadata_path,
         args.pdf_data_path,
         args.output_path,
-        args.gold_folder,
-        args.pred_set_folder,
-        args.people_folder,
-    )
-
-    cleanSenatoPDFRep(
-        args.senato_rep_metadata_path,
-        args.pdf_data_path,
-        args.output_path,
-        args.gold_folder,
-        args.pred_set_folder,
         args.people_folder,
     )
 
@@ -356,13 +386,14 @@ if __name__ == "__main__":
         args.camera_metadata_path,
         args.pdf_data_path,
         args.output_path,
-        args.gold_folder,
-        args.pred_set_folder,
         args.people_folder,
     )
-    # # cleanSenatoHTML(args.html_data_path, args.output_path, args.people_folder)
-
-    # cleanCameraHTML(args.html_data_path, args.output_path, args.people_folder)
+    cleanSenatoPDFRep(
+        args.senato_rep_metadata_path,
+        args.pdf_data_path,
+        args.output_path,
+        args.people_folder,
+    )
 
     end_time = datetime.now()
     print("Duration: {}".format(end_time - start_time))

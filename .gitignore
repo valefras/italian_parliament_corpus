@@ -166,6 +166,7 @@ evaluation/data/pred*
 evaluation/data/base*
 evaluation/dictionaries/window*
 evaluation/metrics
+output/
 *.png
 *.csv
 plot*

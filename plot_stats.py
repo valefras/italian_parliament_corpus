@@ -69,7 +69,7 @@ stats = stats.sort_values(by=["start"])
 # plot using time span as width of the bars
 
 # Create a figure and axis
-fig, ax = plt.subplots(figsize=(12, 7))
+fig, ax = plt.subplots(figsize=(9, 5.25))
 
 # Loop through the time spans and create bars with varying widths
 for index, row in stats.iterrows():

@@ -1,1100 +1,1232 @@
-name,surname,URI
-GAETANO,MOSCA,http://dati.camera.it/ocd/persona.rdf/pr3150
-GIACOMO,MATTEOTTI,http://dati.camera.it/ocd/persona.rdf/pr3174
-GINO JACOPO,OLIVETTI,http://dati.camera.it/ocd/persona.rdf/pr3218
-NUNZIO,NASI,http://dati.camera.it/ocd/persona.rdf/pr3325
-CESARE,NAVA,http://dati.camera.it/ocd/persona.rdf/pr3327
-CAMILLO,PEANO,http://dati.camera.it/ocd/persona.rdf/pr3488
-LUIGI,FACTA,http://dati.camera.it/ocd/persona.rdf/pr2255
-LUIGI,FEDERZONI,http://dati.camera.it/ocd/persona.rdf/pr2291
-CARLO FRANCESCO,FERRARIS,http://dati.camera.it/ocd/persona.rdf/pr2348
-MAGGIORINO,FERRARIS,http://dati.camera.it/ocd/persona.rdf/pr2352
-GIUSEPPE,GARIBOTTI,http://dati.camera.it/ocd/persona.rdf/pr2433
-GIUSTINO,FORTUNATO,http://dati.camera.it/ocd/persona.rdf/pr2522
-GIOVANNI,GIOLITTI,http://dati.camera.it/ocd/persona.rdf/pr2546
-EGILBERTO,MARTIRE,http://dati.camera.it/ocd/persona.rdf/pr2798
-COSTANTINO,LAZZARI,http://dati.camera.it/ocd/persona.rdf/pr2839
-LUIGI,LUZZATTI,http://dati.camera.it/ocd/persona.rdf/pr2864
-GUIDO,MIGLIOLI,http://dati.camera.it/ocd/persona.rdf/pr3020
-PAOLO,MATTEI GENTILI,http://dati.camera.it/ocd/persona.rdf/pr3132
-ODDINO,MORGARI,http://dati.camera.it/ocd/persona.rdf/pr3136
-ALFREDO,BACCELLI,http://dati.camera.it/ocd/persona.rdf/pr1019
-FRANCESCO,RUFFINI,http://dati.camera.it/ocd/persona.rdf/pr10246
-GIUSEPPE,SIRIANNI,http://dati.camera.it/ocd/persona.rdf/pr10337
-ARRIGO,SOLMI,http://dati.camera.it/ocd/persona.rdf/pr10343
-GIACOMO,SUARDO,http://dati.camera.it/ocd/persona.rdf/pr10362
-GIOVANNI,VERGA,http://dati.camera.it/ocd/persona.rdf/pr10456
-GIOVANNI,VILLA,http://dati.camera.it/ocd/persona.rdf/pr10468
-VITTORIO,ZUPELLI,http://dati.camera.it/ocd/persona.rdf/pr10494
-MICHELE,BIANCHI,http://dati.camera.it/ocd/persona.rdf/pr10569
-ITALO,BALBO,http://dati.camera.it/ocd/persona.rdf/pr10612
-VINCENZO,CASALINI,http://dati.camera.it/ocd/persona.rdf/pr10668
-PIETRO,DE FRANCISCI,http://dati.camera.it/ocd/persona.rdf/pr10742
-NICOLA,BOMBACCI,http://dati.camera.it/ocd/persona.rdf/pr1275
-ENRICO,ARLOTTA,http://dati.camera.it/ocd/persona.rdf/pr129
-BRUNO,BUOZZI,http://dati.camera.it/ocd/persona.rdf/pr1321
-GIOVANNI,CAMERA,http://dati.camera.it/ocd/persona.rdf/pr1455
-GABRIELLO,CARNAZZA,http://dati.camera.it/ocd/persona.rdf/pr1458
-PIETRO,CHIMIENTI,http://dati.camera.it/ocd/persona.rdf/pr1685
-STEFANO,CAVAZZONI,http://dati.camera.it/ocd/persona.rdf/pr1716
-GIOVANNI ANTONIO,COLONNA  ROMANO DI CESARÒ,http://dati.camera.it/ocd/persona.rdf/pr1827
-SILVIO,CRESPI,http://dati.camera.it/ocd/persona.rdf/pr1915
-PIETRO,LANZA ( DI SCALEA),http://dati.camera.it/ocd/persona.rdf/pr2024
-ROBERTO,DE VITO,http://dati.camera.it/ocd/persona.rdf/pr2121
-ANTONINO,DI GIORGIO,http://dati.camera.it/ocd/persona.rdf/pr2129
-LUIGI,DI FRANCIA,http://dati.camera.it/ocd/persona.rdf/pr2196
-SALVATORE,BARZILAI,http://dati.camera.it/ocd/persona.rdf/pr1078
-ALESSANDRO,PAVOLINI,http://dati.camera.it/ocd/persona.rdf/pr10986
-CARLO,SCORZA,http://dati.camera.it/ocd/persona.rdf/pr11071
-ADELCHI,SERENA,http://dati.camera.it/ocd/persona.rdf/pr11073
-ACHILLE,STARACE,http://dati.camera.it/ocd/persona.rdf/pr11089
-OTTAVIO,CORGINI,http://dati.camera.it/ocd/persona.rdf/pr11218
-ALBERTO,BENEDUCE,http://dati.camera.it/ocd/persona.rdf/pr1126
-GALEAZZO,CIANO,http://dati.camera.it/ocd/persona.rdf/pr11317
-ALDO,VIDUSSONI,http://dati.camera.it/ocd/persona.rdf/pr11808
-ETTORE,MUTI,http://dati.camera.it/ocd/persona.rdf/pr12289
-PAOLO,BOSELLI,http://dati.camera.it/ocd/persona.rdf/pr1239
-GIUSEPPE EMANUELE,MODIGLIANI,http://dati.camera.it/ocd/persona.rdf/p26480
-GIUSEPPE,ROMITA,http://dati.camera.it/ocd/persona.rdf/p26830
-IVANOE,BONOMI,http://dati.camera.it/ocd/persona.rdf/p27370
-BENEDETTO,CROCE,http://dati.camera.it/ocd/persona.rdf/p27710
-LUIGI,GASPAROTTO,http://dati.camera.it/ocd/persona.rdf/p27920
-ALCIDE,DE GASPERI,http://dati.camera.it/ocd/persona.rdf/p13230
-EMILIO,LUSSU,http://dati.camera.it/ocd/persona.rdf/p28070
-FRANCESCO SAVERIO,NITTI,http://dati.camera.it/ocd/persona.rdf/p28250
-GIUSEPPE,PENNISI DI SANTA MARGHERITA,http://dati.camera.it/ocd/persona.rdf/pr3516
-LUIGI,RAVA,http://dati.camera.it/ocd/persona.rdf/pr3624
-LUIGI,REPOSSI,http://dati.camera.it/ocd/persona.rdf/pr3683
-TOMMASO,TITTONI,http://dati.camera.it/ocd/persona.rdf/pr3712
-ETTORE,SACCHI,http://dati.camera.it/ocd/persona.rdf/pr3884
-ANTONIO,SALANDRA,http://dati.camera.it/ocd/persona.rdf/pr3893
-GINO,SARROCCHI,http://dati.camera.it/ocd/persona.rdf/pr3986
-GIOVANNI,GRONCHI,http://dati.camera.it/ocd/persona.rdf/p18950
-VITTORIO EMANUELE,ORLANDO,http://dati.camera.it/ocd/persona.rdf/p28270
-TITO,ZANIBONI,http://dati.camera.it/ocd/persona.rdf/pr4767
-GIOVANNI,AMENDOLA,http://dati.camera.it/ocd/persona.rdf/pr78
-LUIGI,ALBERTINI,http://dati.camera.it/ocd/persona.rdf/pr9027
-PIETRO,BADOGLIO,http://dati.camera.it/ocd/persona.rdf/pr9083
-EMANUELE,INCISA BECCARIA,http://dati.camera.it/ocd/persona.rdf/pr9118
-RICCARDO,BIANCHI,http://dati.camera.it/ocd/persona.rdf/pr9151
-LUIGI,CADORNA,http://dati.camera.it/ocd/persona.rdf/pr9247
-CARLO,CANEVA,http://dati.camera.it/ocd/persona.rdf/pr9273
-ENRICO,CAVIGLIA,http://dati.camera.it/ocd/persona.rdf/pr9334
-VINCENZO,TANGORRA,http://dati.camera.it/ocd/persona.rdf/pr4120
-SIDNEY COSTANTINO,SONNINO,http://dati.camera.it/ocd/persona.rdf/pr4226
-CLAUDIO,TREVES,http://dati.camera.it/ocd/persona.rdf/pr4301
-FILIPPO,TURATI,http://dati.camera.it/ocd/persona.rdf/pr4323
-ACHILLE,VISOCCHI,http://dati.camera.it/ocd/persona.rdf/pr4399
-LEONE,WOLLEMBORG,http://dati.camera.it/ocd/persona.rdf/pr4411
-ENRICO,DE NICOLA,http://dati.camera.it/ocd/persona.rdf/p303409
-GIACOMO,ACERBO,http://dati.camera.it/ocd/persona.rdf/pr4487
-LEANDRO,ARPINATI,http://dati.camera.it/ocd/persona.rdf/pr4502
-GINO,BALDESI,http://dati.camera.it/ocd/persona.rdf/pr4505
-GIUSEPPE,BOTTAI,http://dati.camera.it/ocd/persona.rdf/pr4523
-ALBERTO,DE STEFANI,http://dati.camera.it/ocd/persona.rdf/pr4595
-ALESSANDRO,DUDAN,http://dati.camera.it/ocd/persona.rdf/pr4604
-ROBERTO,FARINACCI,http://dati.camera.it/ocd/persona.rdf/pr4611
-ALDO,FINZI,http://dati.camera.it/ocd/persona.rdf/pr4621
-FRANCESCO,GIUNTA,http://dati.camera.it/ocd/persona.rdf/pr4637
-ALFREDO,MISURI,http://dati.camera.it/ocd/persona.rdf/pr4685
-BENITO,MUSSOLINI,http://dati.camera.it/ocd/persona.rdf/pr4690
-ALDO,OVIGLIO,http://dati.camera.it/ocd/persona.rdf/pr4698
-CESARE,ROSSI DI MONTELERA,http://dati.camera.it/ocd/persona.rdf/pr4727
-CARLO,SFORZA,http://dati.camera.it/ocd/persona.rdf/p28500
-ETTORE,CONTI,http://dati.camera.it/ocd/persona.rdf/pr9398
-MARIO ORSO,CORBINO,http://dati.camera.it/ocd/persona.rdf/pr9405
-ENRICO,CORRADINI,http://dati.camera.it/ocd/persona.rdf/pr9410
-EMILIO,DE BONO,http://dati.camera.it/ocd/persona.rdf/pr9461
-CESARE MARIA,DE VECCHI DI VAL CISMON,http://dati.camera.it/ocd/persona.rdf/pr9538
-ARMANDO,DIAZ,http://dati.camera.it/ocd/persona.rdf/pr9542
-PIETRO,GAZZERA,http://dati.camera.it/ocd/persona.rdf/pr9701
-GIOVANNI,GENTILE,http://dati.camera.it/ocd/persona.rdf/pr9705
-GAETANO,GIARDINO,http://dati.camera.it/ocd/persona.rdf/pr9726
-CAMILLO,GOLGI,http://dati.camera.it/ocd/persona.rdf/pr9758
-GUGLIELMO,IMPERIALI,http://dati.camera.it/ocd/persona.rdf/pr9794
-GIACOMO,MALVANO,http://dati.camera.it/ocd/persona.rdf/pr9868
-GUGLIELMO,MARCONI,http://dati.camera.it/ocd/persona.rdf/pr9888
-PIETRO,MILANO FRANCO D'ARAGONA,http://dati.camera.it/ocd/persona.rdf/pr9957
-ENRICO,MILLO,http://dati.camera.it/ocd/persona.rdf/pr9960
-PAOLO,MORRONE,http://dati.camera.it/ocd/persona.rdf/pr9999
-GIOVANNI,GIURIATI,http://dati.camera.it/ocd/persona.rdf/pr9750
-ANTONIO,CASERTANO,http://dati.camera.it/ocd/persona.rdf/pr1604
-DINO,GRANDI,http://dati.camera.it/ocd/persona.rdf/pr2443
-GIUSEPPE,MARCORA,http://dati.camera.it/ocd/persona.rdf/pr2845
-COSTANZO,CIANO,http://dati.camera.it/ocd/persona.rdf/pr4561
-ALFREDO,ROCCO,http://dati.camera.it/ocd/persona.rdf/pr4723
-GIOVANNI,CUOMO,http://dati.camera.it/ocd/persona.rdf/p12240
-PAOLO,CAPPA,http://dati.camera.it/ocd/persona.rdf/p11350
-GIUSEPPE,GRASSI,http://dati.camera.it/ocd/persona.rdf/p11780
-MARIO,JANNELLI,http://dati.camera.it/ocd/persona.rdf/p13730
-ANTONIO,FERRARESE,http://dati.camera.it/ocd/persona.rdf/p13790
-TEODORO,BUBBIO,http://dati.camera.it/ocd/persona.rdf/p13530
-ROBERTO,CANTALUPO,http://dati.camera.it/ocd/persona.rdf/p14180
-ANGELO,CORSI,http://dati.camera.it/ocd/persona.rdf/p13130
-ARMANDO,ANGELINI,http://dati.camera.it/ocd/persona.rdf/p17750
-EZIO MARIA,GRAY,http://dati.camera.it/ocd/persona.rdf/p18930
-KARL,TINZL,http://dati.camera.it/ocd/persona.rdf/p20150
-GIAMBATTISTA,BOSCO LUCARELLI,http://dati.camera.it/ocd/persona.rdf/p25410
-FRANCESCO,CERABONA,http://dati.camera.it/ocd/persona.rdf/p25550
-SALVATORE,ALDISIO,http://dati.camera.it/ocd/persona.rdf/p25290
-PAOLO,GRECO,http://dati.camera.it/ocd/persona.rdf/p26120
-PASQUALE,IMPROTA,http://dati.camera.it/ocd/persona.rdf/p26160
-RAFFAELE,DE CARO,http://dati.camera.it/ocd/persona.rdf/p25690
-AUGUSTO,DE MARSANICH,http://dati.camera.it/ocd/persona.rdf/p25720
-GIUSEPPE,DI VITTORIO,http://dati.camera.it/ocd/persona.rdf/p25750
-ANDREA,FINOCCHIARO APRILE,http://dati.camera.it/ocd/persona.rdf/p25900
-ACHILLE,PELLIZZARI,http://dati.camera.it/ocd/persona.rdf/p26650
-GINO,MACRELLI,http://dati.camera.it/ocd/persona.rdf/p26250
-GIUSEPPE,MICHELI,http://dati.camera.it/ocd/persona.rdf/p26450
-LUCIANO,FANTONI,http://dati.camera.it/ocd/persona.rdf/p27820
-GIUSEPPE,FILIPPINI,http://dati.camera.it/ocd/persona.rdf/p27870
-GUIDO,GIACOMETTI,http://dati.camera.it/ocd/persona.rdf/p27960
-ACHILLE,GRANDI,http://dati.camera.it/ocd/persona.rdf/p27990
-STEFANO,JACINI,http://dati.camera.it/ocd/persona.rdf/p28020
-ARTURO,LABRIOLA,http://dati.camera.it/ocd/persona.rdf/p28030
-EMIDIO,LOPARDI,http://dati.camera.it/ocd/persona.rdf/p28050
-FABRIZIO,MAFFI,http://dati.camera.it/ocd/persona.rdf/p28080
-PIETRO,MANCINI,http://dati.camera.it/ocd/persona.rdf/p28100
-GIUSEPPE,CANEPA,http://dati.camera.it/ocd/persona.rdf/p27460
-LUIGI,CARBONARI,http://dati.camera.it/ocd/persona.rdf/p27500
-MARIO,CINGOLANI,http://dati.camera.it/ocd/persona.rdf/p27610
-GIOVANNI,CONTI,http://dati.camera.it/ocd/persona.rdf/p27640
-LUIGI,CORAZZIN,http://dati.camera.it/ocd/persona.rdf/p27660
-GIOVANNI,COSATTINI,http://dati.camera.it/ocd/persona.rdf/p27680
-LODOVICO,D'ARAGONA,http://dati.camera.it/ocd/persona.rdf/p27740
-EDUARDO,DI GIOVANNI,http://dati.camera.it/ocd/persona.rdf/p27780
-ALFONSO,RUBILLI,http://dati.camera.it/ocd/persona.rdf/p28450
-TIZIANO,TESSITORI,http://dati.camera.it/ocd/persona.rdf/p28560
-TOMMASO ANGELO,TONELLO,http://dati.camera.it/ocd/persona.rdf/p28570
-UMBERTO,TUPINI,http://dati.camera.it/ocd/persona.rdf/p28590
-GIOVANNI,UBERTI,http://dati.camera.it/ocd/persona.rdf/p28610
-FRANCESCO,ZANARDI,http://dati.camera.it/ocd/persona.rdf/p28680
-PIETRO,MASTINO,http://dati.camera.it/ocd/persona.rdf/p28150
-NINO,MAZZONI,http://dati.camera.it/ocd/persona.rdf/p28160
-UMBERTO,MERLIN,http://dati.camera.it/ocd/persona.rdf/p28170
-ENRICO,MOLE',http://dati.camera.it/ocd/persona.rdf/p28180
-RICCARDO,MOMIGLIANO,http://dati.camera.it/ocd/persona.rdf/p28200
-GABRIELE LUIGI,MONTEMARTINI,http://dati.camera.it/ocd/persona.rdf/p28220
-GIUSEPPE,PARATORE,http://dati.camera.it/ocd/persona.rdf/p28290
-GIOVANNI,PERSICO,http://dati.camera.it/ocd/persona.rdf/p28340
-GIUSEPPE ERNESTO,PIEMONTE,http://dati.camera.it/ocd/persona.rdf/p28350
-GIOVANNI,PORZIO,http://dati.camera.it/ocd/persona.rdf/p28370
-VITO,REALE,http://dati.camera.it/ocd/persona.rdf/p28400
-LEOPOLDO,BARACCO,http://dati.camera.it/ocd/persona.rdf/p27190
-TULLIO,BENEDETTI,http://dati.camera.it/ocd/persona.rdf/p27270
-GIOVANNI,BERTINI,http://dati.camera.it/ocd/persona.rdf/p27310
-GIOVANNI BATTISTA,BERTONE,http://dati.camera.it/ocd/persona.rdf/p27320
-ALESSANDRO,BOCCONI,http://dati.camera.it/ocd/persona.rdf/p27350
-GIOVANNI,BRASCHI,http://dati.camera.it/ocd/persona.rdf/p27400
-FRANCESCO,BUFFONI,http://dati.camera.it/ocd/persona.rdf/p27410
-GIUSEPPE,BUONOCORE,http://dati.camera.it/ocd/persona.rdf/p27420
-EMILIO,CANEVARI,http://dati.camera.it/ocd/persona.rdf/p27450
-ALBINO OTTAVIO,STELLA,http://dati.camera.it/ocd/persona.rdf/p26990
-BRUNO,VILLABRUNA,http://dati.camera.it/ocd/persona.rdf/p27080
-ALFREDO,DE MARSICO,http://dati.camera.it/ocd/persona.rdf/p300833
-EGIDIO,FAZIO,http://dati.camera.it/ocd/persona.rdf/p300797
-ROSARIO,PASQUALINO VASSALLO,http://dati.camera.it/ocd/persona.rdf/p300670
-ANTONIO,BOGGIANO PICO,http://dati.camera.it/ocd/persona.rdf/p300768
-FILIPPO,AMEDEO,http://dati.camera.it/ocd/persona.rdf/p300642
-PIETRO,ROMANI,http://dati.camera.it/ocd/persona.rdf/p300655
-ALESSANDRO,LESSONA,http://dati.camera.it/ocd/persona.rdf/p303964
-FILIPPO,PENNAVARIA,http://dati.camera.it/ocd/persona.rdf/p303752
-CLEMENTE,PISCITELLI,http://dati.camera.it/ocd/persona.rdf/p304417
-FEDERICO,MARCONCINI,http://dati.camera.it/ocd/persona.rdf/p303333
-FRANCESCO,MICELI PICARDI,http://dati.camera.it/ocd/persona.rdf/p303339
-GAETANO,PIERACCINI,http://dati.camera.it/ocd/persona.rdf/p303346
-RAFFAELE,CAPORALI,http://dati.camera.it/ocd/persona.rdf/p303294
-ALESSANDRO,CASATI,http://dati.camera.it/ocd/persona.rdf/p303297
-ALFREDO,FRASSATI,http://dati.camera.it/ocd/persona.rdf/p303313
-ENRICO,GONZALES,http://dati.camera.it/ocd/persona.rdf/p303317
-UGO,GUARIENTI,http://dati.camera.it/ocd/persona.rdf/p303319
-LUIGI,FABBRI,http://dati.camera.it/ocd/persona.rdf/p303741
-FRANCESCO,TERMINI,http://dati.camera.it/ocd/persona.rdf/p303365
-PIETRO,TOMASI DELLA TORRETTA,http://dati.camera.it/ocd/persona.rdf/p303368
-LUIGI,BENNANI,http://dati.camera.it/ocd/persona.rdf/p6790
-GIACOMO FILIPPO,NOVARO,http://dati.camera.it/ocd/persona.rdf/pr10036
-EUGENIO,OLIVERI,http://dati.camera.it/ocd/persona.rdf/pr10045
-LODOVICO,MORTARA,http://dati.camera.it/ocd/persona.rdf/pr10000
-ANTONIO,MOSCONI,http://dati.camera.it/ocd/persona.rdf/pr10002
-ALFREDO,BERTESI,http://dati.camera.it/ocd/persona.rdf/pr1001
-MICHELE,BERTETTI,http://dati.camera.it/ocd/persona.rdf/pr1002
-EUGENIO,NICCOLINI SIRIGATTI,http://dati.camera.it/ocd/persona.rdf/pr10023
-MARIO,NICOLIS DI ROBILANT,http://dati.camera.it/ocd/persona.rdf/pr10025
-GIOVANNI BATTISTA,PIRELLI,http://dati.camera.it/ocd/persona.rdf/pr10151
-ALBERTO,PIRONTI,http://dati.camera.it/ocd/persona.rdf/pr10152
-GIORGIO,PITACCO,http://dati.camera.it/ocd/persona.rdf/pr10155
-CESARE,POGGI,http://dati.camera.it/ocd/persona.rdf/pr10160
-VITTORIO,POLACCO,http://dati.camera.it/ocd/persona.rdf/pr10162
-CORIOLANO,PONZA DI SAN MARTINO,http://dati.camera.it/ocd/persona.rdf/pr10165
-CARLO,PORRO (DEI CONTI DI S.MARIA DELLA BICOCCA),http://dati.camera.it/ocd/persona.rdf/pr10169
-ERNESTO,PRESBITERO,http://dati.camera.it/ocd/persona.rdf/pr10178
-BELLOM,PESCAROLO,http://dati.camera.it/ocd/persona.rdf/pr10120
-ERNESTO,PESTALOZZA,http://dati.camera.it/ocd/persona.rdf/pr10124
-CARLO,PETITTI DI RORETO,http://dati.camera.it/ocd/persona.rdf/pr10126
-SETTIMIO,PIACENTINI,http://dati.camera.it/ocd/persona.rdf/pr10135
-PIETRO OTTORINO,PIANIGIANI,http://dati.camera.it/ocd/persona.rdf/pr10137
-GIORGIO,PICCOLI,http://dati.camera.it/ocd/persona.rdf/pr10140
-LUIGI,PIGORINI,http://dati.camera.it/ocd/persona.rdf/pr10144
-GABRIELE,PINCHERLE,http://dati.camera.it/ocd/persona.rdf/pr10145
-GASPARE DOMENICO,REGIS,http://dati.camera.it/ocd/persona.rdf/pr10209
-CARLO LEONE,REYNAUDI,http://dati.camera.it/ocd/persona.rdf/pr10213
-ARTURO,RICCARDI,http://dati.camera.it/ocd/persona.rdf/pr10214
-CORRADO,RICCI,http://dati.camera.it/ocd/persona.rdf/pr10217
-VITTORIO,ROLANDI RICCI,http://dati.camera.it/ocd/persona.rdf/pr10226
-MICHELE,ROMANO,http://dati.camera.it/ocd/persona.rdf/pr10228
-FELICE,BACCI,http://dati.camera.it/ocd/persona.rdf/pr1023
-FRANCESCO LORENZO,PULLÈ,http://dati.camera.it/ocd/persona.rdf/pr10191
-VITTORIO,PUNTONI,http://dati.camera.it/ocd/persona.rdf/pr10192
-ORONZO,QUARTA,http://dati.camera.it/ocd/persona.rdf/pr10197
-FERDINANDO,QUARTIERI,http://dati.camera.it/ocd/persona.rdf/pr10198
-PIO,RAJNA,http://dati.camera.it/ocd/persona.rdf/pr10205
-EMANUELE,PATERNÒ,http://dati.camera.it/ocd/persona.rdf/pr10093
-RANIERO,PAULUCCI DI CALBOLI,http://dati.camera.it/ocd/persona.rdf/pr10095
-GUGLIELMO,PECORI GIRALDI,http://dati.camera.it/ocd/persona.rdf/pr10097
-VITTORIO,PEGLION,http://dati.camera.it/ocd/persona.rdf/pr10099
-ANGELO,PERSICO,http://dati.camera.it/ocd/persona.rdf/pr10118
-SALVATORE,PAGLIANO,http://dati.camera.it/ocd/persona.rdf/pr10064
-ETTORE,PAIS,http://dati.camera.it/ocd/persona.rdf/pr10065
-SILVIO,BERTI,http://dati.camera.it/ocd/persona.rdf/pr1007
-NATALE,PALUMMO,http://dati.camera.it/ocd/persona.rdf/pr10073
-ALBERTO,PANSA,http://dati.camera.it/ocd/persona.rdf/pr10077
-GIOVANNI,AUTERI BERRETTA,http://dati.camera.it/ocd/persona.rdf/pr1008
-GIOVANNI,PASCALE,http://dati.camera.it/ocd/persona.rdf/pr10083
-ANGELO,PASSERINI,http://dati.camera.it/ocd/persona.rdf/pr10089
-NAPOLEONE,PASSERINI,http://dati.camera.it/ocd/persona.rdf/pr10090
-FRANCESCO,TORRACA,http://dati.camera.it/ocd/persona.rdf/pr10409
-LUIGI,TORRIGIANI,http://dati.camera.it/ocd/persona.rdf/pr10413
-EMANUELE,TRIGONA,http://dati.camera.it/ocd/persona.rdf/pr10421
-GIULIO CESARE,TASSONI,http://dati.camera.it/ocd/persona.rdf/pr10382
-PAOLO IGNAZIO MARIA,THAON DI REVEL,http://dati.camera.it/ocd/persona.rdf/pr10388
-ROMOLO,TITTONI,http://dati.camera.it/ocd/persona.rdf/pr10394
-ENRICO,TIVARONI,http://dati.camera.it/ocd/persona.rdf/pr10395
-NULLO,BALDINI,http://dati.camera.it/ocd/persona.rdf/pr1040
-GIUSEPPE,TOMMASI,http://dati.camera.it/ocd/persona.rdf/pr10402
-CARLO,SANDRELLI,http://dati.camera.it/ocd/persona.rdf/pr10273
-ENRICO,SAN MARTINO VALPERGA,http://dati.camera.it/ocd/persona.rdf/pr10278
-NICOLA,BADALONI,http://dati.camera.it/ocd/persona.rdf/pr1028
-DONATO,SANMINIATELLI,http://dati.camera.it/ocd/persona.rdf/pr10280
-CARLO,SANTUCCI,http://dati.camera.it/ocd/persona.rdf/pr10288
-FILIPPO,SAVORGNAN DI BRAZZÀ,http://dati.camera.it/ocd/persona.rdf/pr10296
-FRANCESCO,SCADUTO,http://dati.camera.it/ocd/persona.rdf/pr10298
-MICHELE,SCHERILLO,http://dati.camera.it/ocd/persona.rdf/pr10302
-GIUSEPPE,SCHININÀ DI SANT'ELIA,http://dati.camera.it/ocd/persona.rdf/pr10305
-CATALDO,SCHIRALLI,http://dati.camera.it/ocd/persona.rdf/pr10306
-FRANCESCO,SCHUPFER,http://dati.camera.it/ocd/persona.rdf/pr10307
-VITTORIO,SCIALOJA,http://dati.camera.it/ocd/persona.rdf/pr10308
-BALDO,ROSSI,http://dati.camera.it/ocd/persona.rdf/pr10241
-GIOVANNI,ROSSI,http://dati.camera.it/ocd/persona.rdf/pr10242
-LUIGI,RUSSO,http://dati.camera.it/ocd/persona.rdf/pr10250
-FRANCESCO,SALATA,http://dati.camera.it/ocd/persona.rdf/pr10257
-CESARE,SALDINI,http://dati.camera.it/ocd/persona.rdf/pr10259
-ANGELO,SALMOIRAGHI,http://dati.camera.it/ocd/persona.rdf/pr10262
-GIUSEPPE MARIA,SALVAGO RAGGI,http://dati.camera.it/ocd/persona.rdf/pr10265
-ELVIDIO,SALVAREZZA,http://dati.camera.it/ocd/persona.rdf/pr10267
-LUIGI,SPEZZOTTI,http://dati.camera.it/ocd/persona.rdf/pr10350
-NICOLA,SQUITTI DI PALERMITI E GUARNA,http://dati.camera.it/ocd/persona.rdf/pr10355
-DAVID,SUPINO,http://dati.camera.it/ocd/persona.rdf/pr10363
-PAOLINO,TADDEI,http://dati.camera.it/ocd/persona.rdf/pr10367
-NINO,TAMASSIA,http://dati.camera.it/ocd/persona.rdf/pr10372
-GIOVANNI,SECHI,http://dati.camera.it/ocd/persona.rdf/pr10315
-ARRIGO,SERPIERI,http://dati.camera.it/ocd/persona.rdf/pr10322
-AUGUSTO,SETTI,http://dati.camera.it/ocd/persona.rdf/pr10327
-GINO,BAGLIONI,http://dati.camera.it/ocd/persona.rdf/pr1034
-GIUSEPPE,COBOLLI GIGLI,http://dati.camera.it/ocd/persona.rdf/pr10723
-CARLO,CARNAZZA,http://dati.camera.it/ocd/persona.rdf/pr10660
-ARALDO,CROLLALANZA (DI),http://dati.camera.it/ocd/persona.rdf/pr10694
-GIUSEPPE,FRIGNANI,http://dati.camera.it/ocd/persona.rdf/pr10798
-RICCARDO,DEL GIUDICE,http://dati.camera.it/ocd/persona.rdf/pr10747
-FRANCESCO,ERCOLE,http://dati.camera.it/ocd/persona.rdf/pr10762
-AMEDEO,FANI,http://dati.camera.it/ocd/persona.rdf/pr10766
-ANTONIO STEFANO,BENNI,http://dati.camera.it/ocd/persona.rdf/pr10560
-BRUNO,BIAGI,http://dati.camera.it/ocd/persona.rdf/pr10567
-TOMMASO,BISI,http://dati.camera.it/ocd/persona.rdf/pr10571
-GUIDO,BUFFARINI GUIDI,http://dati.camera.it/ocd/persona.rdf/pr10581
-ANGELO,BANDERALI,http://dati.camera.it/ocd/persona.rdf/pr1051
-GIOVANNI BATTISTA,BACCARINI,http://dati.camera.it/ocd/persona.rdf/pr10533
-ZENONE,BENINI,http://dati.camera.it/ocd/persona.rdf/pr10630
-CARLO ALBERTO,BIGGINI,http://dati.camera.it/ocd/persona.rdf/pr10635
-ORESTE,BONOMI,http://dati.camera.it/ocd/persona.rdf/pr10639
-EMILIO,CALDARA,http://dati.camera.it/ocd/persona.rdf/pr10643
-GABRIELE,CANELLI,http://dati.camera.it/ocd/persona.rdf/pr10647
-GIOVANNI,CAO,http://dati.camera.it/ocd/persona.rdf/pr10650
-EDOARDO DINO,ALFIERI,http://dati.camera.it/ocd/persona.rdf/pr10590
-ERMANNO,AMICUCCI,http://dati.camera.it/ocd/persona.rdf/pr10592
-AGEO,ARCANGELI,http://dati.camera.it/ocd/persona.rdf/pr10600
-DOMENICO,ARCIDIACONO,http://dati.camera.it/ocd/persona.rdf/pr10601
-ALBERTO,ASQUINI,http://dati.camera.it/ocd/persona.rdf/pr10610
-ALFONSO,VALERIO,http://dati.camera.it/ocd/persona.rdf/pr10438
-UBERTO,VISCONTI DI MODRONE,http://dati.camera.it/ocd/persona.rdf/pr10476
-GIROLAMO,VITELLI,http://dati.camera.it/ocd/persona.rdf/pr10478
-GIUSEPPE,VOLPI DI MISURATA,http://dati.camera.it/ocd/persona.rdf/pr10481
-VITO,VOLTERRA,http://dati.camera.it/ocd/persona.rdf/pr10482
-LUIGI,ZILIOTTO,http://dati.camera.it/ocd/persona.rdf/pr10486
-VITTORIO,ZIPPEL,http://dati.camera.it/ocd/persona.rdf/pr10487
-LUIGI,ZUCCARI,http://dati.camera.it/ocd/persona.rdf/pr10491
-PAOLO,ZUNINO,http://dati.camera.it/ocd/persona.rdf/pr10493
-VITTORIO,ASINARI DI BERNEZZO,http://dati.camera.it/ocd/persona.rdf/pr10496
-GIOVANNI ANTONIO,VANNI,http://dati.camera.it/ocd/persona.rdf/pr10443
-LUIGI,VENOSTA,http://dati.camera.it/ocd/persona.rdf/pr10451
-ETTORE,VIGANÒ,http://dati.camera.it/ocd/persona.rdf/pr10463
-GIACOMO,VIGLIANI,http://dati.camera.it/ocd/persona.rdf/pr10465
-ANTONIO,LEONI,http://dati.camera.it/ocd/persona.rdf/pr10864
-LUIGI,LOJACONO,http://dati.camera.it/ocd/persona.rdf/pr10873
-LUIGI,BASSO,http://dati.camera.it/ocd/persona.rdf/pr1088
-GIOVANNI,HOST VENTURI,http://dati.camera.it/ocd/persona.rdf/pr10843
-GUIDO,JUNG,http://dati.camera.it/ocd/persona.rdf/pr10849
-FERRUCCIO,LANTINI,http://dati.camera.it/ocd/persona.rdf/pr10856
-SERGIO,NANNINI,http://dati.camera.it/ocd/persona.rdf/pr10952
-GIACOMO,MEDICI DEL VASCELLO,http://dati.camera.it/ocd/persona.rdf/pr10920
-VIRGILIO,SCEK,http://dati.camera.it/ocd/persona.rdf/pr11286
-DOMENICO,TRIPEPI,http://dati.camera.it/ocd/persona.rdf/pr11293
-GENUZIO,BENTINI,http://dati.camera.it/ocd/persona.rdf/pr1131
-DOMENICO,CAVAGNARI,http://dati.camera.it/ocd/persona.rdf/pr11316
-FELICE,GUARNERI,http://dati.camera.it/ocd/persona.rdf/pr11318
-GIUSEPPE,PEVERELLI,http://dati.camera.it/ocd/persona.rdf/pr11319
-GIOVANNI,MARINELLI,http://dati.camera.it/ocd/persona.rdf/pr11252
-FRANCESCO,MAURO,http://dati.camera.it/ocd/persona.rdf/pr11255
-ALDO,NETTI,http://dati.camera.it/ocd/persona.rdf/pr11264
-GIULIO,PADULLI,http://dati.camera.it/ocd/persona.rdf/pr11265
-GIUSEPPE,BENEDUCE,http://dati.camera.it/ocd/persona.rdf/pr1127
-ANTONIO,POGATSCHNIG,http://dati.camera.it/ocd/persona.rdf/pr11277
-UMBERTO,ALBINI,http://dati.camera.it/ocd/persona.rdf/pr11322
-TULLIO,CIANETTI,http://dati.camera.it/ocd/persona.rdf/pr11153
-BORTOLO,BELOTTI,http://dati.camera.it/ocd/persona.rdf/pr1116
-EGIDIO,GENNARI,http://dati.camera.it/ocd/persona.rdf/pr11163
-OTTORINO,PICCINATO,http://dati.camera.it/ocd/persona.rdf/pr11168
-GAETANO,POLVERELLI,http://dati.camera.it/ocd/persona.rdf/pr11169
-FRANCESCO,BELTRAMI,http://dati.camera.it/ocd/persona.rdf/pr1117
-CESARE,TUMEDEI,http://dati.camera.it/ocd/persona.rdf/pr11176
-DARIO,LUPI,http://dati.camera.it/ocd/persona.rdf/pr11179
-AMBROGIO,BELLONI,http://dati.camera.it/ocd/persona.rdf/pr1114
-PIETRO,FAUDELLA,http://dati.camera.it/ocd/persona.rdf/pr11226
-ANTONINO,GALFO RUTA,http://dati.camera.it/ocd/persona.rdf/pr11227
-BARBATO,GATTELLI,http://dati.camera.it/ocd/persona.rdf/pr11230
-EMO,GNUDI,http://dati.camera.it/ocd/persona.rdf/pr11233
-LUIGI,LA ROSA,http://dati.camera.it/ocd/persona.rdf/pr11247
-LUCA,BELTRAMI,http://dati.camera.it/ocd/persona.rdf/pr1119
-GIUSEPPE,BASTIANINI,http://dati.camera.it/ocd/persona.rdf/pr11199
-GIUSEPPE,BELLONE,http://dati.camera.it/ocd/persona.rdf/pr11203
-GAETANO,POSTIGLIONE,http://dati.camera.it/ocd/persona.rdf/pr11008
-GALILEO,BEGHI,http://dati.camera.it/ocd/persona.rdf/pr1101
-UMBERTO,PUPPINI,http://dati.camera.it/ocd/persona.rdf/pr11014
-ANTONIO,PUTZOLU,http://dati.camera.it/ocd/persona.rdf/pr11015
-LUIGI,RAZZA,http://dati.camera.it/ocd/persona.rdf/pr11024
-GIOVANNI,PALA,http://dati.camera.it/ocd/persona.rdf/pr10969
-GIOVANNI,BAVIERA,http://dati.camera.it/ocd/persona.rdf/pr1097
-SERGIO,PANUNZIO,http://dati.camera.it/ocd/persona.rdf/pr10973
-FERDINANDO,PIERAZZI,http://dati.camera.it/ocd/persona.rdf/pr10999
-FULVIO,SUVICH,http://dati.camera.it/ocd/persona.rdf/pr11093
-GIUSEPPE,TASSINARI,http://dati.camera.it/ocd/persona.rdf/pr11098
-ATTILIO,TERUZZI,http://dati.camera.it/ocd/persona.rdf/pr11100
-GIUSEPPE,BELLINI,http://dati.camera.it/ocd/persona.rdf/pr1111
-RAFFAELLO,RICCARDI,http://dati.camera.it/ocd/persona.rdf/pr11030
-RENATO,RICCI,http://dati.camera.it/ocd/persona.rdf/pr11032
-GUIDO,RISPOLI,http://dati.camera.it/ocd/persona.rdf/pr11037
-RUGGERO,ROMANO,http://dati.camera.it/ocd/persona.rdf/pr11040
-ETTORE BERNARDO,ROSBOCH,http://dati.camera.it/ocd/persona.rdf/pr11042
-AMILCARE,ROSSI,http://dati.camera.it/ocd/persona.rdf/pr11043
-EDMONDO,ROSSONI,http://dati.camera.it/ocd/persona.rdf/pr11049
-AUGUSTO,BATTAGLIERI,http://dati.camera.it/ocd/persona.rdf/pr1095
-LUIGI,SCARFIOTTI,http://dati.camera.it/ocd/persona.rdf/pr11658
-ANTONIO,SORICE,http://dati.camera.it/ocd/persona.rdf/pr11665
-GUTIEREZ MICHELE,SPADAFORA,http://dati.camera.it/ocd/persona.rdf/pr11667
-RENATO,RINALDI,http://dati.camera.it/ocd/persona.rdf/pr11630
-GIUSEPPE,LOMBRASSA,http://dati.camera.it/ocd/persona.rdf/pr11529
-GIUSEPPE,GORLA,http://dati.camera.it/ocd/persona.rdf/pr11504
-ALFREDO,GUZZONI,http://dati.camera.it/ocd/persona.rdf/pr11512
-CARLO,PARESCHI,http://dati.camera.it/ocd/persona.rdf/pr11592
-MICHELE,PASCOLATO,http://dati.camera.it/ocd/persona.rdf/pr11593
-GIAMPIETRO DOMENICO,PELLEGRINI,http://dati.camera.it/ocd/persona.rdf/pr11600
-DOMENICO,BREZZI,http://dati.camera.it/ocd/persona.rdf/pr1156
-LUIGI,CONTU,http://dati.camera.it/ocd/persona.rdf/pr11416
-EUGENIO,BERGAMASCO,http://dati.camera.it/ocd/persona.rdf/pr1142
-GUIDO,BERGAMO,http://dati.camera.it/ocd/persona.rdf/pr1143
-ADOLFO,BERARDELLI,http://dati.camera.it/ocd/persona.rdf/pr1134
-AGOSTINO,BERENINI,http://dati.camera.it/ocd/persona.rdf/pr1139
-RINO CORSO,FOUGIER,http://dati.camera.it/ocd/persona.rdf/pr11470
-GEROLAMO,BRANDOLIN,http://dati.camera.it/ocd/persona.rdf/pr1148
-CARLO,FABRIZI,http://dati.camera.it/ocd/persona.rdf/pr11451
-CARLO,FAVAGROSSA,http://dati.camera.it/ocd/persona.rdf/pr11457
-CARLO GIUSEPPE,BIANCHI,http://dati.camera.it/ocd/persona.rdf/pr1210
-GIUSEPPE,BEVIONE,http://dati.camera.it/ocd/persona.rdf/pr1205
-UMBERTO,BIANCHI,http://dati.camera.it/ocd/persona.rdf/pr1218
-VINCENZO,BIANCHI,http://dati.camera.it/ocd/persona.rdf/pr1219
-GIUSEPPE,BIANCHI,http://dati.camera.it/ocd/persona.rdf/pr1215
-LEONARDO,BIANCHI,http://dati.camera.it/ocd/persona.rdf/pr1216
-ANTONIO,SCUERO,http://dati.camera.it/ocd/persona.rdf/pr11956
-GIOVANNI,BRUSASCA,http://dati.camera.it/ocd/persona.rdf/pr1197
-FRANCESCO,PRICOLO,http://dati.camera.it/ocd/persona.rdf/pr11786
-LUIGI,FECIA DI COSSATO,http://dati.camera.it/ocd/persona.rdf/pr11854
-ALBERTO,PARIANI,http://dati.camera.it/ocd/persona.rdf/pr11864
-GIOVANNI,MANENTI,http://dati.camera.it/ocd/persona.rdf/pr11837
-UBALDO,SODDU,http://dati.camera.it/ocd/persona.rdf/pr12325
-ROMEO,CAMPANINI,http://dati.camera.it/ocd/persona.rdf/pr1530
-GIOVANNI ANTONIO,CAMPOSTRINI,http://dati.camera.it/ocd/persona.rdf/pr1538
-GIACOMO,CALLERI,http://dati.camera.it/ocd/persona.rdf/pr1440
-GIOVANNI,CALÒ,http://dati.camera.it/ocd/persona.rdf/pr1442
-ERNESTO,ARTOM,http://dati.camera.it/ocd/persona.rdf/pr145
-ARTURO,CAROTI,http://dati.camera.it/ocd/persona.rdf/pr1463
-BALDASSARRE,CASTIGLIONI,http://dati.camera.it/ocd/persona.rdf/pr1418
-ENRICO,CARBONI BOJ,http://dati.camera.it/ocd/persona.rdf/pr1513
-VINCENZO,CARBONI,http://dati.camera.it/ocd/persona.rdf/pr1515
-VINCENZO,CAMERINI,http://dati.camera.it/ocd/persona.rdf/pr1521
-MARIO,CARUSI,http://dati.camera.it/ocd/persona.rdf/pr1473
-RAFFAELE,CARUSO,http://dati.camera.it/ocd/persona.rdf/pr1475
-ANTONIO,CIVELLI,http://dati.camera.it/ocd/persona.rdf/pr1482
-PASQUALE,CLEMENTE,http://dati.camera.it/ocd/persona.rdf/pr1485
-FRANCESCO,COCCO ORTU,http://dati.camera.it/ocd/persona.rdf/pr1491
-FEDERICO,COCUZZA,http://dati.camera.it/ocd/persona.rdf/pr1496
-LORENZO,COCUZZA,http://dati.camera.it/ocd/persona.rdf/pr1497
-ANTONIO,CARDARELLI,http://dati.camera.it/ocd/persona.rdf/pr1329
-ALFREDO,BOUVIER,http://dati.camera.it/ocd/persona.rdf/pr1292
-GIACOMO,BONICELLI,http://dati.camera.it/ocd/persona.rdf/pr1376
-LELIO,BONIN LONGARE,http://dati.camera.it/ocd/persona.rdf/pr1377
-EGISTO,CAGNONI,http://dati.camera.it/ocd/persona.rdf/pr1387
-GIACOMO,CALABRIA,http://dati.camera.it/ocd/persona.rdf/pr1389
-CLEMENTE,CALDESI,http://dati.camera.it/ocd/persona.rdf/pr1396
-CARLO,CALISSE,http://dati.camera.it/ocd/persona.rdf/pr1400
-ARMANDO,BUSSI,http://dati.camera.it/ocd/persona.rdf/pr1344
-CARLO,BONARDI,http://dati.camera.it/ocd/persona.rdf/pr1362
-CARLO,TIENGO,http://dati.camera.it/ocd/persona.rdf/pr12290
-LUIGI,BOSI,http://dati.camera.it/ocd/persona.rdf/pr1240
-PAOLO,BIGNAMI,http://dati.camera.it/ocd/persona.rdf/pr1245
-CLODOALDO,BINOTTI,http://dati.camera.it/ocd/persona.rdf/pr1253
-ROBERTO,BISCARETTI DI RUFFIA,http://dati.camera.it/ocd/persona.rdf/pr1255
-SESTO,BISOGNI,http://dati.camera.it/ocd/persona.rdf/pr1256
-DANTE,ARGENTIERI,http://dati.camera.it/ocd/persona.rdf/pr126
-LUIGI,BORSARELLI DI RIFREDDO,http://dati.camera.it/ocd/persona.rdf/pr1231
-EUGENIO,CHIESA,http://dati.camera.it/ocd/persona.rdf/pr1680
-VITTORIO,CIPELLI,http://dati.camera.it/ocd/persona.rdf/pr1757
-MARCO,CIRIANI,http://dati.camera.it/ocd/persona.rdf/pr1763
-GIUSEPPE,CIRINCIONE,http://dati.camera.it/ocd/persona.rdf/pr1764
-BENEDETTO,CIRMENI,http://dati.camera.it/ocd/persona.rdf/pr1765
-ALESSANDRO,DE GIOVANNI,http://dati.camera.it/ocd/persona.rdf/pr1768
-ANTONIO,CEFALY,http://dati.camera.it/ocd/persona.rdf/pr1726
-GIOVANNI,CELESIA DI VEGLIASCO,http://dati.camera.it/ocd/persona.rdf/pr1728
-GUIDO,CELLI,http://dati.camera.it/ocd/persona.rdf/pr1732
-MARIO,CERMENATI,http://dati.camera.it/ocd/persona.rdf/pr1746
-GIOVANNI,CICOGNA,http://dati.camera.it/ocd/persona.rdf/pr1747
-CAMILLO,CIMATI,http://dati.camera.it/ocd/persona.rdf/pr1749
-GAETANO,CIOCCHI,http://dati.camera.it/ocd/persona.rdf/pr1755
-LUIGI,CANZI,http://dati.camera.it/ocd/persona.rdf/pr1564
-PIETRO,CAPASSO,http://dati.camera.it/ocd/persona.rdf/pr1568
-ALFREDO,CAPECE MINUTOLO DI BUGNANO,http://dati.camera.it/ocd/persona.rdf/pr1570
-LUIGI,CAPITANIO,http://dati.camera.it/ocd/persona.rdf/pr1578
-INNOCENZO,CAPPA,http://dati.camera.it/ocd/persona.rdf/pr1587
-GIUSEPPE MARIA,CAPPELLERI,http://dati.camera.it/ocd/persona.rdf/pr1589
-FELICE NAPOLEONE,CANEVARO,http://dati.camera.it/ocd/persona.rdf/pr1551
-VITTORIO,CANNAVINA,http://dati.camera.it/ocd/persona.rdf/pr1553
-LUIGI,CAVALLI,http://dati.camera.it/ocd/persona.rdf/pr1652
-ALFREDO,CODACCI PISANELLI,http://dati.camera.it/ocd/persona.rdf/pr1653
-GIROLAMO,COFFARI,http://dati.camera.it/ocd/persona.rdf/pr1655
-GIULIO,CASALINI,http://dati.camera.it/ocd/persona.rdf/pr1594
-FRANCESCO,CASARETTO,http://dati.camera.it/ocd/persona.rdf/pr1596
-CALOGERO,CASCINO,http://dati.camera.it/ocd/persona.rdf/pr1603
-GIUSEPPE,CASOLI,http://dati.camera.it/ocd/persona.rdf/pr1609
-FABRIZIO,COLONNA AVELLA,http://dati.camera.it/ocd/persona.rdf/pr1826
-PROSPERO,COLONNA,http://dati.camera.it/ocd/persona.rdf/pr1831
-GASPARE,COLOSIMO,http://dati.camera.it/ocd/persona.rdf/pr1833
-CARLO,PANIZZARDI,http://dati.camera.it/ocd/persona.rdf/pr184
-LUIGI,CONGIU,http://dati.camera.it/ocd/persona.rdf/pr1849
-CARLO,CUCCA,http://dati.camera.it/ocd/persona.rdf/pr1787
-GIACOMO,CURRENO DI SANTA MADDALENA,http://dati.camera.it/ocd/persona.rdf/pr1800
-FRANCESCO,CURTI,http://dati.camera.it/ocd/persona.rdf/pr1801
-GIUSEPPE,DE NAVA,http://dati.camera.it/ocd/persona.rdf/pr1811
-FEDELE,DE NOVELLIS,http://dati.camera.it/ocd/persona.rdf/pr1816
-DAVIDE,CONSIGLIO,http://dati.camera.it/ocd/persona.rdf/pr1851
-GIOVANNI BATTISTA,CORIS,http://dati.camera.it/ocd/persona.rdf/pr1869
-ANSELMO,CIAPPI,http://dati.camera.it/ocd/persona.rdf/pr1698
-FERDINANDO,CAZZAMALLI,http://dati.camera.it/ocd/persona.rdf/pr1721
-NAPOLEONE,COLAJANNI,http://dati.camera.it/ocd/persona.rdf/pr1658
-ENRICO,DUGONI,http://dati.camera.it/ocd/persona.rdf/pr2078
-FRANCESCO,DURANTE,http://dati.camera.it/ocd/persona.rdf/pr2080
-PIETRO,ELLERO,http://dati.camera.it/ocd/persona.rdf/pr2084
-UGO,DA COMO,http://dati.camera.it/ocd/persona.rdf/pr2048
-MANSUETO,DE AMICIS,http://dati.camera.it/ocd/persona.rdf/pr2067
-LUIGI,DE ANDREIS,http://dati.camera.it/ocd/persona.rdf/pr2068
-AURELIO,DRAGO,http://dati.camera.it/ocd/persona.rdf/pr2075
-BIAGIO,DI PIETRA,http://dati.camera.it/ocd/persona.rdf/pr2145
-ARNALDO,DELLO SBARBA,http://dati.camera.it/ocd/persona.rdf/pr2164
-MARCO,DI SALUZZO DI PAESANA,http://dati.camera.it/ocd/persona.rdf/pr2174
-VINCENZO,DI SALVO,http://dati.camera.it/ocd/persona.rdf/pr2175
-FRANCESCO,DEGNI,http://dati.camera.it/ocd/persona.rdf/pr2126
-ALBERTO,DI MARZO,http://dati.camera.it/ocd/persona.rdf/pr2137
-FRANCESCO,D'ALESSIO,http://dati.camera.it/ocd/persona.rdf/pr1951
-NICOLA,D'ALIFE GAETANI,http://dati.camera.it/ocd/persona.rdf/pr1953
-GIUSEPPE,D'ANDREA,http://dati.camera.it/ocd/persona.rdf/pr1959
-PIO,DONATI,http://dati.camera.it/ocd/persona.rdf/pr1976
-FILIPPO,CRISPOLTI,http://dati.camera.it/ocd/persona.rdf/pr1918
-ETTORE,CROCE,http://dati.camera.it/ocd/persona.rdf/pr1919
-VITO,DE BELLIS,http://dati.camera.it/ocd/persona.rdf/pr1922
-GIUSEPPE,DE CAPITANI D'ARZAGO,http://dati.camera.it/ocd/persona.rdf/pr1934
-ROSARIO,CUTRUFELLI,http://dati.camera.it/ocd/persona.rdf/pr1941
-GIUSEPPE,CUZZI,http://dati.camera.it/ocd/persona.rdf/pr1945
-UGO,DI SANT'ONOFRIO DEL CASTILLO,http://dati.camera.it/ocd/persona.rdf/pr2022
-GIUSEPPE,DI STEFANO NAPOLITANI,http://dati.camera.it/ocd/persona.rdf/pr2027
-FRANCESCO SAVERIO,D'AYALA,http://dati.camera.it/ocd/persona.rdf/pr2040
-PIETRO,D'AYALA VALVA,http://dati.camera.it/ocd/persona.rdf/pr2042
-ENRICO,DE RENZI,http://dati.camera.it/ocd/persona.rdf/pr1981
-GIUSEPPE,DE RISEIS,http://dati.camera.it/ocd/persona.rdf/pr1984
-ERRICO,DE SETA,http://dati.camera.it/ocd/persona.rdf/pr1997
-GIULIO,ADAMOLI,http://dati.camera.it/ocd/persona.rdf/pr20
-RAFFAELE,COTUGNO,http://dati.camera.it/ocd/persona.rdf/pr1910
-LUIGI,CREDARO,http://dati.camera.it/ocd/persona.rdf/pr1912
-GIUSEPPE,CORNALBA,http://dati.camera.it/ocd/persona.rdf/pr1872
-CAMILLO,CORRADINI,http://dati.camera.it/ocd/persona.rdf/pr1874
-CESARE,FERRERO DI CAMBIANO,http://dati.camera.it/ocd/persona.rdf/pr2356
-ENRICO,FERRI,http://dati.camera.it/ocd/persona.rdf/pr2358
-GIACOMO,FERRI,http://dati.camera.it/ocd/persona.rdf/pr2360
-IGNAZIO,FILÌ ASTOLFONE,http://dati.camera.it/ocd/persona.rdf/pr2370
-EMILIO,FAELLI,http://dati.camera.it/ocd/persona.rdf/pr2376
-VITTORIO,GIACCONE,http://dati.camera.it/ocd/persona.rdf/pr2325
-CARLO,FUMAROLA,http://dati.camera.it/ocd/persona.rdf/pr2407
-FILIPPO,GARAVETTI,http://dati.camera.it/ocd/persona.rdf/pr2425
-EMANUELE,FINOCCHIARO APRILE,http://dati.camera.it/ocd/persona.rdf/pr2477
-EUGENIO,FAINA,http://dati.camera.it/ocd/persona.rdf/pr2378
-ALFREDO,FALCIONI,http://dati.camera.it/ocd/persona.rdf/pr2382
-GIOVANNI,FALDELLA,http://dati.camera.it/ocd/persona.rdf/pr2387
-FERNANDO,GAROSI,http://dati.camera.it/ocd/persona.rdf/pr2493
-ARNALDO,AGNELLI,http://dati.camera.it/ocd/persona.rdf/pr25
-GIROLAMO,GATTI,http://dati.camera.it/ocd/persona.rdf/pr2501
-SECONDO,FROLA,http://dati.camera.it/ocd/persona.rdf/pr2399
-LODOVICO,GAVAZZI,http://dati.camera.it/ocd/persona.rdf/pr2505
-LUIGI,FRONTINI,http://dati.camera.it/ocd/persona.rdf/pr2401
-OTTAVIO,FROVA,http://dati.camera.it/ocd/persona.rdf/pr2402
-LODOVICO,FULCI,http://dati.camera.it/ocd/persona.rdf/pr2404
-LUIGI,FULCI,http://dati.camera.it/ocd/persona.rdf/pr2405
-ANGELO,GALENO,http://dati.camera.it/ocd/persona.rdf/pr2450
-GIOVANNI,FRANCICA NAVA,http://dati.camera.it/ocd/persona.rdf/pr2223
-GIUSEPPE,FRASCARA,http://dati.camera.it/ocd/persona.rdf/pr2230
-FRANCESCO,FARIOLI,http://dati.camera.it/ocd/persona.rdf/pr2471
-FRANCESCO SAVERIO,FINO,http://dati.camera.it/ocd/persona.rdf/pr2473
-CARLO,FABRI,http://dati.camera.it/ocd/persona.rdf/pr2245
-PIERO,GINORI CONTI,http://dati.camera.it/ocd/persona.rdf/pr2542
-CESARE,GIOPPI,http://dati.camera.it/ocd/persona.rdf/pr2547
-GIUSEPPE,GIORDANO APOSTOLI,http://dati.camera.it/ocd/persona.rdf/pr2548
-ALESSANDRO,GUACCERO,http://dati.camera.it/ocd/persona.rdf/pr2554
-AMANTO,DI FAUSTO,http://dati.camera.it/ocd/persona.rdf/pr2194
-LUIGI,DENTICE DI FRASSO,http://dati.camera.it/ocd/persona.rdf/pr2197
-FILIPPO,DENTICE DI ACCADIA,http://dati.camera.it/ocd/persona.rdf/pr2201
-ATTILIO,FONTANA,http://dati.camera.it/ocd/persona.rdf/pr2513
-DOMENICO,FRACASSI DI TORRE ROSSANO,http://dati.camera.it/ocd/persona.rdf/pr2526
-LUIGI,FERA,http://dati.camera.it/ocd/persona.rdf/pr2294
-ANTONIO,FRADELETTO,http://dati.camera.it/ocd/persona.rdf/pr2529
-TITO,GALLA,http://dati.camera.it/ocd/persona.rdf/pr2297
-DANTE,GALLANI,http://dati.camera.it/ocd/persona.rdf/pr2298
-EMILIO,GALLAVRESI,http://dati.camera.it/ocd/persona.rdf/pr2299
-CALLISTO,GIAVAZZI,http://dati.camera.it/ocd/persona.rdf/pr2535
-CARLO,GALLINI,http://dati.camera.it/ocd/persona.rdf/pr2308
-GIUSEPPE,GENTILE,http://dati.camera.it/ocd/persona.rdf/pr2262
-GERINO,GERINI,http://dati.camera.it/ocd/persona.rdf/pr2268
-GIAN FRANCESCO,GHERARDINI,http://dati.camera.it/ocd/persona.rdf/pr2275
-ARTURO,MAESTRI,http://dati.camera.it/ocd/persona.rdf/pr2876
-MICHELE,MAITILASSO,http://dati.camera.it/ocd/persona.rdf/pr2896
-IGNAZIO,LARUSSA,http://dati.camera.it/ocd/persona.rdf/pr2834
-GENNARO,MARCIANO,http://dati.camera.it/ocd/persona.rdf/pr2841
-ARTURO,MARESCALCHI,http://dati.camera.it/ocd/persona.rdf/pr2851
-LUIGI,MARESCALCHI GRAVINA,http://dati.camera.it/ocd/persona.rdf/pr2852
-ARTURO,LUZZATTO,http://dati.camera.it/ocd/persona.rdf/pr2865
-DOMENICO,MAJOLO,http://dati.camera.it/ocd/persona.rdf/pr2902
-LEOPOLDO,GIUNTI,http://dati.camera.it/ocd/persona.rdf/pr2735
-GIROLAMO,GIUSSO,http://dati.camera.it/ocd/persona.rdf/pr2738
-GESUALDO,LIBERTINI PLUCHINOTTA,http://dati.camera.it/ocd/persona.rdf/pr2747
-PIETRO,LISSIA,http://dati.camera.it/ocd/persona.rdf/pr2753
-GIOVANNI,LO MONTE,http://dati.camera.it/ocd/persona.rdf/pr2756
-AGOSTINO,LO PIANO,http://dati.camera.it/ocd/persona.rdf/pr2757
-VITO,LUCIANI,http://dati.camera.it/ocd/persona.rdf/pr2701
-GIUSEPPE,GIRARDINI,http://dati.camera.it/ocd/persona.rdf/pr2721
-VINCENZO,GIUFFRIDA,http://dati.camera.it/ocd/persona.rdf/pr2728
-FERDINANDO,MARTINI,http://dati.camera.it/ocd/persona.rdf/pr2793
-GIOVANNI,INDRI,http://dati.camera.it/ocd/persona.rdf/pr2820
-CALCEDONIO,INGHILLERI,http://dati.camera.it/ocd/persona.rdf/pr2821
-GIUSEPPE,DI TRABIA (LANZA),http://dati.camera.it/ocd/persona.rdf/pr2826
-GIORGIO,GUGLIELMI,http://dati.camera.it/ocd/persona.rdf/pr2775
-ALESSANDRO,GUICCIOLI,http://dati.camera.it/ocd/persona.rdf/pr2779
-ULDERICO,LEVI,http://dati.camera.it/ocd/persona.rdf/pr2607
-VINCENZO,JANFOLLA,http://dati.camera.it/ocd/persona.rdf/pr2617
-DOMENICO,GRANDI,http://dati.camera.it/ocd/persona.rdf/pr2581
-GIACOMO,AGNESI,http://dati.camera.it/ocd/persona.rdf/pr26
-EMANUELE,GREPPI,http://dati.camera.it/ocd/persona.rdf/pr2678
-PASQUALE,GRIPPO,http://dati.camera.it/ocd/persona.rdf/pr2685
-PIERO,LUCCA,http://dati.camera.it/ocd/persona.rdf/pr2690
-LUIGI,LUCCHINI,http://dati.camera.it/ocd/persona.rdf/pr2694
-ARNALDO,LUCCI,http://dati.camera.it/ocd/persona.rdf/pr2695
-ALBERTO,AGNETTI,http://dati.camera.it/ocd/persona.rdf/pr27
-PRIMO,LAGASI,http://dati.camera.it/ocd/persona.rdf/pr2643
-VINCENZO EDOARDO,LOJODICE,http://dati.camera.it/ocd/persona.rdf/pr2648
-VITTORIO,LOLLINI,http://dati.camera.it/ocd/persona.rdf/pr2650
-GIOVANNI MARIA,LONGINOTTI,http://dati.camera.it/ocd/persona.rdf/pr2655
-LUIGI,MANGIAGALLI,http://dati.camera.it/ocd/persona.rdf/pr2939
-CAMILLO,MANGO,http://dati.camera.it/ocd/persona.rdf/pr2941
-GENNARO,MANNA,http://dati.camera.it/ocd/persona.rdf/pr2942
-ANSELMO,MARABINI,http://dati.camera.it/ocd/persona.rdf/pr2954
-ALBERTO,MALATESTA,http://dati.camera.it/ocd/persona.rdf/pr2910
-NERIO,MALVEZZI DÈ MEDICI,http://dati.camera.it/ocd/persona.rdf/pr2919
-GIOVANNI,MERIZZI,http://dati.camera.it/ocd/persona.rdf/pr3247
-GIOVANNI,MERLONI,http://dati.camera.it/ocd/persona.rdf/pr3250
-EDOARDO,OLLANDINI,http://dati.camera.it/ocd/persona.rdf/pr3222
-PAOLO,ORANO,http://dati.camera.it/ocd/persona.rdf/pr3226
-NICOLÒ,MELODIA,http://dati.camera.it/ocd/persona.rdf/pr3110
-VINCENZO,MENDAIA,http://dati.camera.it/ocd/persona.rdf/pr3113
-ALCEO,MASSARUCCI,http://dati.camera.it/ocd/persona.rdf/pr3118
-PASQUALE,MATERI,http://dati.camera.it/ocd/persona.rdf/pr3126
-EMILIO,MORINI,http://dati.camera.it/ocd/persona.rdf/pr3140
-LUIGI,MORANDI,http://dati.camera.it/ocd/persona.rdf/pr3083
-FILIPPO,MEDA,http://dati.camera.it/ocd/persona.rdf/pr3097
-CLEMENTE,MAURO,http://dati.camera.it/ocd/persona.rdf/pr3179
-EUGENIO,MAURY DI MORANCEZ,http://dati.camera.it/ocd/persona.rdf/pr3185
-BASILIO,MAZZARELLA,http://dati.camera.it/ocd/persona.rdf/pr3194
-GIUSEPPE,MAZZINI,http://dati.camera.it/ocd/persona.rdf/pr3198
-MATTEO,MAZZIOTTI,http://dati.camera.it/ocd/persona.rdf/pr3201
-ULDERICO,MAZZOLANI,http://dati.camera.it/ocd/persona.rdf/pr3204
-TEODORO,MORISANI,http://dati.camera.it/ocd/persona.rdf/pr3142
-ELIO,MORPURGO,http://dati.camera.it/ocd/persona.rdf/pr3144
-ANGELO,PAVIA,http://dati.camera.it/ocd/persona.rdf/pr3170
-ANGELO,MAURI,http://dati.camera.it/ocd/persona.rdf/pr3176
-ERNESTO,MARSAGLIA,http://dati.camera.it/ocd/persona.rdf/pr2991
-PIETRO,ABBO,http://dati.camera.it/ocd/persona.rdf/pr3
-FILIPPO,MASCI,http://dati.camera.it/ocd/persona.rdf/pr3002
-PASQUALE,MASCIANTONIO,http://dati.camera.it/ocd/persona.rdf/pr3005
-ANTONIO,MARINO,http://dati.camera.it/ocd/persona.rdf/pr2981
-GIOVANNI,MARIOTTI,http://dati.camera.it/ocd/persona.rdf/pr2985
-ALESSANDRO,MARRACINO,http://dati.camera.it/ocd/persona.rdf/pr2989
-POMPEO GHERARDO,MOLMENTI,http://dati.camera.it/ocd/persona.rdf/pr3052
-GIOVANNI,MONICI,http://dati.camera.it/ocd/persona.rdf/pr3058
-GIORGIO,MONTINI,http://dati.camera.it/ocd/persona.rdf/pr3076
-LUIGI,MONTRESOR,http://dati.camera.it/ocd/persona.rdf/pr3077
-FULVIO,MILANI,http://dati.camera.it/ocd/persona.rdf/pr3022
-GIAMBATTISTA,MILIANI,http://dati.camera.it/ocd/persona.rdf/pr3023
-FRANCESCO,MISIANO,http://dati.camera.it/ocd/persona.rdf/pr3042
-ALESSANDRO,MARTELLI,http://dati.camera.it/ocd/persona.rdf/pr350
-GIUSEPPE,PELLEGRINO,http://dati.camera.it/ocd/persona.rdf/pr3503
-SILVIO,PELLERANO,http://dati.camera.it/ocd/persona.rdf/pr3507
-LUIGI GIROLAMO,PELLOUX,http://dati.camera.it/ocd/persona.rdf/pr3510
-DOMENICO,NUVOLONI,http://dati.camera.it/ocd/persona.rdf/pr3463
-MICHELE,PIETRAVALLE,http://dati.camera.it/ocd/persona.rdf/pr3481
-ANTONINO,PECORARO LOMBARDO,http://dati.camera.it/ocd/persona.rdf/pr3490
-ENRICO,PINI,http://dati.camera.it/ocd/persona.rdf/pr3568
-VINCENZO,PIPITONE,http://dati.camera.it/ocd/persona.rdf/pr3574
-RAFFAELE,PERLA,http://dati.camera.it/ocd/persona.rdf/pr3533
-FRANCESCO,PERRONE,http://dati.camera.it/ocd/persona.rdf/pr3538
-ANTONIO,PESTALOZZA,http://dati.camera.it/ocd/persona.rdf/pr3552
-ALFREDO,PETRILLO,http://dati.camera.it/ocd/persona.rdf/pr3555
-VINCENZO,PAGELLA,http://dati.camera.it/ocd/persona.rdf/pr3375
-FERDINANDO,PALASCIANO,http://dati.camera.it/ocd/persona.rdf/pr3381
-ROMUALDO,PALBERTI,http://dati.camera.it/ocd/persona.rdf/pr3383
-ANTONINO,PANCAMO,http://dati.camera.it/ocd/persona.rdf/pr3398
-PIETRO,NICCOLINI,http://dati.camera.it/ocd/persona.rdf/pr3340
-LUIGI,PASCALE,http://dati.camera.it/ocd/persona.rdf/pr3362
-ANGELO,PEZZULLO,http://dati.camera.it/ocd/persona.rdf/pr3432
-ERASMO,PIAGGIO,http://dati.camera.it/ocd/persona.rdf/pr3435
-CAMILLO,PIATTI,http://dati.camera.it/ocd/persona.rdf/pr3441
-GINO,PANEBIANCO,http://dati.camera.it/ocd/persona.rdf/pr3403
-MAFFEO,PANTALEONI,http://dati.camera.it/ocd/persona.rdf/pr3410
-EDOARDO,PANTANO,http://dati.camera.it/ocd/persona.rdf/pr3411
-STEFANO,PAOLINO,http://dati.camera.it/ocd/persona.rdf/pr3416
-NICOLÒ,PAPADOPOLI ALDOBRANDINI,http://dati.camera.it/ocd/persona.rdf/pr3423
-ADELFO,NEGRETTI,http://dati.camera.it/ocd/persona.rdf/pr3330
-LEONE LUIGI,MUCCI,http://dati.camera.it/ocd/persona.rdf/pr3278
-DIEGO,MURGIA,http://dati.camera.it/ocd/persona.rdf/pr3284
-ELIA,MUSATTI,http://dati.camera.it/ocd/persona.rdf/pr3290
-SALVATORE,ORLANDO,http://dati.camera.it/ocd/persona.rdf/pr3293
-EMIDIO,AGOSTINONE,http://dati.camera.it/ocd/persona.rdf/pr33
-GIORGIO,RATTONE,http://dati.camera.it/ocd/persona.rdf/pr3623
-EUGENIO,REBAUDENGO,http://dati.camera.it/ocd/persona.rdf/pr3633
-GIACOMO,REGGIO,http://dati.camera.it/ocd/persona.rdf/pr3637
-SALVATORE,RENDA,http://dati.camera.it/ocd/persona.rdf/pr3641
-GUIDO,SALVADORI,http://dati.camera.it/ocd/persona.rdf/pr3653
-FELICE,QUAGLINO,http://dati.camera.it/ocd/persona.rdf/pr3601
-ERNESTO,PISTOIA,http://dati.camera.it/ocd/persona.rdf/pr3608
-FRANCESCO,PISTOJA,http://dati.camera.it/ocd/persona.rdf/pr3609
-EDOARDO,PIVA,http://dati.camera.it/ocd/persona.rdf/pr3610
-PASQUALE,PLACIDO,http://dati.camera.it/ocd/persona.rdf/pr3616
-FABRIZIO,PLUTINO,http://dati.camera.it/ocd/persona.rdf/pr3621
-EZIO,RIBOLDI,http://dati.camera.it/ocd/persona.rdf/pr3691
-ANTONIO,TESO,http://dati.camera.it/ocd/persona.rdf/pr3702
-DOMENICO,TINOZZI,http://dati.camera.it/ocd/persona.rdf/pr3711
-MARIO,TODESCHINI,http://dati.camera.it/ocd/persona.rdf/pr3719
-GIOVANNI,TOFANI,http://dati.camera.it/ocd/persona.rdf/pr3720
-LUIGI,PODESTÀ,http://dati.camera.it/ocd/persona.rdf/pr3722
-ERNESTO,SALVIA,http://dati.camera.it/ocd/persona.rdf/pr3660
-GIAMBATTISTA,QUEIROLO,http://dati.camera.it/ocd/persona.rdf/pr3668
-PIETRO,RABEZZANA,http://dati.camera.it/ocd/persona.rdf/pr3672
-DOMENICO,RACCUINI,http://dati.camera.it/ocd/persona.rdf/pr3675
-FERDINANDO,RESTA PALLAVICINO,http://dati.camera.it/ocd/persona.rdf/pr3684
-SALADINO,SALADINI PILASTRI,http://dati.camera.it/ocd/persona.rdf/pr3891
-LUIGI,ROSSI,http://dati.camera.it/ocd/persona.rdf/pr3898
-ALDO,ROSSINI,http://dati.camera.it/ocd/persona.rdf/pr3903
-ATTILIO,ROTA,http://dati.camera.it/ocd/persona.rdf/pr3905
-ALESSANDRO,DI ROVASENDA,http://dati.camera.it/ocd/persona.rdf/pr3909
-LEONE,ROMANIN JACUR,http://dati.camera.it/ocd/persona.rdf/pr3865
-GIOVANNI,ROMEO DELLE TORRAZZE,http://dati.camera.it/ocd/persona.rdf/pr3871
-GIOACCHINO,RUSSO,http://dati.camera.it/ocd/persona.rdf/pr3879
-VINCENZO,RICCIO,http://dati.camera.it/ocd/persona.rdf/pr3763
-DOMENICO,RIDOLA,http://dati.camera.it/ocd/persona.rdf/pr3766
-VINCENZO,RIOLO,http://dati.camera.it/ocd/persona.rdf/pr3777
-GIUSEPPE,SANARELLI,http://dati.camera.it/ocd/persona.rdf/pr3787
-MICHELINO,POGGI,http://dati.camera.it/ocd/persona.rdf/pr3726
-MARCO,POZZO,http://dati.camera.it/ocd/persona.rdf/pr3749
-DINO,RONDANI,http://dati.camera.it/ocd/persona.rdf/pr3821
-GIOVANNI,ROSADI,http://dati.camera.it/ocd/persona.rdf/pr3823
-TEOFILO,ROSSI DI MONTELERA,http://dati.camera.it/ocd/persona.rdf/pr3832
-FRANCESCO,ROSSI,http://dati.camera.it/ocd/persona.rdf/pr3834
-CARLO,RIZZETTI,http://dati.camera.it/ocd/persona.rdf/pr3845
-GIUSEPPE,ROBERTI,http://dati.camera.it/ocd/persona.rdf/pr3850
-GUGLIELMO,SANDRONI,http://dati.camera.it/ocd/persona.rdf/pr3791
-ALFREDO,SANDULLI,http://dati.camera.it/ocd/persona.rdf/pr3792
-GIOVANNI,RAINERI,http://dati.camera.it/ocd/persona.rdf/pr3802
-SECONDO,RAMELLA,http://dati.camera.it/ocd/persona.rdf/pr3803
-ROBERTO,RAMPOLDI,http://dati.camera.it/ocd/persona.rdf/pr3804
-PIETRO,SORMANI,http://dati.camera.it/ocd/persona.rdf/pr4231
-NICOLA,SPADA,http://dati.camera.it/ocd/persona.rdf/pr4235
-ANTONIO,SPAGNOLI,http://dati.camera.it/ocd/persona.rdf/pr4238
-ALESSANDRO,STOPPATO,http://dati.camera.it/ocd/persona.rdf/pr4153
-GIANFORTE,SUARDI,http://dati.camera.it/ocd/persona.rdf/pr4161
-BALDASSARRE,SQUITTI,http://dati.camera.it/ocd/persona.rdf/pr4107
-PAOLO,TAMBORINO,http://dati.camera.it/ocd/persona.rdf/pr4116
-VINCENZO,TAMBORINO,http://dati.camera.it/ocd/persona.rdf/pr4117
-GIUSEPPE,TANARI,http://dati.camera.it/ocd/persona.rdf/pr4119
-FRANCESCO,TEDESCO,http://dati.camera.it/ocd/persona.rdf/pr4202
-MARCELLO,SOLERI,http://dati.camera.it/ocd/persona.rdf/pr4216
-GIORGIO MICHELE,SONNINO,http://dati.camera.it/ocd/persona.rdf/pr4225
-PIER GAETANO,VENINO,http://dati.camera.it/ocd/persona.rdf/pr4175
-GIULIO,VENZI,http://dati.camera.it/ocd/persona.rdf/pr4182
-FRANCESCO,TASSINARI,http://dati.camera.it/ocd/persona.rdf/pr4194
-NICOLA,SERRA,http://dati.camera.it/ocd/persona.rdf/pr4020
-UMBERTO,SERRISTORI TOZZONI,http://dati.camera.it/ocd/persona.rdf/pr4027
-GIOVANNI,SCAGLIOTTI,http://dati.camera.it/ocd/persona.rdf/pr4036
-GIUSEPPE,SBARAGLINI,http://dati.camera.it/ocd/persona.rdf/pr3993
-GIUSEPPE,ALBANESE,http://dati.camera.it/ocd/persona.rdf/pr40
-TITO,SINIBALDI,http://dati.camera.it/ocd/persona.rdf/pr4080
-ERMINIO,SIPARI,http://dati.camera.it/ocd/persona.rdf/pr4082
-PIETRO,SITTA,http://dati.camera.it/ocd/persona.rdf/pr4086
-FILIBERTO,SMORTI,http://dati.camera.it/ocd/persona.rdf/pr4087
-EDOARDO,SODERINI,http://dati.camera.it/ocd/persona.rdf/pr4089
-BENIAMINO,SPIRITO,http://dati.camera.it/ocd/persona.rdf/pr4101
-UGO,SCALORI,http://dati.camera.it/ocd/persona.rdf/pr4040
-CARLO,SCHANZER,http://dati.camera.it/ocd/persona.rdf/pr4048
-GIACOMO,SCOTTI,http://dati.camera.it/ocd/persona.rdf/pr4067
-EDMONDO,SANJUST DI TEULADA,http://dati.camera.it/ocd/persona.rdf/pr3960
-GIUSEPPE,SANNA RANDACCIO,http://dati.camera.it/ocd/persona.rdf/pr3963
-FELICE,SANTINI,http://dati.camera.it/ocd/persona.rdf/pr3974
-LUIGI,SICILIANI,http://dati.camera.it/ocd/persona.rdf/pr3942
-AGOSTINO,SIGNORINI,http://dati.camera.it/ocd/persona.rdf/pr3947
-CESARE,SILI,http://dati.camera.it/ocd/persona.rdf/pr3948
-GIOVANNI,MARCHI,http://dati.camera.it/ocd/persona.rdf/pr4676
-ENRICO,MASTRACCHI,http://dati.camera.it/ocd/persona.rdf/pr4680
-AGOSTINO,MATTOLI,http://dati.camera.it/ocd/persona.rdf/pr4681
-GIUSEPPE,MINGRINO,http://dati.camera.it/ocd/persona.rdf/pr4686
-FEDERICO,MININNI,http://dati.camera.it/ocd/persona.rdf/pr4687
-PIETRO,ALBERTONI,http://dati.camera.it/ocd/persona.rdf/pr44
-GIULIO,VOLPI,http://dati.camera.it/ocd/persona.rdf/pr4408
-GIOVANNI,ZACCONE,http://dati.camera.it/ocd/persona.rdf/pr4418
-EUGENIO,VALLI,http://dati.camera.it/ocd/persona.rdf/pr4362
-ANTONIO,VALLONE,http://dati.camera.it/ocd/persona.rdf/pr4363
-ANGELO,VALVASSORI PERONI,http://dati.camera.it/ocd/persona.rdf/pr4370
-ERNESTO,VASSALLO,http://dati.camera.it/ocd/persona.rdf/pr4376
-ARTURO,VELLA,http://dati.camera.it/ocd/persona.rdf/pr4384
-LUIGI,ALBANESE,http://dati.camera.it/ocd/persona.rdf/pr4489
-GINO,ALDI MAI,http://dati.camera.it/ocd/persona.rdf/pr4491
-FRANCESCO,AMATUCCI,http://dati.camera.it/ocd/persona.rdf/pr4494
-ERSILIO,AMBROGI,http://dati.camera.it/ocd/persona.rdf/pr4495
-GUIDO,AROCA,http://dati.camera.it/ocd/persona.rdf/pr4501
-FELICE,ASSENNATO,http://dati.camera.it/ocd/persona.rdf/pr4503
-GIOVANNI FLORIANO,BANELLI,http://dati.camera.it/ocd/persona.rdf/pr4506
-ARTURO,BARANZINI,http://dati.camera.it/ocd/persona.rdf/pr4507
-ADELCHI,BARATONO,http://dati.camera.it/ocd/persona.rdf/pr4508
-ALFREDO,BARTOLOMEI,http://dati.camera.it/ocd/persona.rdf/pr4509
-AGOSTINO,BASSINO,http://dati.camera.it/ocd/persona.rdf/pr4510
-ANDREA,BELTRAMINI,http://dati.camera.it/ocd/persona.rdf/pr4511
-GIOVANNI BATTISTA,BIAVASCHI,http://dati.camera.it/ocd/persona.rdf/pr4517
-LUIGI,BILUCAGLIA,http://dati.camera.it/ocd/persona.rdf/pr4518
-EDOARDO TEMISTOCLE,BOGIANCKINO,http://dati.camera.it/ocd/persona.rdf/pr4519
-DOMENICO,CIGNA,http://dati.camera.it/ocd/persona.rdf/pr4562
-VALENTINO,CODA,http://dati.camera.it/ocd/persona.rdf/pr4563
-CORSO,BOVIO,http://dati.camera.it/ocd/persona.rdf/pr4524
-GUIDO,COMPAGNA,http://dati.camera.it/ocd/persona.rdf/pr4566
-ALBANO,CORNELI,http://dati.camera.it/ocd/persona.rdf/pr4569
-CARLO,ZANZI,http://dati.camera.it/ocd/persona.rdf/pr4428
-LUIGI,ZAPPI CERONI,http://dati.camera.it/ocd/persona.rdf/pr4429
-MICHELE,CRISAFULLI MONDIO,http://dati.camera.it/ocd/persona.rdf/pr4573
-ANTONIO,CRISTOFORI,http://dati.camera.it/ocd/persona.rdf/pr4575
-CARLO,DE ANGELIS,http://dati.camera.it/ocd/persona.rdf/pr4578
-RAFFAELE,ZEGRETTI,http://dati.camera.it/ocd/persona.rdf/pr4435
-IPPOLITO LUIGI,DE CRISTOFARO,http://dati.camera.it/ocd/persona.rdf/pr4581
-MARINO,DE FILIPPIS DELFICO,http://dati.camera.it/ocd/persona.rdf/pr4582
-PASQUALE,D'ELIA,http://dati.camera.it/ocd/persona.rdf/pr4585
-GIOVAN BATTISTA,DE MARTINI,http://dati.camera.it/ocd/persona.rdf/pr4588
-GIACOMO,DE MARTINO,http://dati.camera.it/ocd/persona.rdf/pr4589
-CARLO,ZUCCHINI,http://dati.camera.it/ocd/persona.rdf/pr4450
-GIUSEPPE,DI VAGNO,http://dati.camera.it/ocd/persona.rdf/pr4598
-CARLO,BRESCIANI,http://dati.camera.it/ocd/persona.rdf/pr4529
-EUGENIO,BROCCARDI,http://dati.camera.it/ocd/persona.rdf/pr4530
-TOMMASO,BRUNELLI,http://dati.camera.it/ocd/persona.rdf/pr4531
-NICOLÒ,TORTORICI,http://dati.camera.it/ocd/persona.rdf/pr4264
-CARLO,BUTTAFOCHI,http://dati.camera.it/ocd/persona.rdf/pr4532
-GINO,CACCIANIGA,http://dati.camera.it/ocd/persona.rdf/pr4533
-UMBERTO,CAO,http://dati.camera.it/ocd/persona.rdf/pr4538
-ITALO,CAPANNI,http://dati.camera.it/ocd/persona.rdf/pr4539
-FRANCESCO,CAPOBIANCO,http://dati.camera.it/ocd/persona.rdf/pr4541
-ARISTIDE,CARAPELLE,http://dati.camera.it/ocd/persona.rdf/pr4542
-ANTONIO,VICINI,http://dati.camera.it/ocd/persona.rdf/pr4273
-GIUSEPPE,CARADONNA,http://dati.camera.it/ocd/persona.rdf/pr4543
-UGO,CASALICCHIO,http://dati.camera.it/ocd/persona.rdf/pr4547
-VITO,CATALANI,http://dati.camera.it/ocd/persona.rdf/pr4548
-DOMENICO,ARCANGELI,http://dati.camera.it/ocd/persona.rdf/pr4549
-ADRIANO,ARCANI,http://dati.camera.it/ocd/persona.rdf/pr4550
-GIULIO,VIGONI,http://dati.camera.it/ocd/persona.rdf/pr4282
-SALVATORE,CAMERATA,http://dati.camera.it/ocd/persona.rdf/pr4554
-GIULIO,CAVINA,http://dati.camera.it/ocd/persona.rdf/pr4556
-GIOVANNI,CHIGGIATO,http://dati.camera.it/ocd/persona.rdf/pr4559
-GIUSEPPE,TOSCANO,http://dati.camera.it/ocd/persona.rdf/pr4289
-MANFREDO,CHIOSTRI,http://dati.camera.it/ocd/persona.rdf/pr4560
-FULCO,TOSTI DI VALMINUTA,http://dati.camera.it/ocd/persona.rdf/pr4291
-RODOLFO,GRANDI,http://dati.camera.it/ocd/persona.rdf/pr4641
-LIVIO,TOVINI,http://dati.camera.it/ocd/persona.rdf/pr4292
-SILVESTRO,GRAZIANO,http://dati.camera.it/ocd/persona.rdf/pr4643
-LIONELLO,GROFF,http://dati.camera.it/ocd/persona.rdf/pr4645
-GIOVANNI BATTISTA,IMBERTI,http://dati.camera.it/ocd/persona.rdf/pr4647
-ALFONSO,IMPERATI,http://dati.camera.it/ocd/persona.rdf/pr4648
-FERDINANDO,INNAMORATI,http://dati.camera.it/ocd/persona.rdf/pr4650
-NATALE,KREKICH,http://dati.camera.it/ocd/persona.rdf/pr4653
-VIRGILIO,LANCELLOTTI,http://dati.camera.it/ocd/persona.rdf/pr4654
-LUIGI,LANFRANCONI,http://dati.camera.it/ocd/persona.rdf/pr4656
-GIUSEPPE,LAVRENCIC,http://dati.camera.it/ocd/persona.rdf/pr4657
-GIUSEPPE,LOCATELLI,http://dati.camera.it/ocd/persona.rdf/pr4662
-FILIPPO,LOFARO,http://dati.camera.it/ocd/persona.rdf/pr4664
-GIOVANNI,LUCANGELI,http://dati.camera.it/ocd/persona.rdf/pr4666
-GIOVANNI,TORLONIA,http://dati.camera.it/ocd/persona.rdf/pr4249
-LUIGI,LUIGGI,http://dati.camera.it/ocd/persona.rdf/pr4667
-LUIGI,MACCHI,http://dati.camera.it/ocd/persona.rdf/pr4669
-ANGELO,MANARESI,http://dati.camera.it/ocd/persona.rdf/pr4670
-VICO,MANTOVANI,http://dati.camera.it/ocd/persona.rdf/pr4674
-ANDREA,TORRE,http://dati.camera.it/ocd/persona.rdf/pr4256
-FILIPPO,TORRIGIANI GUADAGNI,http://dati.camera.it/ocd/persona.rdf/pr4259
-GUIDO,DONEGANI,http://dati.camera.it/ocd/persona.rdf/pr4601
-GIUSEPPE,ELLERO,http://dati.camera.it/ocd/persona.rdf/pr4606
-ANDREA,ERCOLANI,http://dati.camera.it/ocd/persona.rdf/pr4607
-ANGELO,FAGGI,http://dati.camera.it/ocd/persona.rdf/pr4609
-MATTIA,FARINA,http://dati.camera.it/ocd/persona.rdf/pr4610
-SPARTACO,FAZZARI,http://dati.camera.it/ocd/persona.rdf/pr4614
-ADOLFO,FERRARI,http://dati.camera.it/ocd/persona.rdf/pr4618
-GIOVANNI,FERRARI,http://dati.camera.it/ocd/persona.rdf/pr4619
-LEOPOLDO,FERRI,http://dati.camera.it/ocd/persona.rdf/pr4620
-SILVIO,FLOR,http://dati.camera.it/ocd/persona.rdf/pr4622
-EUGENIO,FLORIAN,http://dati.camera.it/ocd/persona.rdf/pr4623
-ROBERTO,FRANCESCHI,http://dati.camera.it/ocd/persona.rdf/pr4625
-VINCENZO,VACIRCA,http://dati.camera.it/ocd/persona.rdf/pr4348
-MARIO,FURGIUELE,http://dati.camera.it/ocd/persona.rdf/pr4626
-SILVIO,GAI,http://dati.camera.it/ocd/persona.rdf/pr4628
-DOMENICO,VALENZANI,http://dati.camera.it/ocd/persona.rdf/pr4352
-GIUSEPPE,GAVAZZENI,http://dati.camera.it/ocd/persona.rdf/pr4634
-FRANCESCO,TRINCHERA,http://dati.camera.it/ocd/persona.rdf/pr4312
-FRANCESCO,TROILO,http://dati.camera.it/ocd/persona.rdf/pr4316
-MARIO,TROZZI,http://dati.camera.it/ocd/persona.rdf/pr4317
-GIOVANNI,ALICE,http://dati.camera.it/ocd/persona.rdf/pr56
-GIULIO,ALESSIO,http://dati.camera.it/ocd/persona.rdf/pr51
-GUIDO,PIGHETTI,http://dati.camera.it/ocd/persona.rdf/pr4713
-FRANCESCO,PIVANO,http://dati.camera.it/ocd/persona.rdf/pr4715
-CARLO,PODGORNIK,http://dati.camera.it/ocd/persona.rdf/pr4716
-URBANO BENIGNO,PRUNOTTO,http://dati.camera.it/ocd/persona.rdf/pr4717
-GIUSEPPE,PUCCI DI BENISICHI,http://dati.camera.it/ocd/persona.rdf/pr4718
-CARLO ALBERTO,QUILICO,http://dati.camera.it/ocd/persona.rdf/pr4719
-DUILIO,REMONDINO,http://dati.camera.it/ocd/persona.rdf/pr4721
-EDOARDO,REUTH NICOLUSSI,http://dati.camera.it/ocd/persona.rdf/pr4722
-MARCO,ROCCO DI TORREPADULA,http://dati.camera.it/ocd/persona.rdf/pr4724
-ITALO,ROSA,http://dati.camera.it/ocd/persona.rdf/pr4726
-ALFONSO,SALVALAI,http://dati.camera.it/ocd/persona.rdf/pr4730
-GIUSEPPE,SARDELLI,http://dati.camera.it/ocd/persona.rdf/pr4731
-ALESSANDRO,SARDI,http://dati.camera.it/ocd/persona.rdf/pr4732
-MATTEO,SELMI,http://dati.camera.it/ocd/persona.rdf/pr4733
-FRANCESCO,SENSI,http://dati.camera.it/ocd/persona.rdf/pr4734
-FRANCESCO,SORGE,http://dati.camera.it/ocd/persona.rdf/pr4735
-DOMENICO ANDREA,SPADA,http://dati.camera.it/ocd/persona.rdf/pr4736
-SERAFINO,SPERANZA,http://dati.camera.it/ocd/persona.rdf/pr4737
-GIROLAMO,STANCANELLI,http://dati.camera.it/ocd/persona.rdf/pr4738
-EVARISTO,STEFINI,http://dati.camera.it/ocd/persona.rdf/pr4740
-ENRICO,TAMANINI,http://dati.camera.it/ocd/persona.rdf/pr4743
-MICHELE,TERZAGHI,http://dati.camera.it/ocd/persona.rdf/pr4744
-ALESSANDRO,TIRABOSCHI,http://dati.camera.it/ocd/persona.rdf/pr4746
-DONATO ANTONIO,TOMMASI,http://dati.camera.it/ocd/persona.rdf/pr4748
-EDOARDO,TORRE,http://dati.camera.it/ocd/persona.rdf/pr4749
-LEOPOLDO,TUMIATI,http://dati.camera.it/ocd/persona.rdf/pr4751
-GIUSEPPE,TUNTAR,http://dati.camera.it/ocd/persona.rdf/pr4752
-ANGELO,NOSEDA,http://dati.camera.it/ocd/persona.rdf/pr4694
-PIETRO,NOVASIO,http://dati.camera.it/ocd/persona.rdf/pr4695
-FILIPPO,OSTINELLI,http://dati.camera.it/ocd/persona.rdf/pr4696
-GIOVANNI,PALEARI,http://dati.camera.it/ocd/persona.rdf/pr4699
-FERDINANDO,PALMA,http://dati.camera.it/ocd/persona.rdf/pr4700
-RAFFAELE,PAOLUCCI,http://dati.camera.it/ocd/persona.rdf/pr4701
-GIOVANNI,PESANTE,http://dati.camera.it/ocd/persona.rdf/pr4705
-TEOFILO,PETRIELLA,http://dati.camera.it/ocd/persona.rdf/pr4707
-AGOSTINO,PEVERINI,http://dati.camera.it/ocd/persona.rdf/pr4708
-GUIDO,PICELLI,http://dati.camera.it/ocd/persona.rdf/pr4711
-SEBASTIANO,TECCHIO,http://dati.camera.it/ocd/persona.rdf/pr4792
-GAETANO,VERDIRAME,http://dati.camera.it/ocd/persona.rdf/pr4801
-FILIPPO,UNGARO,http://dati.camera.it/ocd/persona.rdf/pr4754
-FRANCESCO,VAIRO,http://dati.camera.it/ocd/persona.rdf/pr4755
-ETTORE,VALENTINI,http://dati.camera.it/ocd/persona.rdf/pr4756
-LUCIANO,VALENTINI,http://dati.camera.it/ocd/persona.rdf/pr4757
-MARCO ARTURO,VICINI,http://dati.camera.it/ocd/persona.rdf/pr4759
-FRANCESCO,VISCO,http://dati.camera.it/ocd/persona.rdf/pr4762
-PASQUALE,VITTORIA,http://dati.camera.it/ocd/persona.rdf/pr4763
-VOLPINO,VOLPINI,http://dati.camera.it/ocd/persona.rdf/pr4764
-GIUSEPPE,WILFAN,http://dati.camera.it/ocd/persona.rdf/pr4766
-CARLO,ZILOCCHI,http://dati.camera.it/ocd/persona.rdf/pr4768
-GAETANO,ZIRARDINI,http://dati.camera.it/ocd/persona.rdf/pr4769
-LORENZO,VENTAVOLI,http://dati.camera.it/ocd/persona.rdf/pr4771
-ANGELO,ABISSO,http://dati.camera.it/ocd/persona.rdf/pr7
-GIOVANNI,CASSIS,http://dati.camera.it/ocd/persona.rdf/pr9317
-CARLO,CATALDI,http://dati.camera.it/ocd/persona.rdf/pr9325
-ENRICO,CATELLANI,http://dati.camera.it/ocd/persona.rdf/pr9327
-UGO,CAVALLERO,http://dati.camera.it/ocd/persona.rdf/pr9332
-GIANNETTO,CAVASOLA,http://dati.camera.it/ocd/persona.rdf/pr9333
-GIUSEPPE,BOTTERINI DE PELOSI,http://dati.camera.it/ocd/persona.rdf/pr9210
-VITTORIO,BRONDI,http://dati.camera.it/ocd/persona.rdf/pr9223
-ROBERTO,BRUSATI,http://dati.camera.it/ocd/persona.rdf/pr9231
-UGO,BRUSATI,http://dati.camera.it/ocd/persona.rdf/pr9232
-GIOVANNI,BOMBRINI,http://dati.camera.it/ocd/persona.rdf/pr9179
-LORENZO,BONAZZI,http://dati.camera.it/ocd/persona.rdf/pr9182
-FRANCESCO,BONCOMPAGNI LUDOVISI,http://dati.camera.it/ocd/persona.rdf/pr9185
-LUIGI,BONCOMPAGNI LUDOVISI,http://dati.camera.it/ocd/persona.rdf/pr9187
-GIACOMO,BONI,http://dati.camera.it/ocd/persona.rdf/pr9194
-ALBERTO,BONZANI,http://dati.camera.it/ocd/persona.rdf/pr9196
-GIOVANNI BATTISTA,BOREA D'OLMO,http://dati.camera.it/ocd/persona.rdf/pr9198
-FELICE,BORGHESE,http://dati.camera.it/ocd/persona.rdf/pr9199
-PIETRANTONIO,CAPALDO,http://dati.camera.it/ocd/persona.rdf/pr9282
-GIOVANNI,CAPELLINI,http://dati.camera.it/ocd/persona.rdf/pr9283
-GIOVANNI PIETRO,CAPOTORTO,http://dati.camera.it/ocd/persona.rdf/pr9287
-GENNARO,CARISSIMO,http://dati.camera.it/ocd/persona.rdf/pr9302
-ANTONIO,CARLE,http://dati.camera.it/ocd/persona.rdf/pr9303
-GELASIO,CAETANI,http://dati.camera.it/ocd/persona.rdf/pr9248
-LUIGI,CAGNETTA,http://dati.camera.it/ocd/persona.rdf/pr9249
-UMBERTO,CAGNI DI BU MELIANA,http://dati.camera.it/ocd/persona.rdf/pr9251
-PIO,CALLETTI,http://dati.camera.it/ocd/persona.rdf/pr9259
-FEDERICO,BAISTROCCHI,http://dati.camera.it/ocd/persona.rdf/pr9084
-LODOVICO,BARBIERI,http://dati.camera.it/ocd/persona.rdf/pr9095
-EDOARDO,BASSINI,http://dati.camera.it/ocd/persona.rdf/pr9111
-ANGELO,ANNARATONE,http://dati.camera.it/ocd/persona.rdf/pr9050
-ADOLFO,APOLLONI,http://dati.camera.it/ocd/persona.rdf/pr9056
-GIUSEPPE,BIANCHINI,http://dati.camera.it/ocd/persona.rdf/pr9152
-LEONARDO,BISTOLFI,http://dati.camera.it/ocd/persona.rdf/pr9158
-ETTORE,BOCCONI,http://dati.camera.it/ocd/persona.rdf/pr9169
-EMILIO,BODRERO,http://dati.camera.it/ocd/persona.rdf/pr9172
-RICCARDO,BOLLATI,http://dati.camera.it/ocd/persona.rdf/pr9175
-PIERO,BOLZON,http://dati.camera.it/ocd/persona.rdf/pr9176
-GIORGIO,BOMBI,http://dati.camera.it/ocd/persona.rdf/pr9177
-FIORENZO,BAVA BECCARIS,http://dati.camera.it/ocd/persona.rdf/pr9116
-GIUSEPPE,BELLUZZO,http://dati.camera.it/ocd/persona.rdf/pr9122
-GIUSEPPE LUIGI,BENEVENTANO,http://dati.camera.it/ocd/persona.rdf/pr9125
-FELICE,BENNATI,http://dati.camera.it/ocd/persona.rdf/pr9126
-PAOLO EMILIO,BENSA,http://dati.camera.it/ocd/persona.rdf/pr9129
-TANCREDI LUIGI,BERIA D'ARGENTINE,http://dati.camera.it/ocd/persona.rdf/pr9134
-ADOLFO,BERIO,http://dati.camera.it/ocd/persona.rdf/pr9135
-PAOLO,BERNARDI,http://dati.camera.it/ocd/persona.rdf/pr9137
-FEDERICO,BETTONI,http://dati.camera.it/ocd/persona.rdf/pr9144
-UGO,ANCONA,http://dati.camera.it/ocd/persona.rdf/pr86
-GIOVANNI,AMICI,http://dati.camera.it/ocd/persona.rdf/pr81
-GIOVANNI,AGNELLI,http://dati.camera.it/ocd/persona.rdf/pr9019
-ANTONIO,ALBERTINI,http://dati.camera.it/ocd/persona.rdf/pr9026
-ALBERICO,ALBRICCI,http://dati.camera.it/ocd/persona.rdf/pr9030
-GIOVANNI,AMEGLIO,http://dati.camera.it/ocd/persona.rdf/pr9046
-MARCELLO,AMERO D'ASTE STELLA,http://dati.camera.it/ocd/persona.rdf/pr9047
-INNOCENTE,CHERSI,http://dati.camera.it/ocd/persona.rdf/pr9350
-ALESSANDRO,CHIAPPELLI,http://dati.camera.it/ocd/persona.rdf/pr9351
-GIACOMO,CIAMICIAN,http://dati.camera.it/ocd/persona.rdf/pr9357
-VITTORIO,CINI,http://dati.camera.it/ocd/persona.rdf/pr9365
-ANTONIO,CIPPICO,http://dati.camera.it/ocd/persona.rdf/pr9367
-LUIGI,CITO FILOMARINO,http://dati.camera.it/ocd/persona.rdf/pr9370
-AMBROGIO,CLERICI,http://dati.camera.it/ocd/persona.rdf/pr9373
-ENRICO,COCCHIA,http://dati.camera.it/ocd/persona.rdf/pr9375
-ENRICO,CEFALO,http://dati.camera.it/ocd/persona.rdf/pr9335
-ALBERTO,CENCELLI,http://dati.camera.it/ocd/persona.rdf/pr9339
-CAMILLO,CORSI,http://dati.camera.it/ocd/persona.rdf/pr9412
-VINCENZO,COSENZA,http://dati.camera.it/ocd/persona.rdf/pr9417
-FILIPPO,CREMONESI,http://dati.camera.it/ocd/persona.rdf/pr9425
-ENRICO,CRUCIANI ALIBRANDI,http://dati.camera.it/ocd/persona.rdf/pr9430
-LORENZO,CUSANI VISCONTI BOTTA ADORNO,http://dati.camera.it/ocd/persona.rdf/pr9433
-ALBERTO,DALLOLIO,http://dati.camera.it/ocd/persona.rdf/pr9443
-FRANCESCO,COMPAGNA,http://dati.camera.it/ocd/persona.rdf/pr9392
-DOMENICO,COMPARETTI,http://dati.camera.it/ocd/persona.rdf/pr9393
-SALVATORE,CONTARINI,http://dati.camera.it/ocd/persona.rdf/pr9397
-MAURIZIO,GONZAGA,http://dati.camera.it/ocd/persona.rdf/pr9759
-GIOVANNI BATTISTA,GRASSI,http://dati.camera.it/ocd/persona.rdf/pr9762
-DOMENICO,GIORDANI,http://dati.camera.it/ocd/persona.rdf/pr9731
-BALBINO,GIULIANO,http://dati.camera.it/ocd/persona.rdf/pr9746
-VETTOR,GIUSTI DEL GIARDINO,http://dati.camera.it/ocd/persona.rdf/pr9752
-PIETRO,FEDELE,http://dati.camera.it/ocd/persona.rdf/pr9623
-DANTE,FERRARIS,http://dati.camera.it/ocd/persona.rdf/pr9634
-EUGENIO,FIGOLI DES GENEYS,http://dati.camera.it/ocd/persona.rdf/pr9645
-FRANCESCO,FILOMUSI GUELFI,http://dati.camera.it/ocd/persona.rdf/pr9647
-ENRICO,D'OVIDIO,http://dati.camera.it/ocd/persona.rdf/pr9587
-FRANCESCO,D'OVIDIO,http://dati.camera.it/ocd/persona.rdf/pr9588
-LUIGI,DURAND DE LA PENNE,http://dati.camera.it/ocd/persona.rdf/pr9593
-CARLO,FADDA,http://dati.camera.it/ocd/persona.rdf/pr9603
-GIULIO,FANO,http://dati.camera.it/ocd/persona.rdf/pr9610
-RAFFAELE,GAROFALO,http://dati.camera.it/ocd/persona.rdf/pr9690
-CAMILLO EUGENIO,GARRONI CARBONARA,http://dati.camera.it/ocd/persona.rdf/pr9691
-SALVATORE,GATTI,http://dati.camera.it/ocd/persona.rdf/pr9696
-ANTONINO,ANILE,http://dati.camera.it/ocd/persona.rdf/pr97
-ROBERTO,GHIGLIANOVICH,http://dati.camera.it/ocd/persona.rdf/pr9715
-PIO,FOÀ,http://dati.camera.it/ocd/persona.rdf/pr9657
-SALVATORE,FRATELLINI,http://dati.camera.it/ocd/persona.rdf/pr9669
-GIOVANNI,GALLINA,http://dati.camera.it/ocd/persona.rdf/pr9681
-FLORESTANO,DE LARDEREL,http://dati.camera.it/ocd/persona.rdf/pr9481
-ALBERTO,DEL BONO,http://dati.camera.it/ocd/persona.rdf/pr9483
-FERDINANDO,DEL CARRETTO DI NOVELLO,http://dati.camera.it/ocd/persona.rdf/pr9485
-PASQUALE,DEL GIUDICE,http://dati.camera.it/ocd/persona.rdf/pr9489
-GIUSEPPE,DELLA NOCE,http://dati.camera.it/ocd/persona.rdf/pr9493
-LUIGI,DELLA TORRE,http://dati.camera.it/ocd/persona.rdf/pr9498
-ISIDORO,DEL LUNGO,http://dati.camera.it/ocd/persona.rdf/pr9502
-GIUSEPPE,DE LORENZO,http://dati.camera.it/ocd/persona.rdf/pr9504
-PASQUALE,DEL PEZZO,http://dati.camera.it/ocd/persona.rdf/pr9505
-MARIANO,D'AMELIO,http://dati.camera.it/ocd/persona.rdf/pr9448
-TOMMASO,DE AMICIS,http://dati.camera.it/ocd/persona.rdf/pr9457
-ALFONSO,DE BLASIO,http://dati.camera.it/ocd/persona.rdf/pr9460
-ADRIANO,DE CUPIS,http://dati.camera.it/ocd/persona.rdf/pr9467
-POMPEO,DI CAMPELLO,http://dati.camera.it/ocd/persona.rdf/pr9550
-ADRIANO,DIENA,http://dati.camera.it/ocd/persona.rdf/pr9552
-SALVATORE,DI MARZO,http://dati.camera.it/ocd/persona.rdf/pr9564
-GIUSEPPE,DI TERRANOVA (PIGNATELLI),http://dati.camera.it/ocd/persona.rdf/pr9576
-PIETRO,DI VICO,http://dati.camera.it/ocd/persona.rdf/pr9577
-LUIGI,DORIGO,http://dati.camera.it/ocd/persona.rdf/pr9586
-ALBERTO,DE MARINIS STENDARDO DI RICIGLIANO,http://dati.camera.it/ocd/persona.rdf/pr9513
-GIULIO,DE PETRA,http://dati.camera.it/ocd/persona.rdf/pr9523
-GIUSEPPE,DI BAGNO (GUIDI),http://dati.camera.it/ocd/persona.rdf/pr9544
-PIETRO,BERTARELLI,http://dati.camera.it/ocd/persona.rdf/pr999
-ALESSANDRO,MARIOTTI,http://dati.camera.it/ocd/persona.rdf/pr9892
-ERNESTO,MARTINEZ,http://dati.camera.it/ocd/persona.rdf/pr9899
-GIUSEPPE,MARTINO,http://dati.camera.it/ocd/persona.rdf/pr9903
-ALESSANDRO,MATTIOLI PASQUALINI,http://dati.camera.it/ocd/persona.rdf/pr9916
-TEODORO,MAYER,http://dati.camera.it/ocd/persona.rdf/pr9920
-FRANCESCO,MAZZA,http://dati.camera.it/ocd/persona.rdf/pr9924
-OLINDO,MALAGODI,http://dati.camera.it/ocd/persona.rdf/pr9862
-OBIZZO,MALASPINA DI CARBONARA,http://dati.camera.it/ocd/persona.rdf/pr9863
-VALERIANO,MALFATTI,http://dati.camera.it/ocd/persona.rdf/pr9864
-EDOARDO,MARAGLIANO,http://dati.camera.it/ocd/persona.rdf/pr9884
-ETTORE,MARCHIAFAVA,http://dati.camera.it/ocd/persona.rdf/pr9887
-GIUSEPPE,MORELLI,http://dati.camera.it/ocd/persona.rdf/pr9986
-VINCENZO,MORELLO,http://dati.camera.it/ocd/persona.rdf/pr9987
-GUIDO,MAZZONI,http://dati.camera.it/ocd/persona.rdf/pr9930
-ETTORE,MAZZUCCO,http://dati.camera.it/ocd/persona.rdf/pr9931
-GUGLIELMO,MENGARINI,http://dati.camera.it/ocd/persona.rdf/pr9940
-FRANCESCO PAOLO,MICHETTI,http://dati.camera.it/ocd/persona.rdf/pr9952
-FILIPPO,GRIMANI,http://dati.camera.it/ocd/persona.rdf/pr9770
-GIOVANNI,GROSOLI,http://dati.camera.it/ocd/persona.rdf/pr9774
-ANTONIO,GROSSICH,http://dati.camera.it/ocd/persona.rdf/pr9776
-CARLO,GUALA,http://dati.camera.it/ocd/persona.rdf/pr9779
-ENRICO,GUALTERIO,http://dati.camera.it/ocd/persona.rdf/pr9780
-PASQUALE,LEONARDI CATTOLICA,http://dati.camera.it/ocd/persona.rdf/pr9823
-GIACOMO,LEVI CIVITA,http://dati.camera.it/ocd/persona.rdf/pr9829
-ACHILLE,LORIA,http://dati.camera.it/ocd/persona.rdf/pr9839
-ALFREDO,LUSIGNOLI,http://dati.camera.it/ocd/persona.rdf/pr9848
-ALESSANDRO,LUSTIG PIACEZZI,http://dati.camera.it/ocd/persona.rdf/pr9849
-IGNAZIO,GUIDI,http://dati.camera.it/ocd/persona.rdf/pr9790
-ATTILIO,HORTIS,http://dati.camera.it/ocd/persona.rdf/pr9793
-GUGLIELMO,JOSA,http://dati.camera.it/ocd/persona.rdf/pr9799
-MARIO,LAMBERTI (DI COLLE),http://dati.camera.it/ocd/persona.rdf/pr9803
-RODOLFO,LANCIANI,http://dati.camera.it/ocd/persona.rdf/pr9804
-PIETRO,LANZA (DI TRABIA),http://dati.camera.it/ocd/persona.rdf/pr9812
-PIER SILVERIO,LEICHT,http://dati.camera.it/ocd/persona.rdf/pr9821
+name,surname,job,URI
+GAETANO,MOSCA,2,http://dati.camera.it/ocd/persona.rdf/pr3150
+GIACOMO,MATTEOTTI,1,http://dati.camera.it/ocd/persona.rdf/pr3174
+GINO JACOPO,OLIVETTI,1,http://dati.camera.it/ocd/persona.rdf/pr3218
+NUNZIO,NASI,1,http://dati.camera.it/ocd/persona.rdf/pr3325
+CESARE,NAVA,0,http://dati.camera.it/ocd/persona.rdf/pr3327
+CESARE,NAVA,2,http://dati.camera.it/ocd/persona.rdf/pr3327
+CAMILLO,PEANO,2,http://dati.camera.it/ocd/persona.rdf/pr3488
+CAMILLO,PEANO,1,http://dati.camera.it/ocd/persona.rdf/pr3488
+CAMILLO,PEANO,0,http://dati.camera.it/ocd/persona.rdf/pr3488
+LUIGI,FACTA,0,http://dati.camera.it/ocd/persona.rdf/pr2255
+LUIGI,FACTA,1,http://dati.camera.it/ocd/persona.rdf/pr2255
+LUIGI,FEDERZONI,0,http://dati.camera.it/ocd/persona.rdf/pr2291
+LUIGI,FEDERZONI,1,http://dati.camera.it/ocd/persona.rdf/pr2291
+CARLO FRANCESCO,FERRARIS,2,http://dati.camera.it/ocd/persona.rdf/pr2348
+MAGGIORINO,FERRARIS,2,http://dati.camera.it/ocd/persona.rdf/pr2352
+MAGGIORINO,FERRARIS,0,http://dati.camera.it/ocd/persona.rdf/pr2352
+GIUSEPPE,GARIBOTTI,1,http://dati.camera.it/ocd/persona.rdf/pr2433
+GIUSTINO,FORTUNATO,2,http://dati.camera.it/ocd/persona.rdf/pr2522
+GIOVANNI,GIOLITTI,1,http://dati.camera.it/ocd/persona.rdf/pr2546
+GIOVANNI,GIOLITTI,0,http://dati.camera.it/ocd/persona.rdf/pr2546
+EGILBERTO,MARTIRE,1,http://dati.camera.it/ocd/persona.rdf/pr2798
+COSTANTINO,LAZZARI,1,http://dati.camera.it/ocd/persona.rdf/pr2839
+LUIGI,LUZZATTI,2,http://dati.camera.it/ocd/persona.rdf/pr2864
+GUIDO,MIGLIOLI,1,http://dati.camera.it/ocd/persona.rdf/pr3020
+PAOLO,MATTEI GENTILI,1,http://dati.camera.it/ocd/persona.rdf/pr3132
+PAOLO,MATTEI GENTILI,0,http://dati.camera.it/ocd/persona.rdf/pr3132
+ODDINO,MORGARI,1,http://dati.camera.it/ocd/persona.rdf/pr3136
+ALFREDO,BACCELLI,2,http://dati.camera.it/ocd/persona.rdf/pr1019
+FRANCESCO,RUFFINI,2,http://dati.camera.it/ocd/persona.rdf/pr10246
+GIUSEPPE,SIRIANNI,0,http://dati.camera.it/ocd/persona.rdf/pr10337
+ARRIGO,SOLMI,0,http://dati.camera.it/ocd/persona.rdf/pr10343
+GIACOMO,SUARDO,0,http://dati.camera.it/ocd/persona.rdf/pr10362
+GIOVANNI,VERGA,2,http://dati.camera.it/ocd/persona.rdf/pr10456
+GIOVANNI,VILLA,2,http://dati.camera.it/ocd/persona.rdf/pr10468
+VITTORIO,ZUPELLI,2,http://dati.camera.it/ocd/persona.rdf/pr10494
+MICHELE,BIANCHI,0,http://dati.camera.it/ocd/persona.rdf/pr10569
+ITALO,BALBO,0,http://dati.camera.it/ocd/persona.rdf/pr10612
+VINCENZO,CASALINI,0,http://dati.camera.it/ocd/persona.rdf/pr10668
+PIETRO,DE FRANCISCI,0,http://dati.camera.it/ocd/persona.rdf/pr10742
+NICOLA,BOMBACCI,1,http://dati.camera.it/ocd/persona.rdf/pr1275
+ENRICO,ARLOTTA,2,http://dati.camera.it/ocd/persona.rdf/pr129
+BRUNO,BUOZZI,1,http://dati.camera.it/ocd/persona.rdf/pr1321
+GIOVANNI,CAMERA,1,http://dati.camera.it/ocd/persona.rdf/pr1455
+GABRIELLO,CARNAZZA,0,http://dati.camera.it/ocd/persona.rdf/pr1458
+GABRIELLO,CARNAZZA,1,http://dati.camera.it/ocd/persona.rdf/pr1458
+PIETRO,CHIMIENTI,2,http://dati.camera.it/ocd/persona.rdf/pr1685
+STEFANO,CAVAZZONI,0,http://dati.camera.it/ocd/persona.rdf/pr1716
+STEFANO,CAVAZZONI,1,http://dati.camera.it/ocd/persona.rdf/pr1716
+GIOVANNI ANTONIO,COLONNA  ROMANO DI CESARÒ,0,http://dati.camera.it/ocd/persona.rdf/pr1827
+GIOVANNI ANTONIO,COLONNA  ROMANO DI CESARÒ,1,http://dati.camera.it/ocd/persona.rdf/pr1827
+SILVIO,CRESPI,2,http://dati.camera.it/ocd/persona.rdf/pr1915
+PIETRO,LANZA ( DI SCALEA),1,http://dati.camera.it/ocd/persona.rdf/pr2024
+ROBERTO,DE VITO,0,http://dati.camera.it/ocd/persona.rdf/pr2121
+ROBERTO,DE VITO,1,http://dati.camera.it/ocd/persona.rdf/pr2121
+ANTONINO,DI GIORGIO,0,http://dati.camera.it/ocd/persona.rdf/pr2129
+LUIGI,DI FRANCIA,1,http://dati.camera.it/ocd/persona.rdf/pr2196
+SALVATORE,BARZILAI,2,http://dati.camera.it/ocd/persona.rdf/pr1078
+ALESSANDRO,PAVOLINI,0,http://dati.camera.it/ocd/persona.rdf/pr10986
+CARLO,SCORZA,0,http://dati.camera.it/ocd/persona.rdf/pr11071
+ADELCHI,SERENA,0,http://dati.camera.it/ocd/persona.rdf/pr11073
+ACHILLE,STARACE,0,http://dati.camera.it/ocd/persona.rdf/pr11089
+OTTAVIO,CORGINI,1,http://dati.camera.it/ocd/persona.rdf/pr11218
+OTTAVIO,CORGINI,0,http://dati.camera.it/ocd/persona.rdf/pr11218
+ALBERTO,BENEDUCE,0,http://dati.camera.it/ocd/persona.rdf/pr1126
+ALBERTO,BENEDUCE,1,http://dati.camera.it/ocd/persona.rdf/pr1126
+GALEAZZO,CIANO,0,http://dati.camera.it/ocd/persona.rdf/pr11317
+ALDO,VIDUSSONI,0,http://dati.camera.it/ocd/persona.rdf/pr11808
+ETTORE,MUTI,0,http://dati.camera.it/ocd/persona.rdf/pr12289
+PAOLO,BOSELLI,2,http://dati.camera.it/ocd/persona.rdf/pr1239
+GIUSEPPE EMANUELE,MODIGLIANI,1,http://dati.camera.it/ocd/persona.rdf/p26480
+GIUSEPPE,ROMITA,1,http://dati.camera.it/ocd/persona.rdf/p26830
+IVANOE,BONOMI,0,http://dati.camera.it/ocd/persona.rdf/p27370
+IVANOE,BONOMI,1,http://dati.camera.it/ocd/persona.rdf/p27370
+BENEDETTO,CROCE,2,http://dati.camera.it/ocd/persona.rdf/p27710
+BENEDETTO,CROCE,0,http://dati.camera.it/ocd/persona.rdf/p27710
+LUIGI,GASPAROTTO,1,http://dati.camera.it/ocd/persona.rdf/p27920
+LUIGI,GASPAROTTO,0,http://dati.camera.it/ocd/persona.rdf/p27920
+ALCIDE,DE GASPERI,1,http://dati.camera.it/ocd/persona.rdf/p13230
+EMILIO,LUSSU,1,http://dati.camera.it/ocd/persona.rdf/p28070
+FRANCESCO SAVERIO,NITTI,1,http://dati.camera.it/ocd/persona.rdf/p28250
+GIUSEPPE,PENNISI DI SANTA MARGHERITA,1,http://dati.camera.it/ocd/persona.rdf/pr3516
+LUIGI,RAVA,2,http://dati.camera.it/ocd/persona.rdf/pr3624
+LUIGI,REPOSSI,1,http://dati.camera.it/ocd/persona.rdf/pr3683
+TOMMASO,TITTONI,2,http://dati.camera.it/ocd/persona.rdf/pr3712
+ETTORE,SACCHI,1,http://dati.camera.it/ocd/persona.rdf/pr3884
+ANTONIO,SALANDRA,1,http://dati.camera.it/ocd/persona.rdf/pr3893
+GINO,SARROCCHI,1,http://dati.camera.it/ocd/persona.rdf/pr3986
+GINO,SARROCCHI,0,http://dati.camera.it/ocd/persona.rdf/pr3986
+GIOVANNI,GRONCHI,0,http://dati.camera.it/ocd/persona.rdf/p18950
+GIOVANNI,GRONCHI,1,http://dati.camera.it/ocd/persona.rdf/p18950
+VITTORIO EMANUELE,ORLANDO,1,http://dati.camera.it/ocd/persona.rdf/p28270
+TITO,ZANIBONI,1,http://dati.camera.it/ocd/persona.rdf/pr4767
+GIOVANNI,AMENDOLA,0,http://dati.camera.it/ocd/persona.rdf/pr78
+GIOVANNI,AMENDOLA,1,http://dati.camera.it/ocd/persona.rdf/pr78
+LUIGI,ALBERTINI,2,http://dati.camera.it/ocd/persona.rdf/pr9027
+PIETRO,BADOGLIO,2,http://dati.camera.it/ocd/persona.rdf/pr9083
+EMANUELE,INCISA BECCARIA,2,http://dati.camera.it/ocd/persona.rdf/pr9118
+RICCARDO,BIANCHI,2,http://dati.camera.it/ocd/persona.rdf/pr9151
+LUIGI,CADORNA,2,http://dati.camera.it/ocd/persona.rdf/pr9247
+CARLO,CANEVA,2,http://dati.camera.it/ocd/persona.rdf/pr9273
+ENRICO,CAVIGLIA,2,http://dati.camera.it/ocd/persona.rdf/pr9334
+VINCENZO,TANGORRA,1,http://dati.camera.it/ocd/persona.rdf/pr4120
+VINCENZO,TANGORRA,0,http://dati.camera.it/ocd/persona.rdf/pr4120
+SIDNEY COSTANTINO,SONNINO,2,http://dati.camera.it/ocd/persona.rdf/pr4226
+CLAUDIO,TREVES,1,http://dati.camera.it/ocd/persona.rdf/pr4301
+FILIPPO,TURATI,1,http://dati.camera.it/ocd/persona.rdf/pr4323
+ACHILLE,VISOCCHI,1,http://dati.camera.it/ocd/persona.rdf/pr4399
+LEONE,WOLLEMBORG,2,http://dati.camera.it/ocd/persona.rdf/pr4411
+ENRICO,DE NICOLA,1,http://dati.camera.it/ocd/persona.rdf/p303409
+GIACOMO,ACERBO,0,http://dati.camera.it/ocd/persona.rdf/pr4487
+GIACOMO,ACERBO,1,http://dati.camera.it/ocd/persona.rdf/pr4487
+LEANDRO,ARPINATI,1,http://dati.camera.it/ocd/persona.rdf/pr4502
+LEANDRO,ARPINATI,0,http://dati.camera.it/ocd/persona.rdf/pr4502
+GINO,BALDESI,1,http://dati.camera.it/ocd/persona.rdf/pr4505
+GIUSEPPE,BOTTAI,1,http://dati.camera.it/ocd/persona.rdf/pr4523
+GIUSEPPE,BOTTAI,0,http://dati.camera.it/ocd/persona.rdf/pr4523
+ALBERTO,DE STEFANI,0,http://dati.camera.it/ocd/persona.rdf/pr4595
+ALBERTO,DE STEFANI,1,http://dati.camera.it/ocd/persona.rdf/pr4595
+ALESSANDRO,DUDAN,1,http://dati.camera.it/ocd/persona.rdf/pr4604
+ROBERTO,FARINACCI,1,http://dati.camera.it/ocd/persona.rdf/pr4611
+ALDO,FINZI,1,http://dati.camera.it/ocd/persona.rdf/pr4621
+ALDO,FINZI,0,http://dati.camera.it/ocd/persona.rdf/pr4621
+FRANCESCO,GIUNTA,1,http://dati.camera.it/ocd/persona.rdf/pr4637
+FRANCESCO,GIUNTA,0,http://dati.camera.it/ocd/persona.rdf/pr4637
+ALFREDO,MISURI,1,http://dati.camera.it/ocd/persona.rdf/pr4685
+BENITO,MUSSOLINI,0,http://dati.camera.it/ocd/persona.rdf/pr4690
+BENITO,MUSSOLINI,1,http://dati.camera.it/ocd/persona.rdf/pr4690
+ALDO,OVIGLIO,0,http://dati.camera.it/ocd/persona.rdf/pr4698
+ALDO,OVIGLIO,1,http://dati.camera.it/ocd/persona.rdf/pr4698
+CESARE,ROSSI DI MONTELERA,1,http://dati.camera.it/ocd/persona.rdf/pr4727
+CESARE,ROSSI DI MONTELERA,0,http://dati.camera.it/ocd/persona.rdf/pr4727
+CARLO,SFORZA,0,http://dati.camera.it/ocd/persona.rdf/p28500
+ETTORE,CONTI,2,http://dati.camera.it/ocd/persona.rdf/pr9398
+MARIO ORSO,CORBINO,2,http://dati.camera.it/ocd/persona.rdf/pr9405
+MARIO ORSO,CORBINO,0,http://dati.camera.it/ocd/persona.rdf/pr9405
+ENRICO,CORRADINI,2,http://dati.camera.it/ocd/persona.rdf/pr9410
+EMILIO,DE BONO,2,http://dati.camera.it/ocd/persona.rdf/pr9461
+EMILIO,DE BONO,0,http://dati.camera.it/ocd/persona.rdf/pr9461
+CESARE MARIA,DE VECCHI DI VAL CISMON,0,http://dati.camera.it/ocd/persona.rdf/pr9538
+CESARE MARIA,DE VECCHI DI VAL CISMON,1,http://dati.camera.it/ocd/persona.rdf/pr9538
+ARMANDO,DIAZ,2,http://dati.camera.it/ocd/persona.rdf/pr9542
+ARMANDO,DIAZ,0,http://dati.camera.it/ocd/persona.rdf/pr9542
+PIETRO,GAZZERA,0,http://dati.camera.it/ocd/persona.rdf/pr9701
+GIOVANNI,GENTILE,0,http://dati.camera.it/ocd/persona.rdf/pr9705
+GIOVANNI,GENTILE,2,http://dati.camera.it/ocd/persona.rdf/pr9705
+GAETANO,GIARDINO,2,http://dati.camera.it/ocd/persona.rdf/pr9726
+CAMILLO,GOLGI,2,http://dati.camera.it/ocd/persona.rdf/pr9758
+GUGLIELMO,IMPERIALI,2,http://dati.camera.it/ocd/persona.rdf/pr9794
+GIACOMO,MALVANO,2,http://dati.camera.it/ocd/persona.rdf/pr9868
+GUGLIELMO,MARCONI,2,http://dati.camera.it/ocd/persona.rdf/pr9888
+PIETRO,MILANO FRANCO D'ARAGONA,2,http://dati.camera.it/ocd/persona.rdf/pr9957
+ENRICO,MILLO,2,http://dati.camera.it/ocd/persona.rdf/pr9960
+PAOLO,MORRONE,2,http://dati.camera.it/ocd/persona.rdf/pr9999
+GIOVANNI,GIURIATI,1,http://dati.camera.it/ocd/persona.rdf/pr9750
+GIOVANNI,GIURIATI,0,http://dati.camera.it/ocd/persona.rdf/pr9750
+ANTONIO,CASERTANO,1,http://dati.camera.it/ocd/persona.rdf/pr1604
+ANTONIO,CASERTANO,0,http://dati.camera.it/ocd/persona.rdf/pr1604
+DINO,GRANDI,1,http://dati.camera.it/ocd/persona.rdf/pr2443
+DINO,GRANDI,0,http://dati.camera.it/ocd/persona.rdf/pr2443
+GIUSEPPE,MARCORA,2,http://dati.camera.it/ocd/persona.rdf/pr2845
+COSTANZO,CIANO,0,http://dati.camera.it/ocd/persona.rdf/pr4561
+COSTANZO,CIANO,1,http://dati.camera.it/ocd/persona.rdf/pr4561
+ALFREDO,ROCCO,0,http://dati.camera.it/ocd/persona.rdf/pr4723
+ALFREDO,ROCCO,1,http://dati.camera.it/ocd/persona.rdf/pr4723
+GIOVANNI,CUOMO,1,http://dati.camera.it/ocd/persona.rdf/p12240
+PAOLO,CAPPA,1,http://dati.camera.it/ocd/persona.rdf/p11350
+GIUSEPPE,GRASSI,1,http://dati.camera.it/ocd/persona.rdf/p11780
+MARIO,JANNELLI,0,http://dati.camera.it/ocd/persona.rdf/p13730
+ANTONIO,FERRARESE,1,http://dati.camera.it/ocd/persona.rdf/p13790
+TEODORO,BUBBIO,1,http://dati.camera.it/ocd/persona.rdf/p13530
+ROBERTO,CANTALUPO,0,http://dati.camera.it/ocd/persona.rdf/p14180
+ANGELO,CORSI,1,http://dati.camera.it/ocd/persona.rdf/p13130
+ARMANDO,ANGELINI,1,http://dati.camera.it/ocd/persona.rdf/p17750
+EZIO MARIA,GRAY,1,http://dati.camera.it/ocd/persona.rdf/p18930
+KARL,TINZL,1,http://dati.camera.it/ocd/persona.rdf/p20150
+GIAMBATTISTA,BOSCO LUCARELLI,0,http://dati.camera.it/ocd/persona.rdf/p25410
+GIAMBATTISTA,BOSCO LUCARELLI,1,http://dati.camera.it/ocd/persona.rdf/p25410
+FRANCESCO,CERABONA,1,http://dati.camera.it/ocd/persona.rdf/p25550
+SALVATORE,ALDISIO,1,http://dati.camera.it/ocd/persona.rdf/p25290
+PAOLO,GRECO,1,http://dati.camera.it/ocd/persona.rdf/p26120
+PASQUALE,IMPROTA,1,http://dati.camera.it/ocd/persona.rdf/p26160
+RAFFAELE,DE CARO,1,http://dati.camera.it/ocd/persona.rdf/p25690
+AUGUSTO,DE MARSANICH,0,http://dati.camera.it/ocd/persona.rdf/p25720
+GIUSEPPE,DI VITTORIO,1,http://dati.camera.it/ocd/persona.rdf/p25750
+ANDREA,FINOCCHIARO APRILE,1,http://dati.camera.it/ocd/persona.rdf/p25900
+ACHILLE,PELLIZZARI,1,http://dati.camera.it/ocd/persona.rdf/p26650
+GINO,MACRELLI,1,http://dati.camera.it/ocd/persona.rdf/p26250
+GIUSEPPE,MICHELI,1,http://dati.camera.it/ocd/persona.rdf/p26450
+GIUSEPPE,MICHELI,0,http://dati.camera.it/ocd/persona.rdf/p26450
+LUCIANO,FANTONI,1,http://dati.camera.it/ocd/persona.rdf/p27820
+GIUSEPPE,FILIPPINI,1,http://dati.camera.it/ocd/persona.rdf/p27870
+GUIDO,GIACOMETTI,1,http://dati.camera.it/ocd/persona.rdf/p27960
+ACHILLE,GRANDI,1,http://dati.camera.it/ocd/persona.rdf/p27990
+STEFANO,JACINI,1,http://dati.camera.it/ocd/persona.rdf/p28020
+ARTURO,LABRIOLA,0,http://dati.camera.it/ocd/persona.rdf/p28030
+ARTURO,LABRIOLA,1,http://dati.camera.it/ocd/persona.rdf/p28030
+EMIDIO,LOPARDI,1,http://dati.camera.it/ocd/persona.rdf/p28050
+FABRIZIO,MAFFI,1,http://dati.camera.it/ocd/persona.rdf/p28080
+PIETRO,MANCINI,1,http://dati.camera.it/ocd/persona.rdf/p28100
+GIUSEPPE,CANEPA,1,http://dati.camera.it/ocd/persona.rdf/p27460
+LUIGI,CARBONARI,1,http://dati.camera.it/ocd/persona.rdf/p27500
+MARIO,CINGOLANI,0,http://dati.camera.it/ocd/persona.rdf/p27610
+MARIO,CINGOLANI,1,http://dati.camera.it/ocd/persona.rdf/p27610
+GIOVANNI,CONTI,1,http://dati.camera.it/ocd/persona.rdf/p27640
+LUIGI,CORAZZIN,1,http://dati.camera.it/ocd/persona.rdf/p27660
+GIOVANNI,COSATTINI,1,http://dati.camera.it/ocd/persona.rdf/p27680
+LODOVICO,D'ARAGONA,1,http://dati.camera.it/ocd/persona.rdf/p27740
+EDUARDO,DI GIOVANNI,1,http://dati.camera.it/ocd/persona.rdf/p27780
+ALFONSO,RUBILLI,1,http://dati.camera.it/ocd/persona.rdf/p28450
+ALFONSO,RUBILLI,0,http://dati.camera.it/ocd/persona.rdf/p28450
+TIZIANO,TESSITORI,1,http://dati.camera.it/ocd/persona.rdf/p28560
+TOMMASO ANGELO,TONELLO,1,http://dati.camera.it/ocd/persona.rdf/p28570
+UMBERTO,TUPINI,1,http://dati.camera.it/ocd/persona.rdf/p28590
+GIOVANNI,UBERTI,1,http://dati.camera.it/ocd/persona.rdf/p28610
+FRANCESCO,ZANARDI,1,http://dati.camera.it/ocd/persona.rdf/p28680
+PIETRO,MASTINO,1,http://dati.camera.it/ocd/persona.rdf/p28150
+NINO,MAZZONI,1,http://dati.camera.it/ocd/persona.rdf/p28160
+UMBERTO,MERLIN,0,http://dati.camera.it/ocd/persona.rdf/p28170
+UMBERTO,MERLIN,1,http://dati.camera.it/ocd/persona.rdf/p28170
+ENRICO,MOLE',1,http://dati.camera.it/ocd/persona.rdf/p28180
+RICCARDO,MOMIGLIANO,1,http://dati.camera.it/ocd/persona.rdf/p28200
+GABRIELE LUIGI,MONTEMARTINI,1,http://dati.camera.it/ocd/persona.rdf/p28220
+GIUSEPPE,PARATORE,1,http://dati.camera.it/ocd/persona.rdf/p28290
+GIUSEPPE,PARATORE,0,http://dati.camera.it/ocd/persona.rdf/p28290
+GIOVANNI,PERSICO,1,http://dati.camera.it/ocd/persona.rdf/p28340
+GIUSEPPE ERNESTO,PIEMONTE,1,http://dati.camera.it/ocd/persona.rdf/p28350
+GIOVANNI,PORZIO,0,http://dati.camera.it/ocd/persona.rdf/p28370
+GIOVANNI,PORZIO,1,http://dati.camera.it/ocd/persona.rdf/p28370
+VITO,REALE,1,http://dati.camera.it/ocd/persona.rdf/p28400
+LEOPOLDO,BARACCO,1,http://dati.camera.it/ocd/persona.rdf/p27190
+TULLIO,BENEDETTI,1,http://dati.camera.it/ocd/persona.rdf/p27270
+GIOVANNI,BERTINI,1,http://dati.camera.it/ocd/persona.rdf/p27310
+GIOVANNI,BERTINI,0,http://dati.camera.it/ocd/persona.rdf/p27310
+GIOVANNI BATTISTA,BERTONE,0,http://dati.camera.it/ocd/persona.rdf/p27320
+GIOVANNI BATTISTA,BERTONE,1,http://dati.camera.it/ocd/persona.rdf/p27320
+ALESSANDRO,BOCCONI,1,http://dati.camera.it/ocd/persona.rdf/p27350
+GIOVANNI,BRASCHI,1,http://dati.camera.it/ocd/persona.rdf/p27400
+FRANCESCO,BUFFONI,1,http://dati.camera.it/ocd/persona.rdf/p27410
+GIUSEPPE,BUONOCORE,1,http://dati.camera.it/ocd/persona.rdf/p27420
+EMILIO,CANEVARI,1,http://dati.camera.it/ocd/persona.rdf/p27450
+ALBINO OTTAVIO,STELLA,1,http://dati.camera.it/ocd/persona.rdf/p26990
+BRUNO,VILLABRUNA,1,http://dati.camera.it/ocd/persona.rdf/p27080
+ALFREDO,DE MARSICO,0,http://dati.camera.it/ocd/persona.rdf/p300833
+EGIDIO,FAZIO,1,http://dati.camera.it/ocd/persona.rdf/p300797
+ROSARIO,PASQUALINO VASSALLO,1,http://dati.camera.it/ocd/persona.rdf/p300670
+ROSARIO,PASQUALINO VASSALLO,0,http://dati.camera.it/ocd/persona.rdf/p300670
+ANTONIO,BOGGIANO PICO,1,http://dati.camera.it/ocd/persona.rdf/p300768
+FILIPPO,AMEDEO,1,http://dati.camera.it/ocd/persona.rdf/p300642
+PIETRO,ROMANI,1,http://dati.camera.it/ocd/persona.rdf/p300655
+ALESSANDRO,LESSONA,0,http://dati.camera.it/ocd/persona.rdf/p303964
+FILIPPO,PENNAVARIA,1,http://dati.camera.it/ocd/persona.rdf/p303752
+FILIPPO,PENNAVARIA,0,http://dati.camera.it/ocd/persona.rdf/p303752
+CLEMENTE,PISCITELLI,1,http://dati.camera.it/ocd/persona.rdf/p304417
+FEDERICO,MARCONCINI,1,http://dati.camera.it/ocd/persona.rdf/p303333
+FRANCESCO,MICELI PICARDI,1,http://dati.camera.it/ocd/persona.rdf/p303339
+GAETANO,PIERACCINI,1,http://dati.camera.it/ocd/persona.rdf/p303346
+RAFFAELE,CAPORALI,1,http://dati.camera.it/ocd/persona.rdf/p303294
+ALESSANDRO,CASATI,0,http://dati.camera.it/ocd/persona.rdf/p303297
+ALFREDO,FRASSATI,2,http://dati.camera.it/ocd/persona.rdf/p303313
+ENRICO,GONZALES,1,http://dati.camera.it/ocd/persona.rdf/p303317
+UGO,GUARIENTI,1,http://dati.camera.it/ocd/persona.rdf/p303319
+LUIGI,FABBRI,1,http://dati.camera.it/ocd/persona.rdf/p303741
+FRANCESCO,TERMINI,1,http://dati.camera.it/ocd/persona.rdf/p303365
+PIETRO,TOMASI DELLA TORRETTA,0,http://dati.camera.it/ocd/persona.rdf/p303368
+LUIGI,BENNANI,1,http://dati.camera.it/ocd/persona.rdf/p6790
+GIACOMO FILIPPO,NOVARO,2,http://dati.camera.it/ocd/persona.rdf/pr10036
+EUGENIO,OLIVERI,2,http://dati.camera.it/ocd/persona.rdf/pr10045
+LODOVICO,MORTARA,2,http://dati.camera.it/ocd/persona.rdf/pr10000
+ANTONIO,MOSCONI,2,http://dati.camera.it/ocd/persona.rdf/pr10002
+ANTONIO,MOSCONI,0,http://dati.camera.it/ocd/persona.rdf/pr10002
+ALFREDO,BERTESI,2,http://dati.camera.it/ocd/persona.rdf/pr1001
+MICHELE,BERTETTI,2,http://dati.camera.it/ocd/persona.rdf/pr1002
+EUGENIO,NICCOLINI SIRIGATTI,2,http://dati.camera.it/ocd/persona.rdf/pr10023
+MARIO,NICOLIS DI ROBILANT,2,http://dati.camera.it/ocd/persona.rdf/pr10025
+GIOVANNI BATTISTA,PIRELLI,2,http://dati.camera.it/ocd/persona.rdf/pr10151
+ALBERTO,PIRONTI,2,http://dati.camera.it/ocd/persona.rdf/pr10152
+GIORGIO,PITACCO,2,http://dati.camera.it/ocd/persona.rdf/pr10155
+CESARE,POGGI,2,http://dati.camera.it/ocd/persona.rdf/pr10160
+VITTORIO,POLACCO,2,http://dati.camera.it/ocd/persona.rdf/pr10162
+CORIOLANO,PONZA DI SAN MARTINO,2,http://dati.camera.it/ocd/persona.rdf/pr10165
+CARLO,PORRO (DEI CONTI DI S.MARIA DELLA BICOCCA),2,http://dati.camera.it/ocd/persona.rdf/pr10169
+ERNESTO,PRESBITERO,2,http://dati.camera.it/ocd/persona.rdf/pr10178
+BELLOM,PESCAROLO,2,http://dati.camera.it/ocd/persona.rdf/pr10120
+ERNESTO,PESTALOZZA,2,http://dati.camera.it/ocd/persona.rdf/pr10124
+CARLO,PETITTI DI RORETO,2,http://dati.camera.it/ocd/persona.rdf/pr10126
+SETTIMIO,PIACENTINI,2,http://dati.camera.it/ocd/persona.rdf/pr10135
+PIETRO OTTORINO,PIANIGIANI,2,http://dati.camera.it/ocd/persona.rdf/pr10137
+GIORGIO,PICCOLI,2,http://dati.camera.it/ocd/persona.rdf/pr10140
+LUIGI,PIGORINI,2,http://dati.camera.it/ocd/persona.rdf/pr10144
+GABRIELE,PINCHERLE,2,http://dati.camera.it/ocd/persona.rdf/pr10145
+GASPARE DOMENICO,REGIS,2,http://dati.camera.it/ocd/persona.rdf/pr10209
+CARLO LEONE,REYNAUDI,2,http://dati.camera.it/ocd/persona.rdf/pr10213
+ARTURO,RICCARDI,0,http://dati.camera.it/ocd/persona.rdf/pr10214
+CORRADO,RICCI,2,http://dati.camera.it/ocd/persona.rdf/pr10217
+VITTORIO,ROLANDI RICCI,2,http://dati.camera.it/ocd/persona.rdf/pr10226
+MICHELE,ROMANO,0,http://dati.camera.it/ocd/persona.rdf/pr10228
+FELICE,BACCI,1,http://dati.camera.it/ocd/persona.rdf/pr1023
+FRANCESCO LORENZO,PULLÈ,2,http://dati.camera.it/ocd/persona.rdf/pr10191
+VITTORIO,PUNTONI,2,http://dati.camera.it/ocd/persona.rdf/pr10192
+ORONZO,QUARTA,2,http://dati.camera.it/ocd/persona.rdf/pr10197
+FERDINANDO,QUARTIERI,2,http://dati.camera.it/ocd/persona.rdf/pr10198
+PIO,RAJNA,2,http://dati.camera.it/ocd/persona.rdf/pr10205
+EMANUELE,PATERNÒ,2,http://dati.camera.it/ocd/persona.rdf/pr10093
+RANIERO,PAULUCCI DI CALBOLI,2,http://dati.camera.it/ocd/persona.rdf/pr10095
+GUGLIELMO,PECORI GIRALDI,2,http://dati.camera.it/ocd/persona.rdf/pr10097
+VITTORIO,PEGLION,0,http://dati.camera.it/ocd/persona.rdf/pr10099
+ANGELO,PERSICO,2,http://dati.camera.it/ocd/persona.rdf/pr10118
+SALVATORE,PAGLIANO,2,http://dati.camera.it/ocd/persona.rdf/pr10064
+ETTORE,PAIS,2,http://dati.camera.it/ocd/persona.rdf/pr10065
+SILVIO,BERTI,2,http://dati.camera.it/ocd/persona.rdf/pr1007
+NATALE,PALUMMO,2,http://dati.camera.it/ocd/persona.rdf/pr10073
+ALBERTO,PANSA,2,http://dati.camera.it/ocd/persona.rdf/pr10077
+GIOVANNI,AUTERI BERRETTA,2,http://dati.camera.it/ocd/persona.rdf/pr1008
+GIOVANNI,PASCALE,2,http://dati.camera.it/ocd/persona.rdf/pr10083
+ANGELO,PASSERINI,2,http://dati.camera.it/ocd/persona.rdf/pr10089
+NAPOLEONE,PASSERINI,2,http://dati.camera.it/ocd/persona.rdf/pr10090
+FRANCESCO,TORRACA,2,http://dati.camera.it/ocd/persona.rdf/pr10409
+LUIGI,TORRIGIANI,2,http://dati.camera.it/ocd/persona.rdf/pr10413
+EMANUELE,TRIGONA,0,http://dati.camera.it/ocd/persona.rdf/pr10421
+GIULIO CESARE,TASSONI,2,http://dati.camera.it/ocd/persona.rdf/pr10382
+PAOLO IGNAZIO MARIA,THAON DI REVEL,0,http://dati.camera.it/ocd/persona.rdf/pr10388
+ROMOLO,TITTONI,2,http://dati.camera.it/ocd/persona.rdf/pr10394
+ENRICO,TIVARONI,2,http://dati.camera.it/ocd/persona.rdf/pr10395
+NULLO,BALDINI,1,http://dati.camera.it/ocd/persona.rdf/pr1040
+GIUSEPPE,TOMMASI,2,http://dati.camera.it/ocd/persona.rdf/pr10402
+CARLO,SANDRELLI,2,http://dati.camera.it/ocd/persona.rdf/pr10273
+ENRICO,SAN MARTINO VALPERGA,2,http://dati.camera.it/ocd/persona.rdf/pr10278
+NICOLA,BADALONI,2,http://dati.camera.it/ocd/persona.rdf/pr1028
+DONATO,SANMINIATELLI,2,http://dati.camera.it/ocd/persona.rdf/pr10280
+CARLO,SANTUCCI,2,http://dati.camera.it/ocd/persona.rdf/pr10288
+FILIPPO,SAVORGNAN DI BRAZZÀ,2,http://dati.camera.it/ocd/persona.rdf/pr10296
+FRANCESCO,SCADUTO,2,http://dati.camera.it/ocd/persona.rdf/pr10298
+MICHELE,SCHERILLO,2,http://dati.camera.it/ocd/persona.rdf/pr10302
+GIUSEPPE,SCHININÀ DI SANT'ELIA,2,http://dati.camera.it/ocd/persona.rdf/pr10305
+CATALDO,SCHIRALLI,2,http://dati.camera.it/ocd/persona.rdf/pr10306
+FRANCESCO,SCHUPFER,2,http://dati.camera.it/ocd/persona.rdf/pr10307
+VITTORIO,SCIALOJA,2,http://dati.camera.it/ocd/persona.rdf/pr10308
+VITTORIO,SCIALOJA,0,http://dati.camera.it/ocd/persona.rdf/pr10308
+BALDO,ROSSI,2,http://dati.camera.it/ocd/persona.rdf/pr10241
+GIOVANNI,ROSSI,2,http://dati.camera.it/ocd/persona.rdf/pr10242
+LUIGI,RUSSO,0,http://dati.camera.it/ocd/persona.rdf/pr10250
+FRANCESCO,SALATA,2,http://dati.camera.it/ocd/persona.rdf/pr10257
+CESARE,SALDINI,2,http://dati.camera.it/ocd/persona.rdf/pr10259
+ANGELO,SALMOIRAGHI,2,http://dati.camera.it/ocd/persona.rdf/pr10262
+GIUSEPPE MARIA,SALVAGO RAGGI,2,http://dati.camera.it/ocd/persona.rdf/pr10265
+ELVIDIO,SALVAREZZA,2,http://dati.camera.it/ocd/persona.rdf/pr10267
+LUIGI,SPEZZOTTI,0,http://dati.camera.it/ocd/persona.rdf/pr10350
+NICOLA,SQUITTI DI PALERMITI E GUARNA,2,http://dati.camera.it/ocd/persona.rdf/pr10355
+DAVID,SUPINO,2,http://dati.camera.it/ocd/persona.rdf/pr10363
+PAOLINO,TADDEI,0,http://dati.camera.it/ocd/persona.rdf/pr10367
+PAOLINO,TADDEI,2,http://dati.camera.it/ocd/persona.rdf/pr10367
+NINO,TAMASSIA,2,http://dati.camera.it/ocd/persona.rdf/pr10372
+GIOVANNI,SECHI,0,http://dati.camera.it/ocd/persona.rdf/pr10315
+ARRIGO,SERPIERI,0,http://dati.camera.it/ocd/persona.rdf/pr10322
+AUGUSTO,SETTI,2,http://dati.camera.it/ocd/persona.rdf/pr10327
+GINO,BAGLIONI,1,http://dati.camera.it/ocd/persona.rdf/pr1034
+GIUSEPPE,COBOLLI GIGLI,0,http://dati.camera.it/ocd/persona.rdf/pr10723
+CARLO,CARNAZZA,1,http://dati.camera.it/ocd/persona.rdf/pr10660
+ARALDO,CROLLALANZA (DI),0,http://dati.camera.it/ocd/persona.rdf/pr10694
+GIUSEPPE,FRIGNANI,0,http://dati.camera.it/ocd/persona.rdf/pr10798
+RICCARDO,DEL GIUDICE,0,http://dati.camera.it/ocd/persona.rdf/pr10747
+FRANCESCO,ERCOLE,0,http://dati.camera.it/ocd/persona.rdf/pr10762
+AMEDEO,FANI,0,http://dati.camera.it/ocd/persona.rdf/pr10766
+ANTONIO STEFANO,BENNI,1,http://dati.camera.it/ocd/persona.rdf/pr10560
+ANTONIO STEFANO,BENNI,0,http://dati.camera.it/ocd/persona.rdf/pr10560
+BRUNO,BIAGI,0,http://dati.camera.it/ocd/persona.rdf/pr10567
+TOMMASO,BISI,0,http://dati.camera.it/ocd/persona.rdf/pr10571
+GUIDO,BUFFARINI GUIDI,0,http://dati.camera.it/ocd/persona.rdf/pr10581
+ANGELO,BANDERALI,1,http://dati.camera.it/ocd/persona.rdf/pr1051
+GIOVANNI BATTISTA,BACCARINI,0,http://dati.camera.it/ocd/persona.rdf/pr10533
+ZENONE,BENINI,0,http://dati.camera.it/ocd/persona.rdf/pr10630
+CARLO ALBERTO,BIGGINI,0,http://dati.camera.it/ocd/persona.rdf/pr10635
+ORESTE,BONOMI,0,http://dati.camera.it/ocd/persona.rdf/pr10639
+EMILIO,CALDARA,1,http://dati.camera.it/ocd/persona.rdf/pr10643
+GABRIELE,CANELLI,0,http://dati.camera.it/ocd/persona.rdf/pr10647
+GIOVANNI,CAO,0,http://dati.camera.it/ocd/persona.rdf/pr10650
+EDOARDO DINO,ALFIERI,0,http://dati.camera.it/ocd/persona.rdf/pr10590
+ERMANNO,AMICUCCI,0,http://dati.camera.it/ocd/persona.rdf/pr10592
+AGEO,ARCANGELI,0,http://dati.camera.it/ocd/persona.rdf/pr10600
+DOMENICO,ARCIDIACONO,0,http://dati.camera.it/ocd/persona.rdf/pr10601
+ALBERTO,ASQUINI,0,http://dati.camera.it/ocd/persona.rdf/pr10610
+ALFONSO,VALERIO,2,http://dati.camera.it/ocd/persona.rdf/pr10438
+UBERTO,VISCONTI DI MODRONE,2,http://dati.camera.it/ocd/persona.rdf/pr10476
+GIROLAMO,VITELLI,2,http://dati.camera.it/ocd/persona.rdf/pr10478
+GIUSEPPE,VOLPI DI MISURATA,2,http://dati.camera.it/ocd/persona.rdf/pr10481
+GIUSEPPE,VOLPI DI MISURATA,0,http://dati.camera.it/ocd/persona.rdf/pr10481
+VITO,VOLTERRA,2,http://dati.camera.it/ocd/persona.rdf/pr10482
+LUIGI,ZILIOTTO,2,http://dati.camera.it/ocd/persona.rdf/pr10486
+VITTORIO,ZIPPEL,2,http://dati.camera.it/ocd/persona.rdf/pr10487
+LUIGI,ZUCCARI,2,http://dati.camera.it/ocd/persona.rdf/pr10491
+PAOLO,ZUNINO,2,http://dati.camera.it/ocd/persona.rdf/pr10493
+VITTORIO,ASINARI DI BERNEZZO,2,http://dati.camera.it/ocd/persona.rdf/pr10496
+GIOVANNI ANTONIO,VANNI,2,http://dati.camera.it/ocd/persona.rdf/pr10443
+LUIGI,VENOSTA,2,http://dati.camera.it/ocd/persona.rdf/pr10451
+ETTORE,VIGANÒ,2,http://dati.camera.it/ocd/persona.rdf/pr10463
+GIACOMO,VIGLIANI,2,http://dati.camera.it/ocd/persona.rdf/pr10465
+ANTONIO,LEONI,0,http://dati.camera.it/ocd/persona.rdf/pr10864
+LUIGI,LOJACONO,0,http://dati.camera.it/ocd/persona.rdf/pr10873
+LUIGI,BASSO,1,http://dati.camera.it/ocd/persona.rdf/pr1088
+GIOVANNI,HOST VENTURI,0,http://dati.camera.it/ocd/persona.rdf/pr10843
+GUIDO,JUNG,0,http://dati.camera.it/ocd/persona.rdf/pr10849
+FERRUCCIO,LANTINI,0,http://dati.camera.it/ocd/persona.rdf/pr10856
+SERGIO,NANNINI,0,http://dati.camera.it/ocd/persona.rdf/pr10952
+GIACOMO,MEDICI DEL VASCELLO,0,http://dati.camera.it/ocd/persona.rdf/pr10920
+VIRGILIO,SCEK,1,http://dati.camera.it/ocd/persona.rdf/pr11286
+DOMENICO,TRIPEPI,1,http://dati.camera.it/ocd/persona.rdf/pr11293
+GENUZIO,BENTINI,1,http://dati.camera.it/ocd/persona.rdf/pr1131
+DOMENICO,CAVAGNARI,0,http://dati.camera.it/ocd/persona.rdf/pr11316
+FELICE,GUARNERI,0,http://dati.camera.it/ocd/persona.rdf/pr11318
+GIUSEPPE,PEVERELLI,0,http://dati.camera.it/ocd/persona.rdf/pr11319
+GIOVANNI,MARINELLI,0,http://dati.camera.it/ocd/persona.rdf/pr11252
+FRANCESCO,MAURO,1,http://dati.camera.it/ocd/persona.rdf/pr11255
+ALDO,NETTI,1,http://dati.camera.it/ocd/persona.rdf/pr11264
+GIULIO,PADULLI,1,http://dati.camera.it/ocd/persona.rdf/pr11265
+GIUSEPPE,BENEDUCE,1,http://dati.camera.it/ocd/persona.rdf/pr1127
+GIUSEPPE,BENEDUCE,0,http://dati.camera.it/ocd/persona.rdf/pr1127
+ANTONIO,POGATSCHNIG,1,http://dati.camera.it/ocd/persona.rdf/pr11277
+UMBERTO,ALBINI,0,http://dati.camera.it/ocd/persona.rdf/pr11322
+TULLIO,CIANETTI,0,http://dati.camera.it/ocd/persona.rdf/pr11153
+BORTOLO,BELOTTI,0,http://dati.camera.it/ocd/persona.rdf/pr1116
+BORTOLO,BELOTTI,1,http://dati.camera.it/ocd/persona.rdf/pr1116
+EGIDIO,GENNARI,1,http://dati.camera.it/ocd/persona.rdf/pr11163
+OTTORINO,PICCINATO,1,http://dati.camera.it/ocd/persona.rdf/pr11168
+GAETANO,POLVERELLI,0,http://dati.camera.it/ocd/persona.rdf/pr11169
+FRANCESCO,BELTRAMI,1,http://dati.camera.it/ocd/persona.rdf/pr1117
+CESARE,TUMEDEI,0,http://dati.camera.it/ocd/persona.rdf/pr11176
+DARIO,LUPI,0,http://dati.camera.it/ocd/persona.rdf/pr11179
+DARIO,LUPI,1,http://dati.camera.it/ocd/persona.rdf/pr11179
+AMBROGIO,BELLONI,1,http://dati.camera.it/ocd/persona.rdf/pr1114
+PIETRO,FAUDELLA,1,http://dati.camera.it/ocd/persona.rdf/pr11226
+ANTONINO,GALFO RUTA,1,http://dati.camera.it/ocd/persona.rdf/pr11227
+BARBATO,GATTELLI,1,http://dati.camera.it/ocd/persona.rdf/pr11230
+EMO,GNUDI,1,http://dati.camera.it/ocd/persona.rdf/pr11233
+LUIGI,LA ROSA,1,http://dati.camera.it/ocd/persona.rdf/pr11247
+LUCA,BELTRAMI,2,http://dati.camera.it/ocd/persona.rdf/pr1119
+GIUSEPPE,BASTIANINI,0,http://dati.camera.it/ocd/persona.rdf/pr11199
+GIUSEPPE,BELLONE,1,http://dati.camera.it/ocd/persona.rdf/pr11203
+GAETANO,POSTIGLIONE,0,http://dati.camera.it/ocd/persona.rdf/pr11008
+GALILEO,BEGHI,1,http://dati.camera.it/ocd/persona.rdf/pr1101
+UMBERTO,PUPPINI,0,http://dati.camera.it/ocd/persona.rdf/pr11014
+ANTONIO,PUTZOLU,0,http://dati.camera.it/ocd/persona.rdf/pr11015
+LUIGI,RAZZA,0,http://dati.camera.it/ocd/persona.rdf/pr11024
+GIOVANNI,PALA,0,http://dati.camera.it/ocd/persona.rdf/pr10969
+GIOVANNI,BAVIERA,1,http://dati.camera.it/ocd/persona.rdf/pr1097
+SERGIO,PANUNZIO,0,http://dati.camera.it/ocd/persona.rdf/pr10973
+FERDINANDO,PIERAZZI,0,http://dati.camera.it/ocd/persona.rdf/pr10999
+FULVIO,SUVICH,0,http://dati.camera.it/ocd/persona.rdf/pr11093
+FULVIO,SUVICH,1,http://dati.camera.it/ocd/persona.rdf/pr11093
+GIUSEPPE,TASSINARI,0,http://dati.camera.it/ocd/persona.rdf/pr11098
+ATTILIO,TERUZZI,0,http://dati.camera.it/ocd/persona.rdf/pr11100
+GIUSEPPE,BELLINI,2,http://dati.camera.it/ocd/persona.rdf/pr1111
+RAFFAELLO,RICCARDI,0,http://dati.camera.it/ocd/persona.rdf/pr11030
+RENATO,RICCI,0,http://dati.camera.it/ocd/persona.rdf/pr11032
+GUIDO,RISPOLI,0,http://dati.camera.it/ocd/persona.rdf/pr11037
+RUGGERO,ROMANO,0,http://dati.camera.it/ocd/persona.rdf/pr11040
+ETTORE BERNARDO,ROSBOCH,0,http://dati.camera.it/ocd/persona.rdf/pr11042
+AMILCARE,ROSSI,0,http://dati.camera.it/ocd/persona.rdf/pr11043
+EDMONDO,ROSSONI,0,http://dati.camera.it/ocd/persona.rdf/pr11049
+AUGUSTO,BATTAGLIERI,2,http://dati.camera.it/ocd/persona.rdf/pr1095
+LUIGI,SCARFIOTTI,0,http://dati.camera.it/ocd/persona.rdf/pr11658
+ANTONIO,SORICE,0,http://dati.camera.it/ocd/persona.rdf/pr11665
+GUTIEREZ MICHELE,SPADAFORA,0,http://dati.camera.it/ocd/persona.rdf/pr11667
+RENATO,RINALDI,0,http://dati.camera.it/ocd/persona.rdf/pr11630
+GIUSEPPE,LOMBRASSA,0,http://dati.camera.it/ocd/persona.rdf/pr11529
+GIUSEPPE,GORLA,0,http://dati.camera.it/ocd/persona.rdf/pr11504
+ALFREDO,GUZZONI,0,http://dati.camera.it/ocd/persona.rdf/pr11512
+CARLO,PARESCHI,0,http://dati.camera.it/ocd/persona.rdf/pr11592
+MICHELE,PASCOLATO,0,http://dati.camera.it/ocd/persona.rdf/pr11593
+GIAMPIETRO DOMENICO,PELLEGRINI,0,http://dati.camera.it/ocd/persona.rdf/pr11600
+DOMENICO,BREZZI,1,http://dati.camera.it/ocd/persona.rdf/pr1156
+DOMENICO,BREZZI,0,http://dati.camera.it/ocd/persona.rdf/pr1156
+LUIGI,CONTU,0,http://dati.camera.it/ocd/persona.rdf/pr11416
+EUGENIO,BERGAMASCO,0,http://dati.camera.it/ocd/persona.rdf/pr1142
+EUGENIO,BERGAMASCO,2,http://dati.camera.it/ocd/persona.rdf/pr1142
+GUIDO,BERGAMO,1,http://dati.camera.it/ocd/persona.rdf/pr1143
+ADOLFO,BERARDELLI,1,http://dati.camera.it/ocd/persona.rdf/pr1134
+AGOSTINO,BERENINI,2,http://dati.camera.it/ocd/persona.rdf/pr1139
+RINO CORSO,FOUGIER,0,http://dati.camera.it/ocd/persona.rdf/pr11470
+GEROLAMO,BRANDOLIN,2,http://dati.camera.it/ocd/persona.rdf/pr1148
+CARLO,FABRIZI,0,http://dati.camera.it/ocd/persona.rdf/pr11451
+CARLO,FAVAGROSSA,0,http://dati.camera.it/ocd/persona.rdf/pr11457
+CARLO GIUSEPPE,BIANCHI,1,http://dati.camera.it/ocd/persona.rdf/pr1210
+GIUSEPPE,BEVIONE,1,http://dati.camera.it/ocd/persona.rdf/pr1205
+GIUSEPPE,BEVIONE,0,http://dati.camera.it/ocd/persona.rdf/pr1205
+UMBERTO,BIANCHI,1,http://dati.camera.it/ocd/persona.rdf/pr1218
+VINCENZO,BIANCHI,1,http://dati.camera.it/ocd/persona.rdf/pr1219
+VINCENZO,BIANCHI,0,http://dati.camera.it/ocd/persona.rdf/pr1219
+GIUSEPPE,BIANCHI,1,http://dati.camera.it/ocd/persona.rdf/pr1215
+LEONARDO,BIANCHI,2,http://dati.camera.it/ocd/persona.rdf/pr1216
+ANTONIO,SCUERO,0,http://dati.camera.it/ocd/persona.rdf/pr11956
+GIOVANNI,BRUSASCA,1,http://dati.camera.it/ocd/persona.rdf/pr1197
+FRANCESCO,PRICOLO,0,http://dati.camera.it/ocd/persona.rdf/pr11786
+LUIGI,FECIA DI COSSATO,2,http://dati.camera.it/ocd/persona.rdf/pr11854
+ALBERTO,PARIANI,0,http://dati.camera.it/ocd/persona.rdf/pr11864
+GIOVANNI,MANENTI,1,http://dati.camera.it/ocd/persona.rdf/pr11837
+UBALDO,SODDU,0,http://dati.camera.it/ocd/persona.rdf/pr12325
+ROMEO,CAMPANINI,1,http://dati.camera.it/ocd/persona.rdf/pr1530
+GIOVANNI ANTONIO,CAMPOSTRINI,2,http://dati.camera.it/ocd/persona.rdf/pr1538
+GIACOMO,CALLERI,2,http://dati.camera.it/ocd/persona.rdf/pr1440
+GIOVANNI,CALÒ,1,http://dati.camera.it/ocd/persona.rdf/pr1442
+GIOVANNI,CALÒ,0,http://dati.camera.it/ocd/persona.rdf/pr1442
+ERNESTO,ARTOM,2,http://dati.camera.it/ocd/persona.rdf/pr145
+ARTURO,CAROTI,1,http://dati.camera.it/ocd/persona.rdf/pr1463
+BALDASSARRE,CASTIGLIONI,2,http://dati.camera.it/ocd/persona.rdf/pr1418
+ENRICO,CARBONI BOJ,0,http://dati.camera.it/ocd/persona.rdf/pr1513
+ENRICO,CARBONI BOJ,1,http://dati.camera.it/ocd/persona.rdf/pr1513
+VINCENZO,CARBONI,1,http://dati.camera.it/ocd/persona.rdf/pr1515
+VINCENZO,CAMERINI,1,http://dati.camera.it/ocd/persona.rdf/pr1521
+MARIO,CARUSI,1,http://dati.camera.it/ocd/persona.rdf/pr1473
+MARIO,CARUSI,0,http://dati.camera.it/ocd/persona.rdf/pr1473
+RAFFAELE,CARUSO,2,http://dati.camera.it/ocd/persona.rdf/pr1475
+ANTONIO,CIVELLI,2,http://dati.camera.it/ocd/persona.rdf/pr1482
+PASQUALE,CLEMENTE,2,http://dati.camera.it/ocd/persona.rdf/pr1485
+FRANCESCO,COCCO ORTU,1,http://dati.camera.it/ocd/persona.rdf/pr1491
+FEDERICO,COCUZZA,2,http://dati.camera.it/ocd/persona.rdf/pr1496
+LORENZO,COCUZZA,1,http://dati.camera.it/ocd/persona.rdf/pr1497
+ANTONIO,CARDARELLI,2,http://dati.camera.it/ocd/persona.rdf/pr1329
+ALFREDO,BOUVIER,2,http://dati.camera.it/ocd/persona.rdf/pr1292
+GIACOMO,BONICELLI,2,http://dati.camera.it/ocd/persona.rdf/pr1376
+LELIO,BONIN LONGARE,2,http://dati.camera.it/ocd/persona.rdf/pr1377
+EGISTO,CAGNONI,1,http://dati.camera.it/ocd/persona.rdf/pr1387
+GIACOMO,CALABRIA,2,http://dati.camera.it/ocd/persona.rdf/pr1389
+CLEMENTE,CALDESI,2,http://dati.camera.it/ocd/persona.rdf/pr1396
+CARLO,CALISSE,2,http://dati.camera.it/ocd/persona.rdf/pr1400
+ARMANDO,BUSSI,1,http://dati.camera.it/ocd/persona.rdf/pr1344
+CARLO,BONARDI,1,http://dati.camera.it/ocd/persona.rdf/pr1362
+CARLO,BONARDI,0,http://dati.camera.it/ocd/persona.rdf/pr1362
+CARLO,TIENGO,0,http://dati.camera.it/ocd/persona.rdf/pr12290
+LUIGI,BOSI,1,http://dati.camera.it/ocd/persona.rdf/pr1240
+PAOLO,BIGNAMI,0,http://dati.camera.it/ocd/persona.rdf/pr1245
+CLODOALDO,BINOTTI,1,http://dati.camera.it/ocd/persona.rdf/pr1253
+ROBERTO,BISCARETTI DI RUFFIA,2,http://dati.camera.it/ocd/persona.rdf/pr1255
+SESTO,BISOGNI,1,http://dati.camera.it/ocd/persona.rdf/pr1256
+DANTE,ARGENTIERI,1,http://dati.camera.it/ocd/persona.rdf/pr126
+LUIGI,BORSARELLI DI RIFREDDO,2,http://dati.camera.it/ocd/persona.rdf/pr1231
+EUGENIO,CHIESA,1,http://dati.camera.it/ocd/persona.rdf/pr1680
+VITTORIO,CIPELLI,2,http://dati.camera.it/ocd/persona.rdf/pr1757
+MARCO,CIRIANI,1,http://dati.camera.it/ocd/persona.rdf/pr1763
+GIUSEPPE,CIRINCIONE,1,http://dati.camera.it/ocd/persona.rdf/pr1764
+BENEDETTO,CIRMENI,2,http://dati.camera.it/ocd/persona.rdf/pr1765
+ALESSANDRO,DE GIOVANNI,1,http://dati.camera.it/ocd/persona.rdf/pr1768
+ANTONIO,CEFALY,2,http://dati.camera.it/ocd/persona.rdf/pr1726
+GIOVANNI,CELESIA DI VEGLIASCO,0,http://dati.camera.it/ocd/persona.rdf/pr1728
+GIOVANNI,CELESIA DI VEGLIASCO,1,http://dati.camera.it/ocd/persona.rdf/pr1728
+GUIDO,CELLI,1,http://dati.camera.it/ocd/persona.rdf/pr1732
+MARIO,CERMENATI,1,http://dati.camera.it/ocd/persona.rdf/pr1746
+GIOVANNI,CICOGNA,1,http://dati.camera.it/ocd/persona.rdf/pr1747
+CAMILLO,CIMATI,2,http://dati.camera.it/ocd/persona.rdf/pr1749
+GAETANO,CIOCCHI,1,http://dati.camera.it/ocd/persona.rdf/pr1755
+LUIGI,CANZI,2,http://dati.camera.it/ocd/persona.rdf/pr1564
+PIETRO,CAPASSO,1,http://dati.camera.it/ocd/persona.rdf/pr1568
+ALFREDO,CAPECE MINUTOLO DI BUGNANO,2,http://dati.camera.it/ocd/persona.rdf/pr1570
+LUIGI,CAPITANIO,1,http://dati.camera.it/ocd/persona.rdf/pr1578
+INNOCENZO,CAPPA,1,http://dati.camera.it/ocd/persona.rdf/pr1587
+GIUSEPPE MARIA,CAPPELLERI,1,http://dati.camera.it/ocd/persona.rdf/pr1589
+FELICE NAPOLEONE,CANEVARO,2,http://dati.camera.it/ocd/persona.rdf/pr1551
+VITTORIO,CANNAVINA,2,http://dati.camera.it/ocd/persona.rdf/pr1553
+LUIGI,CAVALLI,2,http://dati.camera.it/ocd/persona.rdf/pr1652
+ALFREDO,CODACCI PISANELLI,1,http://dati.camera.it/ocd/persona.rdf/pr1653
+GIROLAMO,COFFARI,2,http://dati.camera.it/ocd/persona.rdf/pr1655
+GIULIO,CASALINI,1,http://dati.camera.it/ocd/persona.rdf/pr1594
+FRANCESCO,CASARETTO,1,http://dati.camera.it/ocd/persona.rdf/pr1596
+CALOGERO,CASCINO,0,http://dati.camera.it/ocd/persona.rdf/pr1603
+CALOGERO,CASCINO,1,http://dati.camera.it/ocd/persona.rdf/pr1603
+GIUSEPPE,CASOLI,1,http://dati.camera.it/ocd/persona.rdf/pr1609
+FABRIZIO,COLONNA AVELLA,2,http://dati.camera.it/ocd/persona.rdf/pr1826
+PROSPERO,COLONNA,2,http://dati.camera.it/ocd/persona.rdf/pr1831
+GASPARE,COLOSIMO,1,http://dati.camera.it/ocd/persona.rdf/pr1833
+CARLO,PANIZZARDI,2,http://dati.camera.it/ocd/persona.rdf/pr184
+LUIGI,CONGIU,0,http://dati.camera.it/ocd/persona.rdf/pr1849
+LUIGI,CONGIU,1,http://dati.camera.it/ocd/persona.rdf/pr1849
+CARLO,CUCCA,1,http://dati.camera.it/ocd/persona.rdf/pr1787
+GIACOMO,CURRENO DI SANTA MADDALENA,2,http://dati.camera.it/ocd/persona.rdf/pr1800
+FRANCESCO,CURTI,1,http://dati.camera.it/ocd/persona.rdf/pr1801
+GIUSEPPE,DE NAVA,0,http://dati.camera.it/ocd/persona.rdf/pr1811
+GIUSEPPE,DE NAVA,1,http://dati.camera.it/ocd/persona.rdf/pr1811
+FEDELE,DE NOVELLIS,2,http://dati.camera.it/ocd/persona.rdf/pr1816
+DAVIDE,CONSIGLIO,2,http://dati.camera.it/ocd/persona.rdf/pr1851
+GIOVANNI BATTISTA,CORIS,1,http://dati.camera.it/ocd/persona.rdf/pr1869
+ANSELMO,CIAPPI,1,http://dati.camera.it/ocd/persona.rdf/pr1698
+FERDINANDO,CAZZAMALLI,1,http://dati.camera.it/ocd/persona.rdf/pr1721
+NAPOLEONE,COLAJANNI,1,http://dati.camera.it/ocd/persona.rdf/pr1658
+ENRICO,DUGONI,1,http://dati.camera.it/ocd/persona.rdf/pr2078
+FRANCESCO,DURANTE,2,http://dati.camera.it/ocd/persona.rdf/pr2080
+PIETRO,ELLERO,2,http://dati.camera.it/ocd/persona.rdf/pr2084
+UGO,DA COMO,2,http://dati.camera.it/ocd/persona.rdf/pr2048
+MANSUETO,DE AMICIS,2,http://dati.camera.it/ocd/persona.rdf/pr2067
+LUIGI,DE ANDREIS,1,http://dati.camera.it/ocd/persona.rdf/pr2068
+AURELIO,DRAGO,1,http://dati.camera.it/ocd/persona.rdf/pr2075
+BIAGIO,DI PIETRA,1,http://dati.camera.it/ocd/persona.rdf/pr2145
+ARNALDO,DELLO SBARBA,0,http://dati.camera.it/ocd/persona.rdf/pr2164
+ARNALDO,DELLO SBARBA,1,http://dati.camera.it/ocd/persona.rdf/pr2164
+MARCO,DI SALUZZO DI PAESANA,0,http://dati.camera.it/ocd/persona.rdf/pr2174
+MARCO,DI SALUZZO DI PAESANA,2,http://dati.camera.it/ocd/persona.rdf/pr2174
+VINCENZO,DI SALVO,1,http://dati.camera.it/ocd/persona.rdf/pr2175
+FRANCESCO,DEGNI,1,http://dati.camera.it/ocd/persona.rdf/pr2126
+FRANCESCO,DEGNI,0,http://dati.camera.it/ocd/persona.rdf/pr2126
+ALBERTO,DI MARZO,1,http://dati.camera.it/ocd/persona.rdf/pr2137
+FRANCESCO,D'ALESSIO,1,http://dati.camera.it/ocd/persona.rdf/pr1951
+FRANCESCO,D'ALESSIO,0,http://dati.camera.it/ocd/persona.rdf/pr1951
+NICOLA,D'ALIFE GAETANI,2,http://dati.camera.it/ocd/persona.rdf/pr1953
+GIUSEPPE,D'ANDREA,2,http://dati.camera.it/ocd/persona.rdf/pr1959
+PIO,DONATI,1,http://dati.camera.it/ocd/persona.rdf/pr1976
+FILIPPO,CRISPOLTI,2,http://dati.camera.it/ocd/persona.rdf/pr1918
+ETTORE,CROCE,1,http://dati.camera.it/ocd/persona.rdf/pr1919
+VITO,DE BELLIS,1,http://dati.camera.it/ocd/persona.rdf/pr1922
+GIUSEPPE,DE CAPITANI D'ARZAGO,0,http://dati.camera.it/ocd/persona.rdf/pr1934
+GIUSEPPE,DE CAPITANI D'ARZAGO,1,http://dati.camera.it/ocd/persona.rdf/pr1934
+ROSARIO,CUTRUFELLI,1,http://dati.camera.it/ocd/persona.rdf/pr1941
+GIUSEPPE,CUZZI,2,http://dati.camera.it/ocd/persona.rdf/pr1945
+UGO,DI SANT'ONOFRIO DEL CASTILLO,2,http://dati.camera.it/ocd/persona.rdf/pr2022
+GIUSEPPE,DI STEFANO NAPOLITANI,2,http://dati.camera.it/ocd/persona.rdf/pr2027
+FRANCESCO SAVERIO,D'AYALA,1,http://dati.camera.it/ocd/persona.rdf/pr2040
+PIETRO,D'AYALA VALVA,2,http://dati.camera.it/ocd/persona.rdf/pr2042
+ENRICO,DE RENZI,2,http://dati.camera.it/ocd/persona.rdf/pr1981
+GIUSEPPE,DE RISEIS,2,http://dati.camera.it/ocd/persona.rdf/pr1984
+ERRICO,DE SETA,2,http://dati.camera.it/ocd/persona.rdf/pr1997
+GIULIO,ADAMOLI,2,http://dati.camera.it/ocd/persona.rdf/pr20
+RAFFAELE,COTUGNO,1,http://dati.camera.it/ocd/persona.rdf/pr1910
+LUIGI,CREDARO,2,http://dati.camera.it/ocd/persona.rdf/pr1912
+GIUSEPPE,CORNALBA,2,http://dati.camera.it/ocd/persona.rdf/pr1872
+CAMILLO,CORRADINI,0,http://dati.camera.it/ocd/persona.rdf/pr1874
+CAMILLO,CORRADINI,1,http://dati.camera.it/ocd/persona.rdf/pr1874
+CESARE,FERRERO DI CAMBIANO,2,http://dati.camera.it/ocd/persona.rdf/pr2356
+ENRICO,FERRI,1,http://dati.camera.it/ocd/persona.rdf/pr2358
+GIACOMO,FERRI,2,http://dati.camera.it/ocd/persona.rdf/pr2360
+IGNAZIO,FILÌ ASTOLFONE,2,http://dati.camera.it/ocd/persona.rdf/pr2370
+EMILIO,FAELLI,2,http://dati.camera.it/ocd/persona.rdf/pr2376
+VITTORIO,GIACCONE,2,http://dati.camera.it/ocd/persona.rdf/pr2325
+CARLO,FUMAROLA,0,http://dati.camera.it/ocd/persona.rdf/pr2407
+CARLO,FUMAROLA,1,http://dati.camera.it/ocd/persona.rdf/pr2407
+FILIPPO,GARAVETTI,2,http://dati.camera.it/ocd/persona.rdf/pr2425
+EMANUELE,FINOCCHIARO APRILE,1,http://dati.camera.it/ocd/persona.rdf/pr2477
+EUGENIO,FAINA,2,http://dati.camera.it/ocd/persona.rdf/pr2378
+ALFREDO,FALCIONI,1,http://dati.camera.it/ocd/persona.rdf/pr2382
+GIOVANNI,FALDELLA,2,http://dati.camera.it/ocd/persona.rdf/pr2387
+FERNANDO,GAROSI,1,http://dati.camera.it/ocd/persona.rdf/pr2493
+ARNALDO,AGNELLI,0,http://dati.camera.it/ocd/persona.rdf/pr25
+GIROLAMO,GATTI,2,http://dati.camera.it/ocd/persona.rdf/pr2501
+SECONDO,FROLA,2,http://dati.camera.it/ocd/persona.rdf/pr2399
+LODOVICO,GAVAZZI,2,http://dati.camera.it/ocd/persona.rdf/pr2505
+LUIGI,FRONTINI,1,http://dati.camera.it/ocd/persona.rdf/pr2401
+OTTAVIO,FROVA,1,http://dati.camera.it/ocd/persona.rdf/pr2402
+LODOVICO,FULCI,2,http://dati.camera.it/ocd/persona.rdf/pr2404
+LUIGI,FULCI,0,http://dati.camera.it/ocd/persona.rdf/pr2405
+LUIGI,FULCI,1,http://dati.camera.it/ocd/persona.rdf/pr2405
+ANGELO,GALENO,1,http://dati.camera.it/ocd/persona.rdf/pr2450
+GIOVANNI,FRANCICA NAVA,2,http://dati.camera.it/ocd/persona.rdf/pr2223
+GIUSEPPE,FRASCARA,2,http://dati.camera.it/ocd/persona.rdf/pr2230
+FRANCESCO,FARIOLI,1,http://dati.camera.it/ocd/persona.rdf/pr2471
+FRANCESCO SAVERIO,FINO,1,http://dati.camera.it/ocd/persona.rdf/pr2473
+CARLO,FABRI,2,http://dati.camera.it/ocd/persona.rdf/pr2245
+PIERO,GINORI CONTI,2,http://dati.camera.it/ocd/persona.rdf/pr2542
+CESARE,GIOPPI,2,http://dati.camera.it/ocd/persona.rdf/pr2547
+GIUSEPPE,GIORDANO APOSTOLI,2,http://dati.camera.it/ocd/persona.rdf/pr2548
+ALESSANDRO,GUACCERO,1,http://dati.camera.it/ocd/persona.rdf/pr2554
+AMANTO,DI FAUSTO,1,http://dati.camera.it/ocd/persona.rdf/pr2194
+LUIGI,DENTICE DI FRASSO,2,http://dati.camera.it/ocd/persona.rdf/pr2197
+FILIPPO,DENTICE DI ACCADIA,1,http://dati.camera.it/ocd/persona.rdf/pr2201
+ATTILIO,FONTANA,0,http://dati.camera.it/ocd/persona.rdf/pr2513
+ATTILIO,FONTANA,1,http://dati.camera.it/ocd/persona.rdf/pr2513
+DOMENICO,FRACASSI DI TORRE ROSSANO,2,http://dati.camera.it/ocd/persona.rdf/pr2526
+LUIGI,FERA,1,http://dati.camera.it/ocd/persona.rdf/pr2294
+LUIGI,FERA,0,http://dati.camera.it/ocd/persona.rdf/pr2294
+ANTONIO,FRADELETTO,2,http://dati.camera.it/ocd/persona.rdf/pr2529
+TITO,GALLA,1,http://dati.camera.it/ocd/persona.rdf/pr2297
+DANTE,GALLANI,1,http://dati.camera.it/ocd/persona.rdf/pr2298
+EMILIO,GALLAVRESI,1,http://dati.camera.it/ocd/persona.rdf/pr2299
+CALLISTO,GIAVAZZI,1,http://dati.camera.it/ocd/persona.rdf/pr2535
+CARLO,GALLINI,2,http://dati.camera.it/ocd/persona.rdf/pr2308
+GIUSEPPE,GENTILE,1,http://dati.camera.it/ocd/persona.rdf/pr2262
+GERINO,GERINI,2,http://dati.camera.it/ocd/persona.rdf/pr2268
+GIAN FRANCESCO,GHERARDINI,2,http://dati.camera.it/ocd/persona.rdf/pr2275
+ARTURO,MAESTRI,1,http://dati.camera.it/ocd/persona.rdf/pr2876
+MICHELE,MAITILASSO,1,http://dati.camera.it/ocd/persona.rdf/pr2896
+IGNAZIO,LARUSSA,1,http://dati.camera.it/ocd/persona.rdf/pr2834
+GENNARO,MARCIANO,2,http://dati.camera.it/ocd/persona.rdf/pr2841
+ARTURO,MARESCALCHI,1,http://dati.camera.it/ocd/persona.rdf/pr2851
+ARTURO,MARESCALCHI,0,http://dati.camera.it/ocd/persona.rdf/pr2851
+LUIGI,MARESCALCHI GRAVINA,2,http://dati.camera.it/ocd/persona.rdf/pr2852
+ARTURO,LUZZATTO,1,http://dati.camera.it/ocd/persona.rdf/pr2865
+DOMENICO,MAJOLO,1,http://dati.camera.it/ocd/persona.rdf/pr2902
+LEOPOLDO,GIUNTI,2,http://dati.camera.it/ocd/persona.rdf/pr2735
+GIROLAMO,GIUSSO,2,http://dati.camera.it/ocd/persona.rdf/pr2738
+GESUALDO,LIBERTINI PLUCHINOTTA,2,http://dati.camera.it/ocd/persona.rdf/pr2747
+PIETRO,LISSIA,0,http://dati.camera.it/ocd/persona.rdf/pr2753
+PIETRO,LISSIA,1,http://dati.camera.it/ocd/persona.rdf/pr2753
+GIOVANNI,LO MONTE,1,http://dati.camera.it/ocd/persona.rdf/pr2756
+AGOSTINO,LO PIANO,0,http://dati.camera.it/ocd/persona.rdf/pr2757
+AGOSTINO,LO PIANO,1,http://dati.camera.it/ocd/persona.rdf/pr2757
+VITO,LUCIANI,1,http://dati.camera.it/ocd/persona.rdf/pr2701
+VITO,LUCIANI,0,http://dati.camera.it/ocd/persona.rdf/pr2701
+GIUSEPPE,GIRARDINI,1,http://dati.camera.it/ocd/persona.rdf/pr2721
+GIUSEPPE,GIRARDINI,0,http://dati.camera.it/ocd/persona.rdf/pr2721
+VINCENZO,GIUFFRIDA,0,http://dati.camera.it/ocd/persona.rdf/pr2728
+VINCENZO,GIUFFRIDA,1,http://dati.camera.it/ocd/persona.rdf/pr2728
+FERDINANDO,MARTINI,2,http://dati.camera.it/ocd/persona.rdf/pr2793
+GIOVANNI,INDRI,2,http://dati.camera.it/ocd/persona.rdf/pr2820
+CALCEDONIO,INGHILLERI,2,http://dati.camera.it/ocd/persona.rdf/pr2821
+GIUSEPPE,DI TRABIA (LANZA),0,http://dati.camera.it/ocd/persona.rdf/pr2826
+GIUSEPPE,DI TRABIA (LANZA),1,http://dati.camera.it/ocd/persona.rdf/pr2826
+GIORGIO,GUGLIELMI,1,http://dati.camera.it/ocd/persona.rdf/pr2775
+ALESSANDRO,GUICCIOLI,2,http://dati.camera.it/ocd/persona.rdf/pr2779
+ULDERICO,LEVI,2,http://dati.camera.it/ocd/persona.rdf/pr2607
+VINCENZO,JANFOLLA,1,http://dati.camera.it/ocd/persona.rdf/pr2617
+DOMENICO,GRANDI,2,http://dati.camera.it/ocd/persona.rdf/pr2581
+GIACOMO,AGNESI,1,http://dati.camera.it/ocd/persona.rdf/pr26
+EMANUELE,GREPPI,2,http://dati.camera.it/ocd/persona.rdf/pr2678
+PASQUALE,GRIPPO,2,http://dati.camera.it/ocd/persona.rdf/pr2685
+PIERO,LUCCA,2,http://dati.camera.it/ocd/persona.rdf/pr2690
+LUIGI,LUCCHINI,2,http://dati.camera.it/ocd/persona.rdf/pr2694
+ARNALDO,LUCCI,1,http://dati.camera.it/ocd/persona.rdf/pr2695
+ALBERTO,AGNETTI,2,http://dati.camera.it/ocd/persona.rdf/pr27
+PRIMO,LAGASI,2,http://dati.camera.it/ocd/persona.rdf/pr2643
+VINCENZO EDOARDO,LOJODICE,2,http://dati.camera.it/ocd/persona.rdf/pr2648
+VITTORIO,LOLLINI,1,http://dati.camera.it/ocd/persona.rdf/pr2650
+GIOVANNI MARIA,LONGINOTTI,0,http://dati.camera.it/ocd/persona.rdf/pr2655
+GIOVANNI MARIA,LONGINOTTI,1,http://dati.camera.it/ocd/persona.rdf/pr2655
+LUIGI,MANGIAGALLI,2,http://dati.camera.it/ocd/persona.rdf/pr2939
+CAMILLO,MANGO,2,http://dati.camera.it/ocd/persona.rdf/pr2941
+GENNARO,MANNA,2,http://dati.camera.it/ocd/persona.rdf/pr2942
+ANSELMO,MARABINI,1,http://dati.camera.it/ocd/persona.rdf/pr2954
+ALBERTO,MALATESTA,1,http://dati.camera.it/ocd/persona.rdf/pr2910
+NERIO,MALVEZZI DÈ MEDICI,2,http://dati.camera.it/ocd/persona.rdf/pr2919
+GIOVANNI,MERIZZI,1,http://dati.camera.it/ocd/persona.rdf/pr3247
+GIOVANNI,MERLONI,1,http://dati.camera.it/ocd/persona.rdf/pr3250
+EDOARDO,OLLANDINI,1,http://dati.camera.it/ocd/persona.rdf/pr3222
+PAOLO,ORANO,1,http://dati.camera.it/ocd/persona.rdf/pr3226
+NICOLÒ,MELODIA,2,http://dati.camera.it/ocd/persona.rdf/pr3110
+VINCENZO,MENDAIA,1,http://dati.camera.it/ocd/persona.rdf/pr3113
+ALCEO,MASSARUCCI,2,http://dati.camera.it/ocd/persona.rdf/pr3118
+PASQUALE,MATERI,1,http://dati.camera.it/ocd/persona.rdf/pr3126
+EMILIO,MORINI,1,http://dati.camera.it/ocd/persona.rdf/pr3140
+LUIGI,MORANDI,2,http://dati.camera.it/ocd/persona.rdf/pr3083
+FILIPPO,MEDA,1,http://dati.camera.it/ocd/persona.rdf/pr3097
+FILIPPO,MEDA,0,http://dati.camera.it/ocd/persona.rdf/pr3097
+CLEMENTE,MAURO,1,http://dati.camera.it/ocd/persona.rdf/pr3179
+EUGENIO,MAURY DI MORANCEZ,1,http://dati.camera.it/ocd/persona.rdf/pr3185
+BASILIO,MAZZARELLA,1,http://dati.camera.it/ocd/persona.rdf/pr3194
+GIUSEPPE,MAZZINI,1,http://dati.camera.it/ocd/persona.rdf/pr3198
+MATTEO,MAZZIOTTI,2,http://dati.camera.it/ocd/persona.rdf/pr3201
+ULDERICO,MAZZOLANI,1,http://dati.camera.it/ocd/persona.rdf/pr3204
+TEODORO,MORISANI,1,http://dati.camera.it/ocd/persona.rdf/pr3142
+ELIO,MORPURGO,2,http://dati.camera.it/ocd/persona.rdf/pr3144
+ANGELO,PAVIA,2,http://dati.camera.it/ocd/persona.rdf/pr3170
+ANGELO,MAURI,0,http://dati.camera.it/ocd/persona.rdf/pr3176
+ANGELO,MAURI,1,http://dati.camera.it/ocd/persona.rdf/pr3176
+ERNESTO,MARSAGLIA,2,http://dati.camera.it/ocd/persona.rdf/pr2991
+PIETRO,ABBO,1,http://dati.camera.it/ocd/persona.rdf/pr3
+FILIPPO,MASCI,2,http://dati.camera.it/ocd/persona.rdf/pr3002
+PASQUALE,MASCIANTONIO,1,http://dati.camera.it/ocd/persona.rdf/pr3005
+ANTONIO,MARINO,1,http://dati.camera.it/ocd/persona.rdf/pr2981
+GIOVANNI,MARIOTTI,2,http://dati.camera.it/ocd/persona.rdf/pr2985
+ALESSANDRO,MARRACINO,0,http://dati.camera.it/ocd/persona.rdf/pr2989
+ALESSANDRO,MARRACINO,1,http://dati.camera.it/ocd/persona.rdf/pr2989
+POMPEO GHERARDO,MOLMENTI,2,http://dati.camera.it/ocd/persona.rdf/pr3052
+GIOVANNI,MONICI,1,http://dati.camera.it/ocd/persona.rdf/pr3058
+GIORGIO,MONTINI,1,http://dati.camera.it/ocd/persona.rdf/pr3076
+LUIGI,MONTRESOR,2,http://dati.camera.it/ocd/persona.rdf/pr3077
+FULVIO,MILANI,0,http://dati.camera.it/ocd/persona.rdf/pr3022
+FULVIO,MILANI,1,http://dati.camera.it/ocd/persona.rdf/pr3022
+GIAMBATTISTA,MILIANI,1,http://dati.camera.it/ocd/persona.rdf/pr3023
+FRANCESCO,MISIANO,1,http://dati.camera.it/ocd/persona.rdf/pr3042
+ALESSANDRO,MARTELLI,0,http://dati.camera.it/ocd/persona.rdf/pr350
+GIUSEPPE,PELLEGRINO,1,http://dati.camera.it/ocd/persona.rdf/pr3503
+SILVIO,PELLERANO,2,http://dati.camera.it/ocd/persona.rdf/pr3507
+LUIGI GIROLAMO,PELLOUX,2,http://dati.camera.it/ocd/persona.rdf/pr3510
+DOMENICO,NUVOLONI,2,http://dati.camera.it/ocd/persona.rdf/pr3463
+MICHELE,PIETRAVALLE,1,http://dati.camera.it/ocd/persona.rdf/pr3481
+ANTONINO,PECORARO LOMBARDO,1,http://dati.camera.it/ocd/persona.rdf/pr3490
+ANTONINO,PECORARO LOMBARDO,0,http://dati.camera.it/ocd/persona.rdf/pr3490
+ENRICO,PINI,2,http://dati.camera.it/ocd/persona.rdf/pr3568
+VINCENZO,PIPITONE,2,http://dati.camera.it/ocd/persona.rdf/pr3574
+RAFFAELE,PERLA,2,http://dati.camera.it/ocd/persona.rdf/pr3533
+FRANCESCO,PERRONE,1,http://dati.camera.it/ocd/persona.rdf/pr3538
+ANTONIO,PESTALOZZA,1,http://dati.camera.it/ocd/persona.rdf/pr3552
+ALFREDO,PETRILLO,0,http://dati.camera.it/ocd/persona.rdf/pr3555
+ALFREDO,PETRILLO,1,http://dati.camera.it/ocd/persona.rdf/pr3555
+VINCENZO,PAGELLA,1,http://dati.camera.it/ocd/persona.rdf/pr3375
+FERDINANDO,PALASCIANO,2,http://dati.camera.it/ocd/persona.rdf/pr3381
+ROMUALDO,PALBERTI,2,http://dati.camera.it/ocd/persona.rdf/pr3383
+ANTONINO,PANCAMO,1,http://dati.camera.it/ocd/persona.rdf/pr3398
+PIETRO,NICCOLINI,2,http://dati.camera.it/ocd/persona.rdf/pr3340
+LUIGI,PASCALE,1,http://dati.camera.it/ocd/persona.rdf/pr3362
+ANGELO,PEZZULLO,1,http://dati.camera.it/ocd/persona.rdf/pr3432
+ERASMO,PIAGGIO,2,http://dati.camera.it/ocd/persona.rdf/pr3435
+CAMILLO,PIATTI,1,http://dati.camera.it/ocd/persona.rdf/pr3441
+GINO,PANEBIANCO,1,http://dati.camera.it/ocd/persona.rdf/pr3403
+MAFFEO,PANTALEONI,2,http://dati.camera.it/ocd/persona.rdf/pr3410
+EDOARDO,PANTANO,2,http://dati.camera.it/ocd/persona.rdf/pr3411
+STEFANO,PAOLINO,1,http://dati.camera.it/ocd/persona.rdf/pr3416
+NICOLÒ,PAPADOPOLI ALDOBRANDINI,2,http://dati.camera.it/ocd/persona.rdf/pr3423
+ADELFO,NEGRETTI,1,http://dati.camera.it/ocd/persona.rdf/pr3330
+LEONE LUIGI,MUCCI,1,http://dati.camera.it/ocd/persona.rdf/pr3278
+DIEGO,MURGIA,1,http://dati.camera.it/ocd/persona.rdf/pr3284
+ELIA,MUSATTI,1,http://dati.camera.it/ocd/persona.rdf/pr3290
+SALVATORE,ORLANDO,2,http://dati.camera.it/ocd/persona.rdf/pr3293
+EMIDIO,AGOSTINONE,1,http://dati.camera.it/ocd/persona.rdf/pr33
+GIORGIO,RATTONE,2,http://dati.camera.it/ocd/persona.rdf/pr3623
+EUGENIO,REBAUDENGO,2,http://dati.camera.it/ocd/persona.rdf/pr3633
+GIACOMO,REGGIO,2,http://dati.camera.it/ocd/persona.rdf/pr3637
+SALVATORE,RENDA,1,http://dati.camera.it/ocd/persona.rdf/pr3641
+GUIDO,SALVADORI,1,http://dati.camera.it/ocd/persona.rdf/pr3653
+FELICE,QUAGLINO,1,http://dati.camera.it/ocd/persona.rdf/pr3601
+ERNESTO,PISTOIA,1,http://dati.camera.it/ocd/persona.rdf/pr3608
+FRANCESCO,PISTOJA,2,http://dati.camera.it/ocd/persona.rdf/pr3609
+EDOARDO,PIVA,1,http://dati.camera.it/ocd/persona.rdf/pr3610
+PASQUALE,PLACIDO,2,http://dati.camera.it/ocd/persona.rdf/pr3616
+FABRIZIO,PLUTINO,2,http://dati.camera.it/ocd/persona.rdf/pr3621
+EZIO,RIBOLDI,1,http://dati.camera.it/ocd/persona.rdf/pr3691
+ANTONIO,TESO,0,http://dati.camera.it/ocd/persona.rdf/pr3702
+ANTONIO,TESO,1,http://dati.camera.it/ocd/persona.rdf/pr3702
+DOMENICO,TINOZZI,1,http://dati.camera.it/ocd/persona.rdf/pr3711
+MARIO,TODESCHINI,1,http://dati.camera.it/ocd/persona.rdf/pr3719
+GIOVANNI,TOFANI,1,http://dati.camera.it/ocd/persona.rdf/pr3720
+LUIGI,PODESTÀ,2,http://dati.camera.it/ocd/persona.rdf/pr3722
+ERNESTO,SALVIA,2,http://dati.camera.it/ocd/persona.rdf/pr3660
+GIAMBATTISTA,QUEIROLO,2,http://dati.camera.it/ocd/persona.rdf/pr3668
+PIETRO,RABEZZANA,1,http://dati.camera.it/ocd/persona.rdf/pr3672
+DOMENICO,RACCUINI,2,http://dati.camera.it/ocd/persona.rdf/pr3675
+FERDINANDO,RESTA PALLAVICINO,2,http://dati.camera.it/ocd/persona.rdf/pr3684
+SALADINO,SALADINI PILASTRI,2,http://dati.camera.it/ocd/persona.rdf/pr3891
+LUIGI,ROSSI,0,http://dati.camera.it/ocd/persona.rdf/pr3898
+LUIGI,ROSSI,1,http://dati.camera.it/ocd/persona.rdf/pr3898
+ALDO,ROSSINI,0,http://dati.camera.it/ocd/persona.rdf/pr3903
+ALDO,ROSSINI,1,http://dati.camera.it/ocd/persona.rdf/pr3903
+ATTILIO,ROTA,2,http://dati.camera.it/ocd/persona.rdf/pr3905
+ALESSANDRO,DI ROVASENDA,2,http://dati.camera.it/ocd/persona.rdf/pr3909
+LEONE,ROMANIN JACUR,2,http://dati.camera.it/ocd/persona.rdf/pr3865
+GIOVANNI,ROMEO DELLE TORRAZZE,2,http://dati.camera.it/ocd/persona.rdf/pr3871
+GIOACCHINO,RUSSO,0,http://dati.camera.it/ocd/persona.rdf/pr3879
+VINCENZO,RICCIO,0,http://dati.camera.it/ocd/persona.rdf/pr3763
+VINCENZO,RICCIO,1,http://dati.camera.it/ocd/persona.rdf/pr3763
+DOMENICO,RIDOLA,2,http://dati.camera.it/ocd/persona.rdf/pr3766
+VINCENZO,RIOLO,2,http://dati.camera.it/ocd/persona.rdf/pr3777
+GIUSEPPE,SANARELLI,2,http://dati.camera.it/ocd/persona.rdf/pr3787
+MICHELINO,POGGI,1,http://dati.camera.it/ocd/persona.rdf/pr3726
+MARCO,POZZO,2,http://dati.camera.it/ocd/persona.rdf/pr3749
+DINO,RONDANI,1,http://dati.camera.it/ocd/persona.rdf/pr3821
+GIOVANNI,ROSADI,0,http://dati.camera.it/ocd/persona.rdf/pr3823
+GIOVANNI,ROSADI,1,http://dati.camera.it/ocd/persona.rdf/pr3823
+TEOFILO,ROSSI DI MONTELERA,0,http://dati.camera.it/ocd/persona.rdf/pr3832
+TEOFILO,ROSSI DI MONTELERA,2,http://dati.camera.it/ocd/persona.rdf/pr3832
+FRANCESCO,ROSSI,1,http://dati.camera.it/ocd/persona.rdf/pr3834
+CARLO,RIZZETTI,2,http://dati.camera.it/ocd/persona.rdf/pr3845
+GIUSEPPE,ROBERTI,1,http://dati.camera.it/ocd/persona.rdf/pr3850
+GUGLIELMO,SANDRONI,1,http://dati.camera.it/ocd/persona.rdf/pr3791
+ALFREDO,SANDULLI,1,http://dati.camera.it/ocd/persona.rdf/pr3792
+GIOVANNI,RAINERI,1,http://dati.camera.it/ocd/persona.rdf/pr3802
+GIOVANNI,RAINERI,0,http://dati.camera.it/ocd/persona.rdf/pr3802
+SECONDO,RAMELLA,1,http://dati.camera.it/ocd/persona.rdf/pr3803
+ROBERTO,RAMPOLDI,2,http://dati.camera.it/ocd/persona.rdf/pr3804
+PIETRO,SORMANI,2,http://dati.camera.it/ocd/persona.rdf/pr4231
+NICOLA,SPADA,2,http://dati.camera.it/ocd/persona.rdf/pr4235
+ANTONIO,SPAGNOLI,1,http://dati.camera.it/ocd/persona.rdf/pr4238
+ALESSANDRO,STOPPATO,2,http://dati.camera.it/ocd/persona.rdf/pr4153
+GIANFORTE,SUARDI,2,http://dati.camera.it/ocd/persona.rdf/pr4161
+BALDASSARRE,SQUITTI,1,http://dati.camera.it/ocd/persona.rdf/pr4107
+PAOLO,TAMBORINO,1,http://dati.camera.it/ocd/persona.rdf/pr4116
+VINCENZO,TAMBORINO,2,http://dati.camera.it/ocd/persona.rdf/pr4117
+GIUSEPPE,TANARI,2,http://dati.camera.it/ocd/persona.rdf/pr4119
+FRANCESCO,TEDESCO,0,http://dati.camera.it/ocd/persona.rdf/pr4202
+MARCELLO,SOLERI,0,http://dati.camera.it/ocd/persona.rdf/pr4216
+MARCELLO,SOLERI,1,http://dati.camera.it/ocd/persona.rdf/pr4216
+GIORGIO MICHELE,SONNINO,2,http://dati.camera.it/ocd/persona.rdf/pr4225
+PIER GAETANO,VENINO,1,http://dati.camera.it/ocd/persona.rdf/pr4175
+PIER GAETANO,VENINO,0,http://dati.camera.it/ocd/persona.rdf/pr4175
+GIULIO,VENZI,2,http://dati.camera.it/ocd/persona.rdf/pr4182
+FRANCESCO,TASSINARI,1,http://dati.camera.it/ocd/persona.rdf/pr4194
+NICOLA,SERRA,1,http://dati.camera.it/ocd/persona.rdf/pr4020
+NICOLA,SERRA,0,http://dati.camera.it/ocd/persona.rdf/pr4020
+UMBERTO,SERRISTORI TOZZONI,2,http://dati.camera.it/ocd/persona.rdf/pr4027
+GIOVANNI,SCAGLIOTTI,1,http://dati.camera.it/ocd/persona.rdf/pr4036
+GIUSEPPE,SBARAGLINI,1,http://dati.camera.it/ocd/persona.rdf/pr3993
+GIUSEPPE,ALBANESE,0,http://dati.camera.it/ocd/persona.rdf/pr40
+GIUSEPPE,ALBANESE,1,http://dati.camera.it/ocd/persona.rdf/pr40
+TITO,SINIBALDI,2,http://dati.camera.it/ocd/persona.rdf/pr4080
+ERMINIO,SIPARI,1,http://dati.camera.it/ocd/persona.rdf/pr4082
+ERMINIO,SIPARI,0,http://dati.camera.it/ocd/persona.rdf/pr4082
+PIETRO,SITTA,1,http://dati.camera.it/ocd/persona.rdf/pr4086
+PIETRO,SITTA,0,http://dati.camera.it/ocd/persona.rdf/pr4086
+FILIBERTO,SMORTI,1,http://dati.camera.it/ocd/persona.rdf/pr4087
+EDOARDO,SODERINI,2,http://dati.camera.it/ocd/persona.rdf/pr4089
+BENIAMINO,SPIRITO,2,http://dati.camera.it/ocd/persona.rdf/pr4101
+UGO,SCALORI,2,http://dati.camera.it/ocd/persona.rdf/pr4040
+CARLO,SCHANZER,2,http://dati.camera.it/ocd/persona.rdf/pr4048
+CARLO,SCHANZER,0,http://dati.camera.it/ocd/persona.rdf/pr4048
+GIACOMO,SCOTTI,1,http://dati.camera.it/ocd/persona.rdf/pr4067
+EDMONDO,SANJUST DI TEULADA,2,http://dati.camera.it/ocd/persona.rdf/pr3960
+GIUSEPPE,SANNA RANDACCIO,1,http://dati.camera.it/ocd/persona.rdf/pr3963
+GIUSEPPE,SANNA RANDACCIO,0,http://dati.camera.it/ocd/persona.rdf/pr3963
+FELICE,SANTINI,2,http://dati.camera.it/ocd/persona.rdf/pr3974
+LUIGI,SICILIANI,0,http://dati.camera.it/ocd/persona.rdf/pr3942
+LUIGI,SICILIANI,1,http://dati.camera.it/ocd/persona.rdf/pr3942
+AGOSTINO,SIGNORINI,1,http://dati.camera.it/ocd/persona.rdf/pr3947
+CESARE,SILI,2,http://dati.camera.it/ocd/persona.rdf/pr3948
+GIOVANNI,MARCHI,0,http://dati.camera.it/ocd/persona.rdf/pr4676
+GIOVANNI,MARCHI,1,http://dati.camera.it/ocd/persona.rdf/pr4676
+ENRICO,MASTRACCHI,1,http://dati.camera.it/ocd/persona.rdf/pr4680
+AGOSTINO,MATTOLI,1,http://dati.camera.it/ocd/persona.rdf/pr4681
+GIUSEPPE,MINGRINO,1,http://dati.camera.it/ocd/persona.rdf/pr4686
+FEDERICO,MININNI,1,http://dati.camera.it/ocd/persona.rdf/pr4687
+PIETRO,ALBERTONI,2,http://dati.camera.it/ocd/persona.rdf/pr44
+GIULIO,VOLPI,1,http://dati.camera.it/ocd/persona.rdf/pr4408
+GIOVANNI,ZACCONE,1,http://dati.camera.it/ocd/persona.rdf/pr4418
+EUGENIO,VALLI,2,http://dati.camera.it/ocd/persona.rdf/pr4362
+ANTONIO,VALLONE,1,http://dati.camera.it/ocd/persona.rdf/pr4363
+ANGELO,VALVASSORI PERONI,2,http://dati.camera.it/ocd/persona.rdf/pr4370
+ANGELO,VALVASSORI PERONI,0,http://dati.camera.it/ocd/persona.rdf/pr4370
+ERNESTO,VASSALLO,1,http://dati.camera.it/ocd/persona.rdf/pr4376
+ERNESTO,VASSALLO,0,http://dati.camera.it/ocd/persona.rdf/pr4376
+ARTURO,VELLA,1,http://dati.camera.it/ocd/persona.rdf/pr4384
+LUIGI,ALBANESE,1,http://dati.camera.it/ocd/persona.rdf/pr4489
+GINO,ALDI MAI,1,http://dati.camera.it/ocd/persona.rdf/pr4491
+FRANCESCO,AMATUCCI,1,http://dati.camera.it/ocd/persona.rdf/pr4494
+ERSILIO,AMBROGI,1,http://dati.camera.it/ocd/persona.rdf/pr4495
+GUIDO,AROCA,1,http://dati.camera.it/ocd/persona.rdf/pr4501
+FELICE,ASSENNATO,1,http://dati.camera.it/ocd/persona.rdf/pr4503
+GIOVANNI FLORIANO,BANELLI,0,http://dati.camera.it/ocd/persona.rdf/pr4506
+GIOVANNI FLORIANO,BANELLI,1,http://dati.camera.it/ocd/persona.rdf/pr4506
+ARTURO,BARANZINI,1,http://dati.camera.it/ocd/persona.rdf/pr4507
+ADELCHI,BARATONO,1,http://dati.camera.it/ocd/persona.rdf/pr4508
+ALFREDO,BARTOLOMEI,1,http://dati.camera.it/ocd/persona.rdf/pr4509
+AGOSTINO,BASSINO,1,http://dati.camera.it/ocd/persona.rdf/pr4510
+ANDREA,BELTRAMINI,1,http://dati.camera.it/ocd/persona.rdf/pr4511
+GIOVANNI BATTISTA,BIAVASCHI,1,http://dati.camera.it/ocd/persona.rdf/pr4517
+LUIGI,BILUCAGLIA,1,http://dati.camera.it/ocd/persona.rdf/pr4518
+EDOARDO TEMISTOCLE,BOGIANCKINO,1,http://dati.camera.it/ocd/persona.rdf/pr4519
+DOMENICO,CIGNA,1,http://dati.camera.it/ocd/persona.rdf/pr4562
+VALENTINO,CODA,1,http://dati.camera.it/ocd/persona.rdf/pr4563
+CORSO,BOVIO,1,http://dati.camera.it/ocd/persona.rdf/pr4524
+GUIDO,COMPAGNA,1,http://dati.camera.it/ocd/persona.rdf/pr4566
+ALBANO,CORNELI,1,http://dati.camera.it/ocd/persona.rdf/pr4569
+CARLO,ZANZI,1,http://dati.camera.it/ocd/persona.rdf/pr4428
+LUIGI,ZAPPI CERONI,2,http://dati.camera.it/ocd/persona.rdf/pr4429
+MICHELE,CRISAFULLI MONDIO,1,http://dati.camera.it/ocd/persona.rdf/pr4573
+ANTONIO,CRISTOFORI,1,http://dati.camera.it/ocd/persona.rdf/pr4575
+CARLO,DE ANGELIS,1,http://dati.camera.it/ocd/persona.rdf/pr4578
+RAFFAELE,ZEGRETTI,1,http://dati.camera.it/ocd/persona.rdf/pr4435
+IPPOLITO LUIGI,DE CRISTOFARO,1,http://dati.camera.it/ocd/persona.rdf/pr4581
+MARINO,DE FILIPPIS DELFICO,1,http://dati.camera.it/ocd/persona.rdf/pr4582
+PASQUALE,D'ELIA,1,http://dati.camera.it/ocd/persona.rdf/pr4585
+GIOVAN BATTISTA,DE MARTINI,1,http://dati.camera.it/ocd/persona.rdf/pr4588
+GIACOMO,DE MARTINO,2,http://dati.camera.it/ocd/persona.rdf/pr4589
+CARLO,ZUCCHINI,1,http://dati.camera.it/ocd/persona.rdf/pr4450
+GIUSEPPE,DI VAGNO,1,http://dati.camera.it/ocd/persona.rdf/pr4598
+CARLO,BRESCIANI,1,http://dati.camera.it/ocd/persona.rdf/pr4529
+EUGENIO,BROCCARDI,1,http://dati.camera.it/ocd/persona.rdf/pr4530
+TOMMASO,BRUNELLI,1,http://dati.camera.it/ocd/persona.rdf/pr4531
+NICOLÒ,TORTORICI,0,http://dati.camera.it/ocd/persona.rdf/pr4264
+NICOLÒ,TORTORICI,1,http://dati.camera.it/ocd/persona.rdf/pr4264
+CARLO,BUTTAFOCHI,1,http://dati.camera.it/ocd/persona.rdf/pr4532
+GINO,CACCIANIGA,1,http://dati.camera.it/ocd/persona.rdf/pr4533
+UMBERTO,CAO,1,http://dati.camera.it/ocd/persona.rdf/pr4538
+ITALO,CAPANNI,1,http://dati.camera.it/ocd/persona.rdf/pr4539
+FRANCESCO,CAPOBIANCO,1,http://dati.camera.it/ocd/persona.rdf/pr4541
+ARISTIDE,CARAPELLE,1,http://dati.camera.it/ocd/persona.rdf/pr4542
+ANTONIO,VICINI,2,http://dati.camera.it/ocd/persona.rdf/pr4273
+GIUSEPPE,CARADONNA,0,http://dati.camera.it/ocd/persona.rdf/pr4543
+GIUSEPPE,CARADONNA,1,http://dati.camera.it/ocd/persona.rdf/pr4543
+UGO,CASALICCHIO,1,http://dati.camera.it/ocd/persona.rdf/pr4547
+VITO,CATALANI,1,http://dati.camera.it/ocd/persona.rdf/pr4548
+DOMENICO,ARCANGELI,1,http://dati.camera.it/ocd/persona.rdf/pr4549
+ADRIANO,ARCANI,1,http://dati.camera.it/ocd/persona.rdf/pr4550
+GIULIO,VIGONI,2,http://dati.camera.it/ocd/persona.rdf/pr4282
+SALVATORE,CAMERATA,1,http://dati.camera.it/ocd/persona.rdf/pr4554
+GIULIO,CAVINA,1,http://dati.camera.it/ocd/persona.rdf/pr4556
+GIOVANNI,CHIGGIATO,1,http://dati.camera.it/ocd/persona.rdf/pr4559
+GIUSEPPE,TOSCANO,1,http://dati.camera.it/ocd/persona.rdf/pr4289
+MANFREDO,CHIOSTRI,1,http://dati.camera.it/ocd/persona.rdf/pr4560
+FULCO,TOSTI DI VALMINUTA,1,http://dati.camera.it/ocd/persona.rdf/pr4291
+FULCO,TOSTI DI VALMINUTA,0,http://dati.camera.it/ocd/persona.rdf/pr4291
+RODOLFO,GRANDI,1,http://dati.camera.it/ocd/persona.rdf/pr4641
+LIVIO,TOVINI,1,http://dati.camera.it/ocd/persona.rdf/pr4292
+SILVESTRO,GRAZIANO,1,http://dati.camera.it/ocd/persona.rdf/pr4643
+LIONELLO,GROFF,1,http://dati.camera.it/ocd/persona.rdf/pr4645
+GIOVANNI BATTISTA,IMBERTI,1,http://dati.camera.it/ocd/persona.rdf/pr4647
+ALFONSO,IMPERATI,1,http://dati.camera.it/ocd/persona.rdf/pr4648
+FERDINANDO,INNAMORATI,1,http://dati.camera.it/ocd/persona.rdf/pr4650
+NATALE,KREKICH,1,http://dati.camera.it/ocd/persona.rdf/pr4653
+VIRGILIO,LANCELLOTTI,1,http://dati.camera.it/ocd/persona.rdf/pr4654
+LUIGI,LANFRANCONI,1,http://dati.camera.it/ocd/persona.rdf/pr4656
+GIUSEPPE,LAVRENCIC,1,http://dati.camera.it/ocd/persona.rdf/pr4657
+GIUSEPPE,LOCATELLI,1,http://dati.camera.it/ocd/persona.rdf/pr4662
+FILIPPO,LOFARO,1,http://dati.camera.it/ocd/persona.rdf/pr4664
+GIOVANNI,LUCANGELI,1,http://dati.camera.it/ocd/persona.rdf/pr4666
+GIOVANNI,TORLONIA,2,http://dati.camera.it/ocd/persona.rdf/pr4249
+LUIGI,LUIGGI,1,http://dati.camera.it/ocd/persona.rdf/pr4667
+LUIGI,MACCHI,0,http://dati.camera.it/ocd/persona.rdf/pr4669
+LUIGI,MACCHI,1,http://dati.camera.it/ocd/persona.rdf/pr4669
+ANGELO,MANARESI,0,http://dati.camera.it/ocd/persona.rdf/pr4670
+ANGELO,MANARESI,1,http://dati.camera.it/ocd/persona.rdf/pr4670
+VICO,MANTOVANI,1,http://dati.camera.it/ocd/persona.rdf/pr4674
+ANDREA,TORRE,1,http://dati.camera.it/ocd/persona.rdf/pr4256
+FILIPPO,TORRIGIANI GUADAGNI,2,http://dati.camera.it/ocd/persona.rdf/pr4259
+GUIDO,DONEGANI,1,http://dati.camera.it/ocd/persona.rdf/pr4601
+GIUSEPPE,ELLERO,1,http://dati.camera.it/ocd/persona.rdf/pr4606
+ANDREA,ERCOLANI,1,http://dati.camera.it/ocd/persona.rdf/pr4607
+ANGELO,FAGGI,1,http://dati.camera.it/ocd/persona.rdf/pr4609
+MATTIA,FARINA,1,http://dati.camera.it/ocd/persona.rdf/pr4610
+SPARTACO,FAZZARI,1,http://dati.camera.it/ocd/persona.rdf/pr4614
+ADOLFO,FERRARI,1,http://dati.camera.it/ocd/persona.rdf/pr4618
+GIOVANNI,FERRARI,1,http://dati.camera.it/ocd/persona.rdf/pr4619
+LEOPOLDO,FERRI,1,http://dati.camera.it/ocd/persona.rdf/pr4620
+SILVIO,FLOR,1,http://dati.camera.it/ocd/persona.rdf/pr4622
+EUGENIO,FLORIAN,1,http://dati.camera.it/ocd/persona.rdf/pr4623
+ROBERTO,FRANCESCHI,1,http://dati.camera.it/ocd/persona.rdf/pr4625
+VINCENZO,VACIRCA,1,http://dati.camera.it/ocd/persona.rdf/pr4348
+MARIO,FURGIUELE,1,http://dati.camera.it/ocd/persona.rdf/pr4626
+SILVIO,GAI,0,http://dati.camera.it/ocd/persona.rdf/pr4628
+SILVIO,GAI,1,http://dati.camera.it/ocd/persona.rdf/pr4628
+DOMENICO,VALENZANI,2,http://dati.camera.it/ocd/persona.rdf/pr4352
+GIUSEPPE,GAVAZZENI,1,http://dati.camera.it/ocd/persona.rdf/pr4634
+FRANCESCO,TRINCHERA,2,http://dati.camera.it/ocd/persona.rdf/pr4312
+FRANCESCO,TROILO,1,http://dati.camera.it/ocd/persona.rdf/pr4316
+MARIO,TROZZI,1,http://dati.camera.it/ocd/persona.rdf/pr4317
+GIOVANNI,ALICE,1,http://dati.camera.it/ocd/persona.rdf/pr56
+GIULIO,ALESSIO,0,http://dati.camera.it/ocd/persona.rdf/pr51
+GIULIO,ALESSIO,1,http://dati.camera.it/ocd/persona.rdf/pr51
+GUIDO,PIGHETTI,1,http://dati.camera.it/ocd/persona.rdf/pr4713
+FRANCESCO,PIVANO,1,http://dati.camera.it/ocd/persona.rdf/pr4715
+CARLO,PODGORNIK,1,http://dati.camera.it/ocd/persona.rdf/pr4716
+URBANO BENIGNO,PRUNOTTO,1,http://dati.camera.it/ocd/persona.rdf/pr4717
+GIUSEPPE,PUCCI DI BENISICHI,1,http://dati.camera.it/ocd/persona.rdf/pr4718
+CARLO ALBERTO,QUILICO,1,http://dati.camera.it/ocd/persona.rdf/pr4719
+DUILIO,REMONDINO,1,http://dati.camera.it/ocd/persona.rdf/pr4721
+EDOARDO,REUTH NICOLUSSI,1,http://dati.camera.it/ocd/persona.rdf/pr4722
+MARCO,ROCCO DI TORREPADULA,1,http://dati.camera.it/ocd/persona.rdf/pr4724
+ITALO,ROSA,1,http://dati.camera.it/ocd/persona.rdf/pr4726
+ALFONSO,SALVALAI,1,http://dati.camera.it/ocd/persona.rdf/pr4730
+GIUSEPPE,SARDELLI,1,http://dati.camera.it/ocd/persona.rdf/pr4731
+ALESSANDRO,SARDI,0,http://dati.camera.it/ocd/persona.rdf/pr4732
+ALESSANDRO,SARDI,1,http://dati.camera.it/ocd/persona.rdf/pr4732
+MATTEO,SELMI,1,http://dati.camera.it/ocd/persona.rdf/pr4733
+FRANCESCO,SENSI,1,http://dati.camera.it/ocd/persona.rdf/pr4734
+FRANCESCO,SORGE,1,http://dati.camera.it/ocd/persona.rdf/pr4735
+DOMENICO ANDREA,SPADA,0,http://dati.camera.it/ocd/persona.rdf/pr4736
+DOMENICO ANDREA,SPADA,1,http://dati.camera.it/ocd/persona.rdf/pr4736
+SERAFINO,SPERANZA,1,http://dati.camera.it/ocd/persona.rdf/pr4737
+GIROLAMO,STANCANELLI,1,http://dati.camera.it/ocd/persona.rdf/pr4738
+EVARISTO,STEFINI,1,http://dati.camera.it/ocd/persona.rdf/pr4740
+ENRICO,TAMANINI,1,http://dati.camera.it/ocd/persona.rdf/pr4743
+MICHELE,TERZAGHI,0,http://dati.camera.it/ocd/persona.rdf/pr4744
+MICHELE,TERZAGHI,1,http://dati.camera.it/ocd/persona.rdf/pr4744
+ALESSANDRO,TIRABOSCHI,1,http://dati.camera.it/ocd/persona.rdf/pr4746
+DONATO ANTONIO,TOMMASI,1,http://dati.camera.it/ocd/persona.rdf/pr4748
+EDOARDO,TORRE,1,http://dati.camera.it/ocd/persona.rdf/pr4749
+EDOARDO,TORRE,0,http://dati.camera.it/ocd/persona.rdf/pr4749
+LEOPOLDO,TUMIATI,1,http://dati.camera.it/ocd/persona.rdf/pr4751
+GIUSEPPE,TUNTAR,1,http://dati.camera.it/ocd/persona.rdf/pr4752
+ANGELO,NOSEDA,1,http://dati.camera.it/ocd/persona.rdf/pr4694
+PIETRO,NOVASIO,1,http://dati.camera.it/ocd/persona.rdf/pr4695
+FILIPPO,OSTINELLI,1,http://dati.camera.it/ocd/persona.rdf/pr4696
+GIOVANNI,PALEARI,1,http://dati.camera.it/ocd/persona.rdf/pr4699
+FERDINANDO,PALMA,1,http://dati.camera.it/ocd/persona.rdf/pr4700
+RAFFAELE,PAOLUCCI,1,http://dati.camera.it/ocd/persona.rdf/pr4701
+GIOVANNI,PESANTE,1,http://dati.camera.it/ocd/persona.rdf/pr4705
+TEOFILO,PETRIELLA,1,http://dati.camera.it/ocd/persona.rdf/pr4707
+AGOSTINO,PEVERINI,1,http://dati.camera.it/ocd/persona.rdf/pr4708
+GUIDO,PICELLI,1,http://dati.camera.it/ocd/persona.rdf/pr4711
+SEBASTIANO,TECCHIO,2,http://dati.camera.it/ocd/persona.rdf/pr4792
+GAETANO,VERDIRAME,1,http://dati.camera.it/ocd/persona.rdf/pr4801
+FILIPPO,UNGARO,1,http://dati.camera.it/ocd/persona.rdf/pr4754
+FRANCESCO,VAIRO,1,http://dati.camera.it/ocd/persona.rdf/pr4755
+ETTORE,VALENTINI,1,http://dati.camera.it/ocd/persona.rdf/pr4756
+LUCIANO,VALENTINI,1,http://dati.camera.it/ocd/persona.rdf/pr4757
+MARCO ARTURO,VICINI,1,http://dati.camera.it/ocd/persona.rdf/pr4759
+FRANCESCO,VISCO,1,http://dati.camera.it/ocd/persona.rdf/pr4762
+PASQUALE,VITTORIA,1,http://dati.camera.it/ocd/persona.rdf/pr4763
+VOLPINO,VOLPINI,1,http://dati.camera.it/ocd/persona.rdf/pr4764
+GIUSEPPE,WILFAN,1,http://dati.camera.it/ocd/persona.rdf/pr4766
+CARLO,ZILOCCHI,1,http://dati.camera.it/ocd/persona.rdf/pr4768
+GAETANO,ZIRARDINI,1,http://dati.camera.it/ocd/persona.rdf/pr4769
+LORENZO,VENTAVOLI,1,http://dati.camera.it/ocd/persona.rdf/pr4771
+ANGELO,ABISSO,1,http://dati.camera.it/ocd/persona.rdf/pr7
+GIOVANNI,CASSIS,2,http://dati.camera.it/ocd/persona.rdf/pr9317
+CARLO,CATALDI,2,http://dati.camera.it/ocd/persona.rdf/pr9325
+ENRICO,CATELLANI,2,http://dati.camera.it/ocd/persona.rdf/pr9327
+UGO,CAVALLERO,0,http://dati.camera.it/ocd/persona.rdf/pr9332
+GIANNETTO,CAVASOLA,2,http://dati.camera.it/ocd/persona.rdf/pr9333
+GIUSEPPE,BOTTERINI DE PELOSI,2,http://dati.camera.it/ocd/persona.rdf/pr9210
+VITTORIO,BRONDI,2,http://dati.camera.it/ocd/persona.rdf/pr9223
+ROBERTO,BRUSATI,2,http://dati.camera.it/ocd/persona.rdf/pr9231
+UGO,BRUSATI,2,http://dati.camera.it/ocd/persona.rdf/pr9232
+GIOVANNI,BOMBRINI,2,http://dati.camera.it/ocd/persona.rdf/pr9179
+LORENZO,BONAZZI,2,http://dati.camera.it/ocd/persona.rdf/pr9182
+FRANCESCO,BONCOMPAGNI LUDOVISI,1,http://dati.camera.it/ocd/persona.rdf/pr9185
+FRANCESCO,BONCOMPAGNI LUDOVISI,0,http://dati.camera.it/ocd/persona.rdf/pr9185
+LUIGI,BONCOMPAGNI LUDOVISI,2,http://dati.camera.it/ocd/persona.rdf/pr9187
+GIACOMO,BONI,2,http://dati.camera.it/ocd/persona.rdf/pr9194
+ALBERTO,BONZANI,0,http://dati.camera.it/ocd/persona.rdf/pr9196
+GIOVANNI BATTISTA,BOREA D'OLMO,2,http://dati.camera.it/ocd/persona.rdf/pr9198
+FELICE,BORGHESE,2,http://dati.camera.it/ocd/persona.rdf/pr9199
+PIETRANTONIO,CAPALDO,2,http://dati.camera.it/ocd/persona.rdf/pr9282
+GIOVANNI,CAPELLINI,2,http://dati.camera.it/ocd/persona.rdf/pr9283
+GIOVANNI PIETRO,CAPOTORTO,2,http://dati.camera.it/ocd/persona.rdf/pr9287
+GENNARO,CARISSIMO,2,http://dati.camera.it/ocd/persona.rdf/pr9302
+ANTONIO,CARLE,2,http://dati.camera.it/ocd/persona.rdf/pr9303
+GELASIO,CAETANI,1,http://dati.camera.it/ocd/persona.rdf/pr9248
+LUIGI,CAGNETTA,2,http://dati.camera.it/ocd/persona.rdf/pr9249
+UMBERTO,CAGNI DI BU MELIANA,2,http://dati.camera.it/ocd/persona.rdf/pr9251
+PIO,CALLETTI,0,http://dati.camera.it/ocd/persona.rdf/pr9259
+FEDERICO,BAISTROCCHI,0,http://dati.camera.it/ocd/persona.rdf/pr9084
+LODOVICO,BARBIERI,2,http://dati.camera.it/ocd/persona.rdf/pr9095
+EDOARDO,BASSINI,2,http://dati.camera.it/ocd/persona.rdf/pr9111
+ANGELO,ANNARATONE,2,http://dati.camera.it/ocd/persona.rdf/pr9050
+ADOLFO,APOLLONI,2,http://dati.camera.it/ocd/persona.rdf/pr9056
+GIUSEPPE,BIANCHINI,0,http://dati.camera.it/ocd/persona.rdf/pr9152
+LEONARDO,BISTOLFI,2,http://dati.camera.it/ocd/persona.rdf/pr9158
+ETTORE,BOCCONI,2,http://dati.camera.it/ocd/persona.rdf/pr9169
+EMILIO,BODRERO,0,http://dati.camera.it/ocd/persona.rdf/pr9172
+RICCARDO,BOLLATI,2,http://dati.camera.it/ocd/persona.rdf/pr9175
+PIERO,BOLZON,0,http://dati.camera.it/ocd/persona.rdf/pr9176
+GIORGIO,BOMBI,2,http://dati.camera.it/ocd/persona.rdf/pr9177
+FIORENZO,BAVA BECCARIS,2,http://dati.camera.it/ocd/persona.rdf/pr9116
+GIUSEPPE,BELLUZZO,0,http://dati.camera.it/ocd/persona.rdf/pr9122
+GIUSEPPE LUIGI,BENEVENTANO,2,http://dati.camera.it/ocd/persona.rdf/pr9125
+FELICE,BENNATI,2,http://dati.camera.it/ocd/persona.rdf/pr9126
+PAOLO EMILIO,BENSA,2,http://dati.camera.it/ocd/persona.rdf/pr9129
+TANCREDI LUIGI,BERIA D'ARGENTINE,2,http://dati.camera.it/ocd/persona.rdf/pr9134
+ADOLFO,BERIO,2,http://dati.camera.it/ocd/persona.rdf/pr9135
+PAOLO,BERNARDI,2,http://dati.camera.it/ocd/persona.rdf/pr9137
+FEDERICO,BETTONI,2,http://dati.camera.it/ocd/persona.rdf/pr9144
+UGO,ANCONA,2,http://dati.camera.it/ocd/persona.rdf/pr86
+GIOVANNI,AMICI,1,http://dati.camera.it/ocd/persona.rdf/pr81
+GIOVANNI,AMICI,0,http://dati.camera.it/ocd/persona.rdf/pr81
+GIOVANNI,AGNELLI,2,http://dati.camera.it/ocd/persona.rdf/pr9019
+ANTONIO,ALBERTINI,0,http://dati.camera.it/ocd/persona.rdf/pr9026
+ALBERICO,ALBRICCI,2,http://dati.camera.it/ocd/persona.rdf/pr9030
+GIOVANNI,AMEGLIO,2,http://dati.camera.it/ocd/persona.rdf/pr9046
+MARCELLO,AMERO D'ASTE STELLA,2,http://dati.camera.it/ocd/persona.rdf/pr9047
+INNOCENTE,CHERSI,2,http://dati.camera.it/ocd/persona.rdf/pr9350
+ALESSANDRO,CHIAPPELLI,2,http://dati.camera.it/ocd/persona.rdf/pr9351
+GIACOMO,CIAMICIAN,2,http://dati.camera.it/ocd/persona.rdf/pr9357
+VITTORIO,CINI,0,http://dati.camera.it/ocd/persona.rdf/pr9365
+ANTONIO,CIPPICO,2,http://dati.camera.it/ocd/persona.rdf/pr9367
+LUIGI,CITO FILOMARINO,2,http://dati.camera.it/ocd/persona.rdf/pr9370
+AMBROGIO,CLERICI,0,http://dati.camera.it/ocd/persona.rdf/pr9373
+ENRICO,COCCHIA,2,http://dati.camera.it/ocd/persona.rdf/pr9375
+ENRICO,CEFALO,2,http://dati.camera.it/ocd/persona.rdf/pr9335
+ALBERTO,CENCELLI,2,http://dati.camera.it/ocd/persona.rdf/pr9339
+CAMILLO,CORSI,2,http://dati.camera.it/ocd/persona.rdf/pr9412
+VINCENZO,COSENZA,2,http://dati.camera.it/ocd/persona.rdf/pr9417
+FILIPPO,CREMONESI,2,http://dati.camera.it/ocd/persona.rdf/pr9425
+ENRICO,CRUCIANI ALIBRANDI,2,http://dati.camera.it/ocd/persona.rdf/pr9430
+LORENZO,CUSANI VISCONTI BOTTA ADORNO,2,http://dati.camera.it/ocd/persona.rdf/pr9433
+ALBERTO,DALLOLIO,2,http://dati.camera.it/ocd/persona.rdf/pr9443
+FRANCESCO,COMPAGNA,2,http://dati.camera.it/ocd/persona.rdf/pr9392
+DOMENICO,COMPARETTI,2,http://dati.camera.it/ocd/persona.rdf/pr9393
+SALVATORE,CONTARINI,2,http://dati.camera.it/ocd/persona.rdf/pr9397
+MAURIZIO,GONZAGA,2,http://dati.camera.it/ocd/persona.rdf/pr9759
+GIOVANNI BATTISTA,GRASSI,2,http://dati.camera.it/ocd/persona.rdf/pr9762
+DOMENICO,GIORDANI,2,http://dati.camera.it/ocd/persona.rdf/pr9731
+BALBINO,GIULIANO,0,http://dati.camera.it/ocd/persona.rdf/pr9746
+VETTOR,GIUSTI DEL GIARDINO,2,http://dati.camera.it/ocd/persona.rdf/pr9752
+PIETRO,FEDELE,0,http://dati.camera.it/ocd/persona.rdf/pr9623
+DANTE,FERRARIS,2,http://dati.camera.it/ocd/persona.rdf/pr9634
+EUGENIO,FIGOLI DES GENEYS,2,http://dati.camera.it/ocd/persona.rdf/pr9645
+FRANCESCO,FILOMUSI GUELFI,2,http://dati.camera.it/ocd/persona.rdf/pr9647
+ENRICO,D'OVIDIO,2,http://dati.camera.it/ocd/persona.rdf/pr9587
+FRANCESCO,D'OVIDIO,2,http://dati.camera.it/ocd/persona.rdf/pr9588
+LUIGI,DURAND DE LA PENNE,2,http://dati.camera.it/ocd/persona.rdf/pr9593
+CARLO,FADDA,2,http://dati.camera.it/ocd/persona.rdf/pr9603
+GIULIO,FANO,2,http://dati.camera.it/ocd/persona.rdf/pr9610
+RAFFAELE,GAROFALO,2,http://dati.camera.it/ocd/persona.rdf/pr9690
+CAMILLO EUGENIO,GARRONI CARBONARA,2,http://dati.camera.it/ocd/persona.rdf/pr9691
+SALVATORE,GATTI,0,http://dati.camera.it/ocd/persona.rdf/pr9696
+ANTONINO,ANILE,0,http://dati.camera.it/ocd/persona.rdf/pr97
+ANTONINO,ANILE,1,http://dati.camera.it/ocd/persona.rdf/pr97
+ROBERTO,GHIGLIANOVICH,2,http://dati.camera.it/ocd/persona.rdf/pr9715
+PIO,FOÀ,2,http://dati.camera.it/ocd/persona.rdf/pr9657
+SALVATORE,FRATELLINI,2,http://dati.camera.it/ocd/persona.rdf/pr9669
+GIOVANNI,GALLINA,2,http://dati.camera.it/ocd/persona.rdf/pr9681
+FLORESTANO,DE LARDEREL,2,http://dati.camera.it/ocd/persona.rdf/pr9481
+ALBERTO,DEL BONO,2,http://dati.camera.it/ocd/persona.rdf/pr9483
+FERDINANDO,DEL CARRETTO DI NOVELLO,2,http://dati.camera.it/ocd/persona.rdf/pr9485
+PASQUALE,DEL GIUDICE,2,http://dati.camera.it/ocd/persona.rdf/pr9489
+GIUSEPPE,DELLA NOCE,2,http://dati.camera.it/ocd/persona.rdf/pr9493
+LUIGI,DELLA TORRE,2,http://dati.camera.it/ocd/persona.rdf/pr9498
+ISIDORO,DEL LUNGO,2,http://dati.camera.it/ocd/persona.rdf/pr9502
+GIUSEPPE,DE LORENZO,2,http://dati.camera.it/ocd/persona.rdf/pr9504
+PASQUALE,DEL PEZZO,2,http://dati.camera.it/ocd/persona.rdf/pr9505
+MARIANO,D'AMELIO,2,http://dati.camera.it/ocd/persona.rdf/pr9448
+TOMMASO,DE AMICIS,2,http://dati.camera.it/ocd/persona.rdf/pr9457
+ALFONSO,DE BLASIO,2,http://dati.camera.it/ocd/persona.rdf/pr9460
+ADRIANO,DE CUPIS,2,http://dati.camera.it/ocd/persona.rdf/pr9467
+POMPEO,DI CAMPELLO,2,http://dati.camera.it/ocd/persona.rdf/pr9550
+ADRIANO,DIENA,2,http://dati.camera.it/ocd/persona.rdf/pr9552
+SALVATORE,DI MARZO,0,http://dati.camera.it/ocd/persona.rdf/pr9564
+GIUSEPPE,DI TERRANOVA (PIGNATELLI),2,http://dati.camera.it/ocd/persona.rdf/pr9576
+PIETRO,DI VICO,2,http://dati.camera.it/ocd/persona.rdf/pr9577
+LUIGI,DORIGO,2,http://dati.camera.it/ocd/persona.rdf/pr9586
+ALBERTO,DE MARINIS STENDARDO DI RICIGLIANO,2,http://dati.camera.it/ocd/persona.rdf/pr9513
+GIULIO,DE PETRA,2,http://dati.camera.it/ocd/persona.rdf/pr9523
+GIUSEPPE,DI BAGNO (GUIDI),2,http://dati.camera.it/ocd/persona.rdf/pr9544
+PIETRO,BERTARELLI,2,http://dati.camera.it/ocd/persona.rdf/pr999
+ALESSANDRO,MARIOTTI,1,http://dati.camera.it/ocd/persona.rdf/pr9892
+ERNESTO,MARTINEZ,2,http://dati.camera.it/ocd/persona.rdf/pr9899
+GIUSEPPE,MARTINO,2,http://dati.camera.it/ocd/persona.rdf/pr9903
+ALESSANDRO,MATTIOLI PASQUALINI,2,http://dati.camera.it/ocd/persona.rdf/pr9916
+TEODORO,MAYER,2,http://dati.camera.it/ocd/persona.rdf/pr9920
+FRANCESCO,MAZZA,2,http://dati.camera.it/ocd/persona.rdf/pr9924
+OLINDO,MALAGODI,2,http://dati.camera.it/ocd/persona.rdf/pr9862
+OBIZZO,MALASPINA DI CARBONARA,2,http://dati.camera.it/ocd/persona.rdf/pr9863
+VALERIANO,MALFATTI,2,http://dati.camera.it/ocd/persona.rdf/pr9864
+EDOARDO,MARAGLIANO,2,http://dati.camera.it/ocd/persona.rdf/pr9884
+ETTORE,MARCHIAFAVA,2,http://dati.camera.it/ocd/persona.rdf/pr9887
+GIUSEPPE,MORELLI,0,http://dati.camera.it/ocd/persona.rdf/pr9986
+VINCENZO,MORELLO,2,http://dati.camera.it/ocd/persona.rdf/pr9987
+GUIDO,MAZZONI,2,http://dati.camera.it/ocd/persona.rdf/pr9930
+ETTORE,MAZZUCCO,1,http://dati.camera.it/ocd/persona.rdf/pr9931
+GUGLIELMO,MENGARINI,2,http://dati.camera.it/ocd/persona.rdf/pr9940
+FRANCESCO PAOLO,MICHETTI,2,http://dati.camera.it/ocd/persona.rdf/pr9952
+FILIPPO,GRIMANI,2,http://dati.camera.it/ocd/persona.rdf/pr9770
+GIOVANNI,GROSOLI,2,http://dati.camera.it/ocd/persona.rdf/pr9774
+ANTONIO,GROSSICH,2,http://dati.camera.it/ocd/persona.rdf/pr9776
+CARLO,GUALA,2,http://dati.camera.it/ocd/persona.rdf/pr9779
+ENRICO,GUALTERIO,2,http://dati.camera.it/ocd/persona.rdf/pr9780
+PASQUALE,LEONARDI CATTOLICA,2,http://dati.camera.it/ocd/persona.rdf/pr9823
+GIACOMO,LEVI CIVITA,2,http://dati.camera.it/ocd/persona.rdf/pr9829
+ACHILLE,LORIA,2,http://dati.camera.it/ocd/persona.rdf/pr9839
+ALFREDO,LUSIGNOLI,2,http://dati.camera.it/ocd/persona.rdf/pr9848
+ALESSANDRO,LUSTIG PIACEZZI,2,http://dati.camera.it/ocd/persona.rdf/pr9849
+IGNAZIO,GUIDI,2,http://dati.camera.it/ocd/persona.rdf/pr9790
+ATTILIO,HORTIS,2,http://dati.camera.it/ocd/persona.rdf/pr9793
+GUGLIELMO,JOSA,0,http://dati.camera.it/ocd/persona.rdf/pr9799
+MARIO,LAMBERTI (DI COLLE),2,http://dati.camera.it/ocd/persona.rdf/pr9803
+RODOLFO,LANCIANI,2,http://dati.camera.it/ocd/persona.rdf/pr9804
+PIETRO,LANZA (DI TRABIA),0,http://dati.camera.it/ocd/persona.rdf/pr9812
+PIETRO,LANZA (DI TRABIA),2,http://dati.camera.it/ocd/persona.rdf/pr9812
+PIER SILVERIO,LEICHT,0,http://dati.camera.it/ocd/persona.rdf/pr9821

@@ -81,7 +81,7 @@ leg_mapping = {
 punctuation = punctuation + "“”"
 
 
-def preprocessDocument(dir, out, strdate, leg, cam, gold_folder, pred_folder, people_folder):
+def preprocessDocument(dir, out, strdate, leg, cam, people_folder):
     """
     processes a single document, removing intestation and padding, merging the page, processing truncated words and outputs the result in a txt file
     :param dir: path to the document
@@ -132,54 +132,54 @@ def preprocessDocument(dir, out, strdate, leg, cam, gold_folder, pred_folder, pe
         # if cam == 0 and (cam == 1 and clean_leg[:9] == "repubblica")
         # else
 
-        if (cam == 1 and clean_leg[:5] == "regno") or cam == 0:
-            clean_doc_name = filename.split(os.sep)[-2].split(".")[0]
-        elif cam == 1 and clean_leg[:10] == "repubblica":
-            clean_doc_name = filename.split("/")[-1].split(".")[0]
+        # if (cam == 1 and clean_leg[:5] == "regno") or cam == 0:
+        #     clean_doc_name = filename.split(os.sep)[-2].split(".")[0]
+        # elif cam == 1 and clean_leg[:10] == "repubblica":
+        #     clean_doc_name = filename.split("/")[-1].split(".")[0]
 
-        if cam == 1 and clean_leg[:5] == "regno":
-            gold_format = (
-                "-".join(
-                    [
-                        "senato",
-                        clean_leg,
-                        clean_doc_name,
-                        str(i),
-                    ]
-                )
-                + ".xml"
-            )
-        elif cam == 0:
-            gold_format = (
-                "-".join(
-                    [
-                        "camera" if cam == 0 else "senato",
-                        clean_leg,
-                        strdate,
-                        clean_doc_name,
-                        str(i),
-                    ]
-                )
-                + ".xml"
-            )
-        elif cam == 1:
-            gold_format = (
-                "-".join(
-                    [
-                        "senato",
-                        clean_leg,
-                        strdate[:4],
-                        clean_doc_name,
-                        str(i),
-                    ]
-                )
-                + ".xml"
-            )
-        # print(gold_format)
+        # if cam == 1 and clean_leg[:5] == "regno":
+        #     gold_format = (
+        #         "-".join(
+        #             [
+        #                 "senato",
+        #                 clean_leg,
+        #                 clean_doc_name,
+        #                 str(i),
+        #             ]
+        #         )
+        #         + ".xml"
+        #     )
+        # elif cam == 0:
+        #     gold_format = (
+        #         "-".join(
+        #             [
+        #                 "camera" if cam == 0 else "senato",
+        #                 clean_leg,
+        #                 strdate,
+        #                 clean_doc_name,
+        #                 str(i),
+        #             ]
+        #         )
+        #         + ".xml"
+        #     )
+        # elif cam == 1:
+        #     gold_format = (
+        #         "-".join(
+        #             [
+        #                 "senato",
+        #                 clean_leg,
+        #                 strdate[:4],
+        #                 clean_doc_name,
+        #                 str(i),
+        #             ]
+        #         )
+        #         + ".xml"
+        #     )
+        # # print(gold_format)
 
-        if gold_format in os.listdir(gold_folder):
-            is_gold = True
-            print("gold standard found for " + gold_format)
+        # if gold_format in os.listdir(gold_folder):
+        #     is_gold = True
+        #     print("gold standard found for " + gold_format)
 
         # if dataframe filename is empty, skip
         if os.stat(filename).st_size == 0:
@@ -232,13 +232,10 @@ def preprocessDocument(dir, out, strdate, leg, cam, gold_folder, pred_folder, pe
         text_values = list(
             zip(
                 new_cols_df["block_num"],
-                new_cols_df["par_num"],
-                new_cols_df["page_num"],
                 new_cols_df["text"],
                 new_cols_df["conf"],
+                new_cols_df["line_num"],
                 new_cols_df["top"],
-                new_cols_df["height"],
-                new_cols_df["word_num"],
             )
         )
 
@@ -248,17 +245,17 @@ def preprocessDocument(dir, out, strdate, leg, cam, gold_folder, pred_folder, pe
 
         with open(out, "a", encoding="utf-8") as output_file:
             # print(text_values)
-            fillOutputDocument(output_file, text_values, i, tot_page_num, prev_last_char, people_dataset, is_gold)
+            fillOutputDocument(output_file, text_values, i, prev_last_char)
 
-        if is_gold:
-            if not os.path.exists(pred_folder):
-                os.makedirs(pred_folder)
-            gold_paths.append(pred_folder + "/" + gold_format)
+        # if is_gold:
+        #     if not os.path.exists(pred_folder):
+        #         os.makedirs(pred_folder)
+        #     gold_paths.append(pred_folder + "/" + gold_format)
 
-            with open(pred_folder + "/" + gold_format, "w", encoding="utf-8") as gold:
-                fillOutputDocument(gold, text_values, i, tot_page_num, prev_last_char, people_dataset, is_gold)
+        #     with open(pred_folder + "/" + gold_format, "w", encoding="utf-8") as gold:
+        #         fillOutputDocument(gold, text_values, i, tot_page_num, prev_last_char, people_dataset, is_gold)
 
-        is_gold = False
+        # is_gold = False
 
         prev_last_char = str(new_cols_df["text"].iloc[-1])[-1]
 
@@ -276,40 +273,38 @@ def preprocessDocument(dir, out, strdate, leg, cam, gold_folder, pred_folder, pe
     if not os.path.isfile(out):
         return
 
-    president_for_gold = performTagging(out, clean_leg, cam, people_dataset)
+    performTagging(out, clean_leg, cam, people_dataset)
 
     # save stats of document in csv having legsilatures as rows and columns as pages, speeches, tokens
 
-    stats_df = pd.read_csv("./stats.csv", encoding="utf-8")
+    # stats_df = pd.read_csv("./stats.csv", encoding="utf-8")
 
-    stats_df.loc[stats_df["legislature"] == clean_leg, "page_num"] += tot_page_num
-    stats_df.loc[stats_df["legislature"] == clean_leg, "speech_num"] += len(
-        re.findall(r"</speech>", open(out, "r", encoding="utf-8").read())
-    )
-    tree = ET.parse(out)
-    string_doc = ET.tostring(tree.getroot(), encoding="utf-8", method="text").decode("utf-8")
-    stats_df.loc[stats_df["legislature"] == clean_leg, "token_num"] += len(
-        [x for x in string_doc.split() if x not in punctuation]
-    )
+    # stats_df.loc[stats_df["legislature"] == clean_leg, "page_num"] += tot_page_num
+    # stats_df.loc[stats_df["legislature"] == clean_leg, "speech_num"] += len(
+    #     re.findall(r"</speech>", open(out, "r", encoding="utf-8").read())
+    # )
+    # tree = ET.parse(out)
+    # string_doc = ET.tostring(tree.getroot(), encoding="utf-8", method="text").decode("utf-8")
+    # stats_df.loc[stats_df["legislature"] == clean_leg, "token_num"] += len(
+    #     [x for x in string_doc.split() if x not in punctuation]
+    # )
 
-    stats_df.to_csv("./stats.csv", index=False, encoding="utf-8")
+    # stats_df.to_csv("./stats.csv", index=False, encoding="utf-8")
 
-    for gold_path in gold_paths:
-        performTagging(gold_path, clean_leg, cam, people_dataset, president_for_gold)
+    # for gold_path in gold_paths:
+    #     performTagging(gold_path, clean_leg, cam, people_dataset, president_for_gold)
     # read whole document line by line, and taking into account the first four words of a line, check if they are in the people dataset.
     # mind that a name is usually uppercase and followed by a comma or a dot.
 
 
-def performTagging(out, leg, cam, people_dataset, president_for_gold="no_president"):
-    with open(out, "r", encoding="utf-8") as input_file:
+def performTagging(input_path, leg, cam, people_dataset):
+    with open(input_path, "r", encoding="utf-8") as input_file:
         lines = input_file.readlines()
 
     is_presidency_open = False
     is_speech_open = False
     president = ""
-    if president_for_gold != "no_president":
-        print("president for gold: " + president_for_gold)
-        president_uri = president_for_gold
+    president_uri = ""
 
     new_lines = ["<?xml version='1.0' encoding='UTF-8'?>\n", "<document>\n"]
 
@@ -346,12 +341,102 @@ def performTagging(out, leg, cam, people_dataset, president_for_gold="no_preside
                     else:
                         new_line += '<presidency president="' + president_uri + '">' + line
                     is_presidency_open = True
-                    president = president_uri
                 else:
                     new_line = line
                 new_lines.append(new_line)
                 continue
         ### if first letter of line is uppercase, proceed with tagging, else just apppend the line
+        elif cam == 1 and leg in [
+            "regno_11",
+            "regno_12",
+            "regno_13",
+            "regno_14",
+            "regno_15",
+            "regno_16",
+            "regno_17",
+            "regno_18",
+            "regno_19",
+        ]:
+            # locate the only uppercase series of words (or single word) in the line
+
+            words = line.split()
+            for i, word in enumerate(words):
+                if i >= 4:
+                    break
+                if has_majority_uppercase(word):
+                    if len(word) == 1:
+                        break
+                    name.append(word)
+                    if word.endswith(".") or word.endswith(","):
+                        break
+
+            name = " ".join(name)
+
+            if not name.endswith(".") and not name.endswith(","):
+                name = ""
+
+            if "PRESIDENTE" in name or fuzz.ratio(name, "PRESIDENTE") >= 80:
+                # and (is_presidency_open or president_for_gold != "no_president"):
+                if is_speech_open:
+                    new_line += '</speech><speech speaker="' + president_uri + '" is_president="true">' + line
+                else:
+                    new_line += '<speech speaker="' + president_uri + '" is_president="true">' + line
+                is_speech_open = True
+                new_lines.append(new_line)
+                continue
+            else:
+                if utils.full_process(name):
+                    # if name is more than one word, use surname + name and partial ratio
+                    if len(name.split()) > 1:
+                        surnames_names = list(people_dataset["surname"] + " " + people_dataset["name"])
+                        best_match = process.extractOne(
+                            name,
+                            surnames_names,
+                            scorer=fuzz.partial_ratio,
+                            score_cutoff=80,
+                        )
+                        if best_match:
+                            best_match_uri = people_dataset.loc[
+                                (people_dataset["surname"] + " " + people_dataset["name"] == best_match[0])
+                                & (people_dataset["job"].isin([0, 2]))
+                            ]["URI"]
+                            if len(best_match_uri) > 0:
+                                best_match_uri = best_match_uri.iloc[0]
+                            else:
+                                best_match_uri = people_dataset.loc[
+                                    (people_dataset["surname"] + " " + people_dataset["name"] == best_match[0])
+                                ].iloc[0]["URI"]
+
+                    # if name is exaclty one word (not PRESIDENTE), use only surname and ratio
+                    else:
+                        best_match = process.extractOne(
+                            name,
+                            list(people_dataset["surname"]),
+                            scorer=fuzz.token_set_ratio,
+                            score_cutoff=80,
+                        )
+                        if best_match:
+                            best_match_uri = people_dataset.loc[
+                                (people_dataset["surname"] == best_match[0]) & (people_dataset["job"].isin([0, 2]))
+                            ]["URI"]
+                            if len(best_match_uri) > 0:
+                                best_match_uri = best_match_uri.iloc[0]
+                            else:
+                                best_match_uri = people_dataset.loc[(people_dataset["surname"] == best_match[0])].iloc[
+                                    0
+                                ]["URI"]
+                    # if among any of the two cases there is a match, tag the line with the URI
+                    if best_match:
+                        if is_speech_open:
+                            new_line += '</speech><speech speaker="' + best_match_uri + '" is_president="false">' + line
+                        else:
+                            new_line += '<speech speaker="' + best_match_uri + '" is_president="false">' + line
+                        is_speech_open = True
+                    else:
+                        new_line = line
+                    new_lines.append(new_line)
+                    continue
+            new_line = line
         elif line[0].isupper():
             ### case 1: names to tag are all lowercase
             if (
@@ -359,7 +444,7 @@ def performTagging(out, leg, cam, people_dataset, president_for_gold="no_preside
             ) or (cam == 1 and leg in ["regno_08", "regno_09", "regno_10"]):
                 # all names to locate are lowercase, only in these legislatures
                 # only way to identify names is the dot or comma at the end of the name
-
+                job = 1 if cam == 0 else 2
                 words = line.split()
                 for i, word in enumerate(words):
                     if i >= 4:
@@ -375,7 +460,8 @@ def performTagging(out, leg, cam, people_dataset, president_for_gold="no_preside
                 if (
                     "Presidente" in name
                     and name.endswith(".")
-                    and (is_presidency_open or president_for_gold != "no_president")
+                    or fuzz.ratio(name, "Presidente.") > 90
+                    # and (is_presidency_open or president_for_gold != "no_president")
                 ):
                     if is_speech_open:
                         new_line += '</speech><speech speaker="' + president_uri + '" is_president="true">' + line
@@ -388,6 +474,8 @@ def performTagging(out, leg, cam, people_dataset, president_for_gold="no_preside
                 else:
                     if utils.full_process(name):
                         # if name is more than one word, use surname + name and partial ratio
+                        if "Senatore" in name:
+                            name = name.replace("Senatore", "")
                         if len(name.split()) > 1:
                             surnames_names = list(
                                 people_dataset["surname"].str.lower() + " " + people_dataset["name"].str.lower()
@@ -400,9 +488,23 @@ def performTagging(out, leg, cam, people_dataset, president_for_gold="no_preside
                             )
                             if best_match:
                                 best_match_uri = people_dataset.loc[
-                                    people_dataset["surname"].str.lower() + " " + people_dataset["name"].str.lower()
-                                    == best_match[0]
-                                ]["URI"].iloc[0]
+                                    (
+                                        people_dataset["surname"].str.lower() + " " + people_dataset["name"].str.lower()
+                                        == best_match[0]
+                                    )
+                                    & (people_dataset["job"].isin([0, job]))
+                                ]["URI"]
+                                if len(best_match_uri) > 0:
+                                    best_match_uri = best_match_uri.iloc[0]
+                                else:
+                                    best_match_uri = people_dataset.loc[
+                                        (
+                                            people_dataset["surname"].str.lower()
+                                            + " "
+                                            + people_dataset["name"].str.lower()
+                                            == best_match[0]
+                                        )
+                                    ].iloc[0]["URI"]
                         # if name is exaclty one word (not PRESIDENTE), use only surname and ratio
                         else:
                             best_match = process.extractOne(
@@ -413,8 +515,15 @@ def performTagging(out, leg, cam, people_dataset, president_for_gold="no_preside
                             )
                             if best_match:
                                 best_match_uri = people_dataset.loc[
-                                    people_dataset["surname"].str.lower() == best_match[0]
-                                ]["URI"].iloc[0]
+                                    (people_dataset["surname"].str.lower() == best_match[0])
+                                    & (people_dataset["job"].isin([0, job]))
+                                ]["URI"]
+                                if len(best_match_uri) > 0:
+                                    best_match_uri = best_match_uri.iloc[0]
+                                else:
+                                    best_match_uri = people_dataset.loc[
+                                        (people_dataset["surname"].str.lower() == best_match[0])
+                                    ].iloc[0]["URI"]
                         # if among any of the two cases there is a match, tag the line with the URI
                         if best_match:
                             if is_speech_open:
@@ -430,86 +539,15 @@ def performTagging(out, leg, cam, people_dataset, president_for_gold="no_preside
                         continue
 
             ### case 2: names to tag are a mix of lowercase and uppercase
-            elif cam == 1 and leg in [
-                "regno_11",
-                "regno_12",
-                "regno_13",
-                "regno_14",
-                "regno_15",
-                "regno_16",
-                "regno_17",
-                "regno_18",
-                "regno_19",
-            ]:
-                # locate the only uppercase series of words (or single word) in the line
-
-                words = line.split()
-                for i, word in enumerate(words):
-                    if i >= 4:
-                        break
-                    if has_majority_uppercase(word):
-                        if len(word) == 1:
-                            break
-                        name.append(word)
-                        if word.endswith(".") or word.endswith(","):
-                            break
-
-                name = " ".join(name)
-
-                if "PRESIDENTE" in name and (is_presidency_open or president_for_gold != "no_president"):
-                    if is_speech_open:
-                        new_line += '</speech><speech speaker="' + president_uri + '" is_president="true">' + line
-                    else:
-                        new_line += '<speech speaker="' + president_uri + '" is_president="true">' + line
-                    is_speech_open = True
-                    new_lines.append(new_line)
-                    continue
-                else:
-                    if utils.full_process(name):
-                        # if name is more than one word, use surname + name and partial ratio
-                        if len(name.split()) > 1:
-                            surnames_names = list(people_dataset["surname"] + " " + people_dataset["name"])
-                            best_match = process.extractOne(
-                                name,
-                                surnames_names,
-                                scorer=fuzz.partial_ratio,
-                                score_cutoff=80,
-                            )
-                            if best_match:
-                                best_match_uri = people_dataset.loc[
-                                    people_dataset["surname"] + " " + people_dataset["name"] == best_match[0]
-                                ]["URI"].iloc[0]
-
-                        # if name is exaclty one word (not PRESIDENTE), use only surname and ratio
-                        else:
-                            best_match = process.extractOne(
-                                name,
-                                list(people_dataset["surname"]),
-                                scorer=fuzz.token_set_ratio,
-                                score_cutoff=80,
-                            )
-                            if best_match:
-                                best_match_uri = people_dataset.loc[people_dataset["surname"] == best_match[0]][
-                                    "URI"
-                                ].iloc[0]
-                        # if among any of the two cases there is a match, tag the line with the URI
-                        if best_match:
-                            if is_speech_open:
-                                new_line += (
-                                    '</speech><speech speaker="' + best_match_uri + '" is_president="false">' + line
-                                )
-                            else:
-                                new_line += '<speech speaker="' + best_match_uri + '" is_president="false">' + line
-                            is_speech_open = True
-                        else:
-                            new_line = line
-                        new_lines.append(new_line)
-                        continue
-                new_line = line
 
             # case 3: names are all uppercase
             else:
-                if has_majority_uppercase(line.split(".")[0]) or has_majority_uppercase(line.split(",")[0]):
+                if (
+                    has_majority_uppercase(line.split(".")[0])
+                    or has_majority_uppercase(line.split(",")[0])
+                    or has_majority_uppercase(line.split(" ")[0])
+                ):
+                    job = 1 if cam == 0 else 2
                     name = []
                     words = line.split()
                     # find name among words, keep all uppercase words UNLESS they are one letter long and more than four words long
@@ -518,7 +556,7 @@ def performTagging(out, leg, cam, people_dataset, president_for_gold="no_preside
                             if len(word) == 1:
                                 break
                             name.append(word)
-                            if word.endswith(".") or word.endswith(","):
+                            if word.endswith(".") or word.endswith(",") or not has_majority_uppercase(word):
                                 break
                             if len(name) >= 4:
                                 break
@@ -535,7 +573,8 @@ def performTagging(out, leg, cam, people_dataset, president_for_gold="no_preside
                         name = re.sub("[\(\[].*?[\)\]]", "", name)
 
                     # if name is PRESIDENTE search for president in charge and tag the speech with it
-                    if "PRESIDENTE" in name and (is_presidency_open or president_for_gold != "no_president"):
+                    if "PRESIDENTE" in name or fuzz.ratio(name, "PRESIDENTE") >= 80:
+                        # and (is_presidency_open or president_for_gold != "no_president"):
                         if is_speech_open:
                             new_line += '</speech><speech speaker="' + president_uri + '" is_president="true">' + line
                         else:
@@ -551,7 +590,7 @@ def performTagging(out, leg, cam, people_dataset, president_for_gold="no_preside
                                 best_match = process.extractOne(
                                     name,
                                     surnames_names,
-                                    scorer=fuzz.token_sort_ratio
+                                    scorer=fuzz.partial_token_set_ratio
                                     if cam == 0
                                     and leg
                                     in [
@@ -567,8 +606,15 @@ def performTagging(out, leg, cam, people_dataset, president_for_gold="no_preside
                                 )
                                 if best_match:
                                     best_match_uri = people_dataset.loc[
-                                        people_dataset["surname"] + " " + people_dataset["name"] == best_match[0]
-                                    ]["URI"].iloc[0]
+                                        (people_dataset["surname"] + " " + people_dataset["name"] == best_match[0])
+                                        & (people_dataset["job"].isin([0, job]))
+                                    ]["URI"]
+                                    if len(best_match_uri) > 0:
+                                        best_match_uri = best_match_uri.iloc[0]
+                                    else:
+                                        best_match_uri = people_dataset.loc[
+                                            (people_dataset["surname"] + " " + people_dataset["name"] == best_match[0])
+                                        ].iloc[0]["URI"]
 
                             # if name is exaclty one word (not PRESIDENTE), use only surname and ratio
                             else:
@@ -579,9 +625,16 @@ def performTagging(out, leg, cam, people_dataset, president_for_gold="no_preside
                                     score_cutoff=80,
                                 )
                                 if best_match:
-                                    best_match_uri = people_dataset.loc[people_dataset["surname"] == best_match[0]][
-                                        "URI"
-                                    ].iloc[0]
+                                    best_match_uri = people_dataset.loc[
+                                        (people_dataset["surname"] == best_match[0])
+                                        & (people_dataset["job"].isin([0, job]))
+                                    ]["URI"]
+                                    if len(best_match_uri) > 0:
+                                        best_match_uri = best_match_uri.iloc[0]
+                                    else:
+                                        best_match_uri = people_dataset.loc[
+                                            (people_dataset["surname"] == best_match[0])
+                                        ].iloc[0]["URI"]
                             # if among any of the two cases there is a match, tag the line with the URI
                             if best_match:
                                 if is_speech_open:
@@ -679,18 +732,11 @@ def performTagging(out, leg, cam, people_dataset, president_for_gold="no_preside
 
     new_lines.append("</document>")
 
-    with open(out, "w", encoding="utf-8") as output_file:
+    with open(input_path, "w", encoding="utf-8") as output_file:
         output_file.writelines(new_lines)
 
-    return president
 
-    # people can be recognized by the fact that they are written in uppercase and are followed by a comma or a dot.
-    # if they are, tag them with their URI. If they are not, check if the first three words are in the dataset. If they are, tag them with their URI.
-
-
-def fillOutputDocument(
-    output_file, text_values, page_num, tot_page_num, prev_last_char, people_dataset, is_gold, current_president="bruh"
-):
+def fillOutputDocument(output_file, text_values, page_num, prev_last_char):
     """
     fills the output file with the text from each page
     :param output_file: file to write to
@@ -716,10 +762,6 @@ def fillOutputDocument(
     #     )
     # )
 
-    if is_gold:
-        page_num = 1
-        tot_page_num = 1
-
     if page_num > 1:
         if prev_last_char == ".":
             output_file.write("\n")
@@ -734,25 +776,25 @@ def fillOutputDocument(
     is_truncated = False
     # word_count = 0
     block = 0
-    is_beginning_of_block = False
-    start_of_block = ""
+    top = 0
+    # is_beginning_of_block = False
+    # start_of_block = ""
 
     for word_count, tup in enumerate(text_values):
-        conf = int(tup[4])
-        word_num = int(tup[7])
+        conf = int(tup[2])
 
         if conf == -1:
             closing_count += 1
             continue
 
-        curr_word = str(tup[3])
+        curr_word = str(tup[1])
 
         sep = ""
 
-        is_next_line = False
-        top = int(tup[5]) - int(tup[6])
+        # is_next_line = False
+        # top = int(tup[5]) - int(tup[6])
 
-        if closing_count == 2 or block != tup[0]:
+        if closing_count == 2 or block != tup[0] or tup[4] - top > 20:
             sep = "\n"
 
         else:
@@ -770,6 +812,7 @@ def fillOutputDocument(
 
         closing_count = 0
         block = tup[0]
+        top = tup[4]
 
     # if tot_page_num == page_num:
     #     output_file.write("</document>")
