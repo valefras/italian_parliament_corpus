@@ -2,7 +2,7 @@
 
 ## Data
 
-The corpus is available in TXT format by following this [link to the OneDrive shared folder](https://fbk-my.sharepoint.com/:f:/g/personal/aprosio_fbk_eu/Ev5-RQdKAPZGq3C82r9P7Z8BgGyul7MEcMdbItZrBOUFRg?e=S1fJp2).
+The corpus is available in TXT format by following this [link to the OneDrive shared folder](https://fbk-my.sharepoint.com/:f:/g/personal/aprosio_fbk_eu/Ev5-RQdKAPZGq3C82r9P7Z8B7DANV-EY59TceMMW0AMFiQ).
 
 ## Steps
 Scripts should be executed in order:
